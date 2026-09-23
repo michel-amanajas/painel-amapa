@@ -1,0 +1,67 @@
+{
+  "racas": {
+    "governador": {
+      "label": "Governador",
+      "sub": "Amapá — eleição majoritária",
+      "seatsLabel": "1 vaga",
+      "seats": 1,
+      "proportional": false,
+      "candidatos": [
+        { "nome": "Exemplo Candidato A", "partido": "PARTIDO1", "votos": 0 },
+        { "nome": "Exemplo Candidato B", "partido": "PARTIDO2", "votos": 0 }
+      ]
+    },
+    "senador": {
+      "label": "Senador",
+      "sub": "Amapá — 2 vagas em disputa",
+      "seatsLabel": "2 vagas",
+      "seats": 2,
+      "proportional": false,
+      "candidatos": [
+        { "nome": "Exemplo Candidato C", "partido": "PARTIDO1", "votos": 0 },
+        { "nome": "Exemplo Candidato D", "partido": "PARTIDO3", "votos": 0 }
+      ]
+    },
+    "dep_federal": {
+      "label": "Deputado Federal",
+      "sub": "Amapá — sistema proporcional",
+      "seatsLabel": "8 vagas",
+      "seats": 8,
+      "proportional": true,
+      "candidatos": [
+        { "nome": "Exemplo Candidato E", "partido": "PARTIDO1", "votos": 0 },
+        { "nome": "Exemplo Candidato F", "partido": "PARTIDO2", "votos": 0 }
+      ]
+    },
+    "dep_estadual": {
+      "label": "Deputado Estadual",
+      "sub": "Amapá — sistema proporcional",
+      "seatsLabel": "24 vagas",
+      "seats": 24,
+      "proportional": true,
+      "candidatos": [
+        { "nome": "Exemplo Candidato G", "partido": "PARTIDO1", "votos": 0 },
+        { "nome": "Exemplo Candidato H", "partido": "PARTIDO3", "votos": 0 }
+      ]
+    }
+  },
+  "municipios": [
+    { "nome": "Macapá", "pct": 0 },
+    { "nome": "Santana", "pct": 0 },
+    { "nome": "Laranjal do Jari", "pct": 0 },
+    { "nome": "Oiapoque", "pct": 0 },
+    { "nome": "Mazagão", "pct": 0 },
+    { "nome": "Porto Grande", "pct": 0 },
+    { "nome": "Ferreira Gomes", "pct": 0 },
+    { "nome": "Amapá", "pct": 0 },
+    { "nome": "Pedra Branca do Amapari", "pct": 0 },
+    { "nome": "Pracuúba", "pct": 0 },
+    { "nome": "Tartarugalzinho", "pct": 0 },
+    { "nome": "Calçoene", "pct": 0 },
+    { "nome": "Cutias", "pct": 0 },
+    { "nome": "Itaubal", "pct": 0 },
+    { "nome": "Serra do Navio", "pct": 0 },
+    { "nome": "Vitória do Jari", "pct": 0 }
+  ],
+  "atualizadoEm": null
+}
