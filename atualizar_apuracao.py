@@ -26,21 +26,21 @@ COMO USAR
    e abra http://localhost:8000/painel_local.html
    (o painel recarrega os dados sozinho a cada 20s)
 
-IMPORTANTE — CONFIRME A URL NO DIA DA ELEIÇÃO
------------------------------------------------
-A estrutura abaixo foi validada em setembro/2026 contra o ambiente de
-SIMULAÇÃO do TSE (resultados-sim.tse.jus.br/simulado/simulado2026/...).
-No dia real da eleição, o domínio de PRODUÇÃO é outro (geralmente
-resultados.tse.jus.br ou o portal oficial de resultados anunciado pelo
-TSE mais perto da data). Antes de usar de verdade:
-  - acesse https://www.tse.jus.br e confirme a URL oficial de resultados
-    2026 (o TSE costuma divulgar isso em nota oficial dias antes);
-  - ajuste a constante BASE_URL abaixo, ou passe --base-url na linha de
-    comando;
-  - rode com --once primeiro e confira se os nomes/votos aparecem certos
-    antes de deixar em --loop.
+SOBRE O AMBIENTE DE PRODUÇÃO (confirmado em 28/09/2026)
+---------------------------------------------------------
+BASE_URL já aponta para o ambiente OFICIAL do TSE:
+    https://resultados.tse.jus.br/oficial · pleito 3220 (1º turno, 04/10/2026)
+    eleição 6259 = Estadual (Governador, Dep. Estadual)
+    eleição 6257 = Federal (Senador, Dep. Federal)
 
-Se a URL estiver errada, o script avisa no terminal e NÃO sobrescreve o
+Até o TSE ativar esse caminho (normalmente perto ou no dia da eleição),
+as buscas vão dar 404 — isso é esperado, não é erro do script. Nesse
+período, o script tenta automaticamente o ambiente de SIMULAÇÃO como
+fallback, então dá para continuar testando com --once normalmente.
+
+Se algo mudar (nomes de campo, códigos) quando o TSE ativar de verdade,
+rode com --once e confira o log linha por linha antes de deixar em --loop.
+Se nenhuma URL funcionar, o script avisa no terminal e NÃO sobrescreve o
 dados.json com informação incompleta (ele preserva o último arquivo
 válido).
 """
@@ -58,23 +58,36 @@ from pathlib import Path
 # CONFIGURAÇÃO — ajuste aqui antes do dia da eleição
 # ---------------------------------------------------------------------------
 
-# Domínio base dos arquivos de resultado. Troque para o de PRODUÇÃO
-# assim que o TSE divulgar (ver aviso acima). Por padrão está apontando
-# para o ambiente de simulação, só para você conseguir testar o script
-# desde já.
-BASE_URL = "https://resultados-sim.tse.jus.br/simulado/simulado2026"
+# Domínio + ambiente PRODUÇÃO — código confirmado por Michel em 28/09/2026:
+#   url: https://resultados.tse.jus.br · ambiente: oficial · pleito: 3220
+#   eleição 6257 = Eleição Geral Federal (Senador, Deputado Federal)
+#   eleição 6259 = Eleições Gerais Estaduais (Governador, Deputado Estadual)
+# Até o TSE ativar esse caminho (normalmente perto/no dia da eleição), as
+# buscas vão dar 404 — isso é esperado, não é erro do script. O script
+# também tenta o ambiente de SIMULAÇÃO como fallback (ver urls_cargo),
+# então nada muda no seu jeito de usar: --once continua funcionando, só
+# passa a preferir os dados reais assim que eles ficarem disponíveis.
+BASE_URL = "https://resultados.tse.jus.br/oficial"
+BASE_URL_SIMULADO = "https://resultados-sim.tse.jus.br/simulado/simulado2026"
 
 UF = "ap"                 # Amapá
-PLEITO = "17801"          # código do pleito (validado no simulado)
-ELEICAO = "21272"         # código da eleição estadual (Gov/Sen/DepFed/DepEst)
+PLEITO = "3220"           # código do pleito 1º turno 04/10/2026 (confirmado)
 
-# Código de cargo em cada arquivo do TSE
+# Código de cargo em cada arquivo do TSE. Cada cargo tem sua própria
+# "eleição" — governador/dep. estadual ficam na eleição Estadual (6259),
+# senador/dep. federal ficam na eleição Federal (6257), mesmo sendo tudo
+# o mesmo pleito e a mesma data de votação.
 CARGOS = {
-    "governador":   {"codigo": "3", "label": "Governador",         "proportional": False, "seats": 1},
-    "senador":      {"codigo": "5", "label": "Senador",            "proportional": False, "seats": 2},
-    "dep_federal":  {"codigo": "6", "label": "Deputado Federal",   "proportional": True,  "seats": 8},
-    "dep_estadual": {"codigo": "7", "label": "Deputado Estadual",  "proportional": True,  "seats": 24},
+    "governador":   {"codigo": "3", "eleicao": "6259", "label": "Governador",         "proportional": False, "seats": 1},
+    "senador":      {"codigo": "5", "eleicao": "6257", "label": "Senador",            "proportional": False, "seats": 2},
+    "dep_federal":  {"codigo": "6", "eleicao": "6257", "label": "Deputado Federal",   "proportional": True,  "seats": 8},
+    "dep_estadual": {"codigo": "7", "eleicao": "6259", "label": "Deputado Estadual",  "proportional": True,  "seats": 24},
 }
+
+# Códigos usados só como fallback no ambiente de simulação (validados
+# anteriormente contra o simulado, podem não valer para o ambiente oficial).
+PLEITO_SIMULADO = "17801"
+ELEICAO_SIMULADO = "21272"
 
 # Os 16 municípios do Amapá com seus códigos IBGE/TSE (para o arquivo de
 # apuração por município). Ajuste/confira se o TSE usar códigos diferentes
@@ -122,28 +135,40 @@ def buscar_json(url: str):
     return None
 
 
-def urls_cargo(cargo_codigo: str) -> list:
+def urls_cargo(cargo_codigo: str, eleicao: str) -> list:
     """Monta candidatos de URL do arquivo de resultado por cargo, no padrão
     real do TSE (confirmado comparando com dados oficiais já publicados):
 
         <base>/<pasta>/dados-simplificados/<uf>/<uf>-c<cargo:04d>-e<eleicao:06d>-r.json
 
-    Onde <pasta> é ou o código do pleito, ou o código da eleição — o TSE usa
-    ora um, ora outro dependendo do ambiente/ano, e não dá para saber qual
-    sem testar. Por isso geramos as duas variações (e, por garantia, também
-    o padrão antigo '-u.json'/'dados/' como último fallback) e tentamos uma
-    de cada vez em buscar_cargo(), até uma funcionar."""
+    Tenta primeiro o ambiente de PRODUÇÃO com os códigos confirmados
+    (pleito 3220, eleição 6257/6259 conforme o cargo). Se ainda não estiver
+    ativo (dá 404 até o TSE ligar o ambiente, normalmente perto do dia da
+    eleição), cai para o ambiente de SIMULAÇÃO como fallback, para você
+    poder continuar testando o script antes do dia real."""
     cargo4 = cargo_codigo.zfill(4)
-    eleicao6 = ELEICAO.zfill(6)
+    eleicao6 = eleicao.zfill(6)
     candidatos = []
-    for pasta in (ELEICAO, PLEITO):
-        candidatos.append(
-            f"{BASE_URL}/{pasta}/dados-simplificados/{UF}/{UF}-c{cargo4}-e{eleicao6}-r.json"
-        )
-    # fallback: padrão antigo, caso o ambiente de simulação ainda use esse formato
+
+    # 1) Produção — pasta = pleito (padrão confirmado)
     candidatos.append(
-        f"{BASE_URL}/{ELEICAO}/dados/{UF}/{UF}-c{cargo_codigo}-e{ELEICAO}-u.json"
+        f"{BASE_URL}/{PLEITO}/dados-simplificados/{UF}/{UF}-c{cargo4}-e{eleicao6}-r.json"
     )
+    # 2) Produção — pasta = eleição (variação, caso o TSE use esse formato)
+    candidatos.append(
+        f"{BASE_URL}/{eleicao}/dados-simplificados/{UF}/{UF}-c{cargo4}-e{eleicao6}-r.json"
+    )
+    # 3) Simulação — fallback para continuar testando antes do dia real
+    eleicao_sim6 = ELEICAO_SIMULADO.zfill(6)
+    for pasta in (ELEICAO_SIMULADO, PLEITO_SIMULADO):
+        candidatos.append(
+            f"{BASE_URL_SIMULADO}/{pasta}/dados-simplificados/{UF}/{UF}-c{cargo4}-e{eleicao_sim6}-r.json"
+        )
+    # 4) padrão antigo, por garantia
+    candidatos.append(
+        f"{BASE_URL_SIMULADO}/{ELEICAO_SIMULADO}/dados/{UF}/{UF}-c{cargo_codigo}-e{ELEICAO_SIMULADO}-u.json"
+    )
+
     # remove duplicatas mantendo a ordem
     vistos = set()
     unicos = []
@@ -198,20 +223,51 @@ def extrair_candidatos(payload) -> list:
     return candidatos
 
 
+UF_ESPERADA = "AP"  # Amapá — trava de segurança contra dado de outro estado
+
+# Campos onde o TSE costuma indicar a sigla do estado/abrangência do arquivo.
+# Nem todo arquivo tem esses campos — quando nenhum aparece, não dá para
+# confirmar, então seguimos em frente (mas o "ap" já está fixo na própria
+# URL, então o risco de vir outro estado é baixo).
+CAMPOS_UF_PAYLOAD = ("uf", "sg_uf", "sguf", "esae", "abr")
+
+
+def confere_uf(payload) -> bool | None:
+    """Confere se o JSON baixado é mesmo do Amapá, olhando os campos que o
+    TSE costuma usar para indicar a sigla do estado. Retorna True/False
+    quando consegue confirmar, ou None quando o arquivo não tem nenhum
+    desses campos (nesse caso não bloqueamos — a UF já está fixa na URL)."""
+    if not isinstance(payload, dict):
+        return None
+    for campo in CAMPOS_UF_PAYLOAD:
+        valor = payload.get(campo)
+        if isinstance(valor, str) and len(valor) <= 3:
+            return valor.strip().upper() == UF_ESPERADA
+    return None
+
+
 def buscar_cargo(chave: str, info: dict) -> list | None:
-    print(f"Buscando {info['label']}...")
-    for url in urls_cargo(info["codigo"]):
+    print(f"Buscando {info['label']} (filtro: apenas Amapá)...")
+    for url in urls_cargo(info["codigo"], info["eleicao"]):
         print(f"  tentando {url}")
         payload = buscar_json(url)
         if payload is None:
             continue
+
+        eh_amapa = confere_uf(payload)
+        if eh_amapa is False:
+            print(f"  [bloqueado] essa URL devolveu dados de outro estado "
+                  f"(esperado: {UF_ESPERADA}) — ignorando, tentando a próxima.")
+            continue
+
         candidatos = extrair_candidatos(payload)
         if not candidatos:
             print(f"  [aviso] essa URL respondeu, mas sem candidatos "
                   f"reconhecíveis no formato esperado — tentando a próxima.")
             continue
         print(f"  ok ({url}) — {len(candidatos)} candidatos, "
-              f"{sum(c['votos'] for c in candidatos)} votos totais")
+              f"{sum(c['votos'] for c in candidatos)} votos totais"
+              f"{' [UF confirmada: AP]' if eh_amapa else ' [UF não confirmada no payload, mas URL já é de AP]'}")
         return candidatos
     print(f"  [erro] nenhuma das URLs testadas funcionou para {info['label']}.")
     return None
@@ -230,10 +286,15 @@ def buscar_municipios() -> list | None:
     início) até essa parte ser ajustada para buscar os 16 arquivos
     municipais individualmente."""
     payload = None
-    for url in urls_cargo(CARGOS["governador"]["codigo"]):
-        payload = buscar_json(url)
-        if payload is not None:
-            break
+    for url in urls_cargo(CARGOS["governador"]["codigo"], CARGOS["governador"]["eleicao"]):
+        candidato = buscar_json(url)
+        if candidato is None:
+            continue
+        if confere_uf(candidato) is False:
+            print(f"  [bloqueado] {url} devolveu dados de outro estado — ignorando.")
+            continue
+        payload = candidato
+        break
     if payload is None:
         return None
 
