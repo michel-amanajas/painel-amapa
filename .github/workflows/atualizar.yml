@@ -31,13 +31,14 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Buscar dados do TSE
-        run: python atualizar_apuracao.py --once
+      - name: Buscar dados do TSE (e fotos dos candidatos)
+        run: python atualizar_apuracao.py --once --fotos
 
-      - name: Publicar dados.json atualizado (se mudou)
+      - name: Publicar dados.json e fotos atualizados (se mudou)
         run: |
           git config user.name "robo-apuracao"
           git config user.email "robo-apuracao@users.noreply.github.com"
-          git add dados.json
-          git diff --cached --quiet || git commit -m "Atualiza dados.json"
+          git add dados.json fotos_mapa.json
+          git add fotos/ 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "Atualiza dados.json e fotos dos candidatos"
           git push
