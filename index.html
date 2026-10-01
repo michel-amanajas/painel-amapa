@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apuração Eleições Amapá 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F1C1E;
+    --panel:#16282B;
+    --panel-2:#1D3236;
+    --line: rgba(237,234,224,0.12);
+    --text:#EDEAE0;
+    --text-muted:#93A6A3;
+    --gold:#D9A544;
+    --teal:#3FA382;
+    --river:#4C90AC;
+    --brick:#C1594B;
+    --elected:#39D98A;
+    --elected-bg: rgba(57,217,138,0.10);
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.24), 0 1px 1px rgba(0,0,0,0.16);
+    --shadow-md: 0 8px 20px rgba(0,0,0,0.30), 0 2px 6px rgba(0,0,0,0.20);
+    --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+    --font-body: 'IBM Plex Sans', -apple-system, 'Segoe UI', sans-serif;
+    --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+  }
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]){
+      --ink:#F5F2E9;
+      --panel:#FFFFFF;
+      --panel-2:#EDE8DA;
+      --line: rgba(15,28,30,0.12);
+      --text:#16282B;
+      --text-muted:#5B6E6B;
+      --elected:#1F9D6B;
+      --elected-bg: rgba(31,157,107,0.10);
+      --shadow-sm: 0 1px 2px rgba(22,40,43,0.07), 0 1px 1px rgba(22,40,43,0.05);
+      --shadow-md: 0 8px 20px rgba(22,40,43,0.10), 0 2px 8px rgba(22,40,43,0.06);
+    }
+  }
+  :root[data-theme="light"]{
+    --ink:#F5F2E9;
+    --panel:#FFFFFF;
+    --panel-2:#ECE7D8;
+    --line: rgba(15,28,30,0.12);
+    --text:#16282B;
+    --text-muted:#5B6E6B;
+    --elected:#1F9D6B;
+    --elected-bg: rgba(31,157,107,0.10);
+    --shadow-sm: 0 1px 2px rgba(22,40,43,0.07), 0 1px 1px rgba(22,40,43,0.05);
+    --shadow-md: 0 8px 20px rgba(22,40,43,0.10), 0 2px 8px rgba(22,40,43,0.06);
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--ink);
+    color:var(--text);
+    font-family:var(--font-body);
+    min-height:100vh;
+    padding: 28px 20px 60px;
+  }
+
+  .wrap{ max-width: 1180px; margin: 0 auto; }
+
+  /* ---------- Header ---------- */
+  header{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:16px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 20px;
+    margin-bottom: 24px;
+  }
+  .title-block h1{
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height:1.05;
+    margin:0 0 6px;
+    letter-spacing:-0.01em;
+  }
+  .title-block h1 em{
+    font-style:normal;
+    color:var(--gold);
+  }
+  .title-block p{
+    margin:0;
+    color:var(--text-muted);
+    font-size:14px;
+  }
+  .demo-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-family:var(--font-mono);
+    font-size:11px;
+    color:var(--brick);
+    border:1px solid var(--brick);
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin-top:8px;
+  }
+  .demo-badge::before{content:"●"; font-size:8px;}
+
+  .stat-cluster{
+    display:flex;
+    gap: 24px;
+    align-items:flex-end;
+  }
+  .stat + .stat{
+    padding-left:24px;
+    border-left:1px solid var(--line);
+  }
+  .stat{ text-align:right; }
+  .stat .num{
+    font-family:var(--font-display);
+    font-size: 34px;
+    font-weight:600;
+    color:var(--gold);
+    line-height:1;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat .lbl{
+    font-size:11px;
+    color:var(--text-muted);
+    margin-top:4px;
+    font-family: var(--font-mono);
+  }
+
+  .theme-toggle{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    border:1px solid var(--line);
+    background:var(--panel);
+    color:var(--text-muted);
+    cursor:pointer;
+    transition: color .15s ease, border-color .15s ease, background-color .15s ease, transform .15s ease;
+  }
+  .theme-toggle svg{ width:17px; height:17px; }
+  .theme-toggle:hover{ color:var(--gold); border-color:var(--gold); }
+  .theme-toggle:active{ transform: scale(0.92); }
+
+  .edit-toggle{
+    display:inline-flex;
+    align-items:center;
+    height:38px;
+    border-radius:20px;
+    border:1px solid var(--line);
+    background:var(--panel);
+    color:var(--text-muted);
+    font-family:var(--font-body);
+    font-size:12.5px;
+    font-weight:500;
+    padding:0 14px;
+    cursor:pointer;
+    white-space:nowrap;
+    transition: color .15s ease, border-color .15s ease, background-color .15s ease;
+  }
+  .edit-toggle:hover{ color:var(--text); border-color:var(--text-muted); }
+  .edit-toggle.active{
+    background:var(--gold);
+    border-color:var(--gold);
+    color:var(--ink);
+    font-weight:600;
+  }
+
+  .edit-note{
+    display:flex;
+    gap:8px;
+    background: rgba(217,165,68,0.10);
+    border:1px solid var(--gold);
+    border-radius:4px;
+    padding:8px 12px;
+    font-size:12px;
+    color:var(--text);
+    margin-bottom:12px;
+  }
+  .edit-note strong{ color:var(--gold); }
+
+  .vote-input, .muni-input{
+    width:100px;
+    background:var(--panel-2);
+    border:1px solid var(--gold);
+    color:var(--text);
+    font-family:var(--font-mono);
+    font-size:14px;
+    text-align:right;
+    padding:6px 8px;
+    border-radius:5px;
+    font-variant-numeric: tabular-nums;
+  }
+  .muni-input{ width:64px; }
+  .vote-input:focus, .muni-input:focus{ outline:2px solid var(--gold); outline-offset:1px; }
+
+  .save-bar{
+    position:sticky;
+    bottom:0;
+    display:flex;
+    gap:10px;
+    background:var(--panel);
+    border-top:1px solid var(--line);
+    padding:12px 0 2px;
+    margin-top:8px;
+  }
+  .save-btn{
+    background:var(--gold);
+    border:1px solid var(--gold);
+    color:var(--ink);
+    font-family:var(--font-body);
+    font-size:13px;
+    font-weight:600;
+    padding:8px 16px;
+    border-radius:6px;
+    cursor:pointer;
+  }
+  .save-btn:hover{ filter:brightness(1.06); }
+  .save-btn:disabled{ opacity:.6; cursor:default; }
+  .cancel-btn{
+    background:none;
+    border:1px solid var(--line);
+    color:var(--text-muted);
+    font-family:var(--font-body);
+    font-size:13px;
+    padding:8px 16px;
+    border-radius:6px;
+    cursor:pointer;
+  }
+  .cancel-btn:hover{ color:var(--text); border-color:var(--text-muted); }
+
+  /* ---------- Tabs ---------- */
+  nav.races{
+    display:flex;
+    gap:4px;
+    margin-bottom: 22px;
+    overflow-x:auto;
+    border-bottom:1px solid var(--line);
+  }
+  nav.races button{
+    background:none;
+    border:none;
+    border-radius:4px 4px 0 0;
+    color:var(--text-muted);
+    font-family:var(--font-body);
+    font-size:14px;
+    font-weight:500;
+    padding: 10px 16px 12px;
+    cursor:pointer;
+    white-space:nowrap;
+    position:relative;
+    border-bottom: 2px solid transparent;
+    transition: color .15s ease, border-color .15s ease, background-color .15s ease;
+  }
+  nav.races button:hover{ color:var(--text); background:var(--panel-2); }
+  nav.races button.active{
+    color:var(--text);
+    border-bottom-color: var(--gold);
+  }
+  nav.races button.active:hover{ background:none; }
+  nav.races button .seats{
+    display:block;
+    font-family:var(--font-mono);
+    font-size:10px;
+    color:var(--text-muted);
+    margin-top:2px;
+  }
+
+  /* ---------- Tela-resumo (landing) ---------- */
+  .landing{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:14px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 640px){
+    .landing{ grid-template-columns: 1fr; }
+  }
+  .race-card{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-top:3px solid var(--rc-accent, var(--gold));
+    border-radius:7px;
+    padding:18px 20px;
+    cursor:pointer;
+    text-align:left;
+    width:100%;
+    font-family:var(--font-body);
+    color:var(--text);
+    box-shadow: var(--shadow-sm);
+    transition: border-color .15s ease, transform .15s ease, box-shadow .15s ease;
+  }
+  .race-card:hover{
+    border-color: var(--line);
+    border-top-color: var(--rc-accent, var(--gold));
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+  .race-card:disabled{ cursor:default; }
+  .race-card:disabled:hover{ transform:none; box-shadow:var(--shadow-sm); }
+  .race-card:focus-visible{ outline:2px solid var(--gold); outline-offset:2px; }
+  .race-card:nth-of-type(1){ --rc-accent: var(--gold); }
+  .race-card:nth-of-type(2){ --rc-accent: var(--river); }
+  .race-card:nth-of-type(3){ --rc-accent: var(--teal); }
+  .race-card:nth-of-type(4){ --rc-accent: var(--brick); }
+  .race-card .rc-label{
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size:17px;
+    margin:0 0 2px;
+  }
+  .race-card .rc-seats{
+    font-size:11px;
+    color:var(--text-muted);
+    font-family:var(--font-mono);
+    margin:0 0 14px;
+  }
+  .race-card .rc-leader-lbl{
+    font-size:10px;
+    letter-spacing:.03em;
+    text-transform:uppercase;
+    color:var(--text-muted);
+    font-family:var(--font-mono);
+    margin-bottom:4px;
+  }
+  .race-card .rc-leader-name{
+    font-size:15px;
+    font-weight:600;
+    margin-bottom:2px;
+  }
+  .race-card .rc-leader-votes{
+    font-size:12px;
+    color:var(--text-muted);
+  }
+  .race-card .rc-empty{
+    font-size:13px;
+    color:var(--text-muted);
+    font-style:italic;
+  }
+  .race-card .rc-foot{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:14px;
+    padding-top:12px;
+    border-top:1px solid var(--line);
+    font-size:11px;
+    color:var(--text-muted);
+    font-family:var(--font-mono);
+  }
+  .race-card .rc-foot b{ color:var(--gold); font-family:var(--font-body); }
+
+  /* ---------- Cartão de coeficiente eleitoral ---------- */
+  .coef-card{
+    display:flex;
+    margin: -4px 0 14px;
+    border:1px solid var(--line);
+    border-radius:6px;
+    overflow:hidden;
+  }
+  .coef-cell{
+    flex:1;
+    padding:10px 14px;
+    text-align:center;
+    border-left:1px solid var(--line);
+  }
+  .coef-cell:first-child{ border-left:none; }
+  .coef-cell .cc-val{
+    font-family:var(--font-mono);
+    font-size:17px;
+    font-weight:500;
+    color:var(--text);
+    font-variant-numeric: tabular-nums;
+  }
+  .coef-cell.cc-highlight{ background: rgba(217,165,68,0.08); }
+  .coef-cell.cc-highlight .cc-val{ color:var(--gold); }
+  .coef-cell .cc-lbl{
+    font-size:10px;
+    color:var(--text-muted);
+    margin-top:3px;
+    text-transform:uppercase;
+    letter-spacing:.03em;
+  }
+
+  /* ---------- Estado vazio ---------- */
+  .empty-banner{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    background:var(--panel-2);
+    border:1px solid var(--line);
+    border-left:3px solid var(--gold);
+    border-radius:4px;
+    padding:10px 14px;
+    font-size:12.5px;
+    color:var(--text-muted);
+    margin-bottom:16px;
+  }
+  .empty-banner strong{ color:var(--text); }
+
+  /* ---------- Layout grid ---------- */
+  .grid{
+    display:grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 20px;
+    align-items:start;
+  }
+  @media (max-width: 820px){
+    .grid{ grid-template-columns: 1fr; }
+  }
+
+  .panel{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius: 7px;
+    padding: 20px;
+    box-shadow: var(--shadow-sm);
+  }
+  .panel h2{
+    font-family:var(--font-display);
+    font-weight:500;
+    font-size:16px;
+    margin:0 0 4px;
+  }
+  .panel .sub{
+    font-size:12px;
+    color:var(--text-muted);
+    margin: 0 0 18px;
+  }
+
+  /* ---------- Candidate ranking ---------- */
+  .cand-row{
+    display:grid;
+    grid-template-columns: 26px 32px 1fr auto;
+    gap:12px;
+    align-items:center;
+    padding: 10px 8px;
+    margin: 0 -8px;
+    border-radius:5px;
+    border-bottom: 1px solid var(--line);
+    transition: background-color .12s ease;
+  }
+  .cand-row:last-child{ border-bottom:none; }
+  .cand-row:not(.elected):hover{ background: var(--panel-2); }
+  .cand-rank{
+    font-family:var(--font-mono);
+    font-size:12px;
+    color:var(--text-muted);
+  }
+  .cand-row.elected .cand-rank{ color:var(--elected); }
+  .cand-avatar{
+    position:relative;
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    overflow:hidden;
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:var(--font-body);
+    font-size:11px;
+    font-weight:700;
+    color:#fff;
+    background: var(--av-bg, var(--river));
+    user-select:none;
+  }
+  .cand-avatar img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    background:var(--panel-2);
+  }
+  .cand-main .name-line{
+    display:flex;
+    align-items:baseline;
+    gap:8px;
+    margin-bottom:6px;
+    flex-wrap:wrap;
+  }
+  .cand-main .name{
+    font-weight:600;
+    font-size:14.5px;
+  }
+  .cand-main .party{
+    font-family:var(--font-mono);
+    font-size:11px;
+    color:var(--text-muted);
+  }
+  .elected-tag{
+    font-family:var(--font-mono);
+    font-size:9.5px;
+    letter-spacing:.03em;
+    color:var(--ink);
+    background:var(--elected);
+    padding: 1px 6px;
+    border-radius:2px;
+    font-weight:700;
+  }
+  .bar-track{
+    height:6px;
+    background:var(--panel-2);
+    border-radius:3px;
+    overflow:hidden;
+  }
+  .bar-fill{
+    height:100%;
+    border-radius:3px;
+    background: var(--river);
+    transition: width .5s ease;
+  }
+  .cand-row.elected .bar-fill{ background: var(--elected); }
+  .cand-row.elected{
+    background: var(--elected-bg);
+    border-left: 2px solid var(--elected);
+    margin-left: -2px;
+    padding-left: calc(2px);
+    border-radius: 4px;
+  }
+  .cand-votes{
+    text-align:right;
+    font-family:var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+  .cand-votes .pct{
+    font-size:15px;
+    font-weight:600;
+  }
+  .cand-votes .abs{
+    font-size:11px;
+    color:var(--text-muted);
+  }
+
+  .legend-note{
+    margin-top:16px;
+    font-size:11.5px;
+    color:var(--text-muted);
+    line-height:1.5;
+    border-top:1px solid var(--line);
+    padding-top:12px;
+  }
+
+  .view-btn{
+    background:none;
+    border:1px solid var(--line);
+    color:var(--text-muted);
+    font-family:var(--font-body);
+    font-size:12.5px;
+    padding:6px 12px;
+    border-radius:20px;
+    cursor:pointer;
+    transition: background-color .12s ease, border-color .12s ease, color .12s ease;
+  }
+  .view-btn:hover{ color:var(--text); border-color:var(--text-muted); }
+  .view-btn.active{
+    background:var(--gold);
+    border-color:var(--gold);
+    color:var(--ink);
+    font-weight:600;
+  }
+  .view-btn.active:hover{ color:var(--ink); }
+
+  .party-row{
+    border-bottom:1px solid var(--line);
+    padding:10px 8px;
+    margin:0 -8px;
+    border-radius:5px;
+    transition: background-color .12s ease;
+  }
+  .party-row:last-child{ border-bottom:none; }
+  .party-row:not(.expanded):hover{ background: var(--panel-2); }
+  .party-head{
+    display:grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    gap:14px;
+    align-items:baseline;
+    font-family:var(--font-mono);
+  }
+  @media (max-width: 520px){
+    .party-head{ display:flex; flex-wrap:wrap; align-items:center; gap:6px 14px; }
+    .party-head .pname{ flex:1 1 100%; }
+  }
+  .party-head .pname{
+    font-family:var(--font-body);
+    font-weight:600;
+    font-size:14.5px;
+    color:var(--text);
+  }
+  .party-head .pvotos{ font-size:12px; color:var(--text-muted); }
+  .party-head .pqp, .party-head .psobras{ font-size:12px; color:var(--text-muted); text-align:right; }
+  .party-head .ptotal{
+    font-size:16px;
+    font-weight:700;
+    color:var(--gold);
+    text-align:right;
+    min-width:28px;
+  }
+  .party-elected{
+    margin-top:6px;
+    font-size:12px;
+    color:var(--text-muted);
+    line-height:1.6;
+    padding-left:2px;
+  }
+  .party-elected b{ color: var(--text); font-weight:500; }
+
+  #cand-search{
+    width:100%;
+    background:var(--panel-2);
+    border:1px solid var(--line);
+    color:var(--text);
+    font-family:var(--font-body);
+    font-size:14px;
+    padding:9px 12px;
+    border-radius:6px;
+    transition: border-color .12s ease;
+  }
+  #cand-search:focus{ outline:none; border-color:var(--gold); }
+  #cand-search::placeholder{ color: var(--text-muted); }
+  #party-select{
+    width:100%;
+    background:var(--panel-2);
+    border:1px solid var(--line);
+    color:var(--text);
+    font-family:var(--font-body);
+    font-size:14px;
+    padding:9px 12px;
+    border-radius:6px;
+    margin-bottom:14px;
+    appearance:auto;
+    cursor:pointer;
+    transition: border-color .12s ease;
+  }
+  #party-select:focus{ outline:none; border-color:var(--gold); }
+  .pf-summary{
+    font-family:var(--font-mono);
+    font-size:12px;
+    color:var(--text-muted);
+    margin: 10px 0 8px;
+  }
+  .pf-summary b{ color:var(--gold); }
+  .party-row{ cursor:pointer; }
+  .party-head{ user-select:none; }
+  .party-caret{
+    font-family:var(--font-mono);
+    font-size:11px;
+    color:var(--text-muted);
+    transition: transform .15s ease;
+  }
+  .party-row.expanded .party-caret{ transform: rotate(90deg); }
+  .party-detail{ display:none; margin-top:4px; }
+  .party-row.expanded .party-detail{ display:block; }
+
+  /* ---------- Municípios ---------- */
+  .muni-list{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+    max-height: 560px;
+    overflow-y:auto;
+    padding-right:4px;
+  }
+  .muni-row{
+    display:grid;
+    grid-template-columns: 1fr auto 60px;
+    gap:10px;
+    align-items:center;
+    padding:8px 6px;
+    margin:0 -6px;
+    border-radius:4px;
+    border-bottom:1px solid var(--line);
+    font-size:13px;
+    transition: background-color .12s ease;
+  }
+  .muni-row:hover{ background:var(--panel-2); }
+  .muni-row .mname{ font-weight:500; }
+  .muni-row .mpct{
+    font-family:var(--font-mono);
+    font-size:12px;
+    color:var(--text-muted);
+    text-align:right;
+    font-variant-numeric: tabular-nums;
+  }
+  .mbar-track{
+    height:5px;
+    background:var(--panel-2);
+    border-radius:3px;
+    overflow:hidden;
+  }
+  .mbar-fill{
+    height:100%;
+    background:var(--teal);
+    border-radius:3px;
+  }
+  .mbar-fill.done{ background: var(--gold); }
+
+  .muni-list::-webkit-scrollbar{ width:6px; }
+  .muni-list::-webkit-scrollbar-thumb{ background:var(--line); border-radius:3px; }
+
+  footer{
+    margin-top: 28px;
+    text-align:center;
+    font-size:11.5px;
+    color: var(--text-muted);
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .bar-fill, nav.races button, .race-card, .cand-row, .party-row, .muni-row, .view-btn, .theme-toggle, .edit-toggle{ transition:none; }
+    .race-card:hover{ transform:none; }
+  }
+
+  button:focus-visible, [tabindex]:focus-visible{
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="title-block">
+      <h1>Apuração Eleições Amapá <em>2026</em></h1>
+      <p>Eleições gerais — acompanhamento por cargo e por município</p>
+      <span class="demo-badge" id="conn-badge">conectando ao dados.json…</span>
+    </div>
+    <div class="stat-cluster">
+      <div class="stat">
+        <div class="num" id="pct-apurado">—</div>
+        <div class="lbl">SEÇÕES APURADAS</div>
+      </div>
+      <div class="stat">
+        <div class="num" id="clock">—</div>
+        <div class="lbl">ÚLTIMA ATUALIZAÇÃO</div>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema"></button>
+    </div>
+  </header>
+
+  <nav class="races" id="race-tabs"></nav>
+
+  <div id="landing" class="landing" style="display:none;"></div>
+
+  <div class="grid" id="detail-view" style="display:none;"
+    <section class="panel">
+      <h2 id="race-title">—</h2>
+      <p class="sub" id="race-sub">—</p>
+      <div id="empty-banner" class="empty-banner" style="display:none;"></div>
+      <div id="coef-block" class="coef-card" style="display:none;"></div>
+      <div id="view-toggle" style="display:none; gap:6px; margin-bottom:14px; flex-wrap:wrap;">
+        <button id="btn-view-individual" class="view-btn">Candidatos</button>
+        <button id="btn-view-partidos" class="view-btn">Por partido</button>
+        <button id="btn-view-filtro" class="view-btn">Filtrar por partido</button>
+      </div>
+      <div id="cand-search-wrap" style="display:none; margin-bottom:12px;">
+        <input id="cand-search" type="text" placeholder="Buscar candidato por nome…" autocomplete="off">
+      </div>
+      <div id="cand-list"></div>
+      <div id="party-list" style="display:none;"></div>
+      <div id="party-filter" style="display:none;">
+        <select id="party-select"></select>
+        <div id="party-filter-list"></div>
+      </div>
+      <div class="legend-note" id="race-note"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Municípios</h2>
+      <p class="sub">Percentual de seções apuradas — 16 municípios do Amapá</p>
+      <div class="muni-list" id="muni-list"></div>
+    </section>
+  </div>
+
+  <footer>Painel local · alimentado por atualizar_apuracao.py · dados oficiais do TSE quando disponíveis</footer>
+</div>
+
+<script>
+// Ordem fixa de exibição das abas de cargo
+const RACE_ORDER = ["governador","senador","dep_federal","dep_estadual"];
+
+const tabsEl = document.getElementById('race-tabs');
+const candListEl = document.getElementById('cand-list');
+const muniListEl = document.getElementById('muni-list');
+const pctEl = document.getElementById('pct-apurado');
+const clockEl = document.getElementById('clock');
+
+let races = {};      // preenchido pelo snapshot da coleção "racas"
+let municipios = [];  // preenchido pelo snapshot do doc "municipios/lista"
+let activeRace = "resumo"; // "resumo" (tela-resumo) | uma das chaves de RACE_ORDER
+let viewMode = "individual"; // "individual" | "partidos" | "filtro"
+let expandedParty = null;    // partido aberto no accordion da view "partidos"
+let selectedParty = null;    // partido escolhido na view "filtro"
+let searchQuery = "";
+const editMode = false; // painel local é somente leitura — quem atualiza os dados é o atualizar_apuracao.py
+
+function fmtInt(n){ return Math.round(n||0).toLocaleString('pt-BR'); }
+function fmtPct(n){ return (n||0).toFixed(1).replace('.', ',') + '%'; }
+function normalizar(s){
+  return (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+}
+
+// ---------- Avatar do candidato (foto do TSE quando dispon\u00edvel, sen\u00e3o iniciais) ----------
+const AVATAR_CORES = ['#1E7A46','#4C90AC','#C79A3D','#8F5FBF','#C1594B','#2F9E73','#5C7BD9','#B0763D'];
+function iniciaisNome(nome){
+  const partes = (nome || '').trim().split(/\s+/).filter(Boolean);
+  if(partes.length === 0) return '?';
+  const primeira = partes[0][0] || '';
+  const ultima = partes.length > 1 ? (partes[partes.length - 1][0] || '') : '';
+  return (primeira + ultima).toUpperCase();
+}
+function corAvatar(nome){
+  const s = nome || '';
+  let hash = 0;
+  for(let i = 0; i < s.length; i++){ hash = (hash * 31 + s.charCodeAt(i)) >>> 0; }
+  return AVATAR_CORES[hash % AVATAR_CORES.length];
+}
+function escapeAttr(s){
+  return (s || '').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+}
+// c.foto \u00e9 opcional \u2014 vem preenchido quando o script de atualiza\u00e7\u00e3o conseguir
+// achar a foto oficial do candidato no TSE. Sem foto, mostra as iniciais.
+function avatarHtml(c){
+  const nome = c.nome || '';
+  const cor = corAvatar(nome + (c.partido||''));
+  const iniciais = iniciaisNome(nome);
+  const imgTag = c.foto
+    ? `<img src="${escapeAttr(c.foto)}" alt="" loading="lazy" onerror="this.remove()">`
+    : '';
+  return `<div class="cand-avatar" style="--av-bg:${cor}">${iniciais}${imgTag}</div>`;
+}
+
+// Quociente eleitoral, quociente partidário e distribuição de sobras
+// (Lei 9.504/1997, art. 106-109: sobras só disputadas por partido/federação
+// que atinja pelo menos 80% do quociente eleitoral, pelo método da maior média)
+function calcularCadeiras(candidatos, vagas){
+  const porPartido = {};
+  candidatos.forEach(c => {
+    const p = c.partido || '—';
+    if(!porPartido[p]) porPartido[p] = { partido: p, votos: 0, candidatos: [] };
+    porPartido[p].votos += (c.votos || 0);
+    porPartido[p].candidatos.push(c);
+  });
+  const lista = Object.values(porPartido);
+  lista.forEach(p => p.candidatos.sort((a,b) => (b.votos||0) - (a.votos||0)));
+
+  const totalValidos = candidatos.reduce((s,c) => s + (c.votos||0), 0);
+
+  if(!vagas || totalValidos === 0){
+    lista.forEach(p => { p.qp = 0; p.sobras = 0; p.total = 0; });
+    lista.sort((a,b) => b.votos - a.votos);
+    return { qe: 0, partidos: lista, pronto: false };
+  }
+
+  const qe = totalValidos / vagas;
+
+  lista.forEach(p => {
+    const qpBruto = Math.floor(p.votos / qe);
+    p.qp = Math.min(qpBruto, p.candidatos.length);
+    p.cadeirasAtuais = p.qp;
+  });
+
+  const distribuidasDireto = lista.reduce((s,p) => s + p.qp, 0);
+  const sobrasAPreencher = Math.max(vagas - distribuidasDireto, 0);
+
+  // partidos elegíveis para sobras: votos >= 80% do quociente eleitoral
+  let elegiveis = lista.filter(p => p.votos >= 0.8*qe && p.cadeirasAtuais < p.candidatos.length);
+  // regra de reserva: se nenhum partido atinge 80%, abre a disputa para todos
+  // (evita travar a distribuição quando o quociente eleitoral é muito alto)
+  if(elegiveis.length === 0){
+    elegiveis = lista.filter(p => p.cadeirasAtuais < p.candidatos.length);
+  }
+
+  for(let i = 0; i < sobrasAPreencher; i++){
+    let escolhido = null, melhorMedia = -1;
+    elegiveis.forEach(p => {
+      if(p.cadeirasAtuais >= p.candidatos.length) return; // sem mais candidatos pra ocupar a vaga
+      const media = p.votos / (p.cadeirasAtuais + 1); // método da maior média (D'Hondt)
+      if(media > melhorMedia){ melhorMedia = media; escolhido = p; }
+    });
+    if(!escolhido) break;
+    escolhido.cadeirasAtuais += 1;
+  }
+
+  lista.forEach(p => { p.sobras = p.cadeirasAtuais - p.qp; p.total = p.cadeirasAtuais; });
+  lista.sort((a,b) => b.total - a.total || b.votos - a.votos);
+
+  return { qe, partidos: lista, pronto: true, distribuidasDireto, sobrasAPreencher };
+}
+
+function irParaCargo(key){
+  activeRace = key;
+  viewMode = 'individual';
+  expandedParty = null;
+  selectedParty = null;
+  searchQuery = '';
+  renderTabs();
+  renderRace();
+}
+
+function renderTabs(){
+  tabsEl.innerHTML = '';
+
+  const resumoBtn = document.createElement('button');
+  resumoBtn.className = activeRace === 'resumo' ? 'active' : '';
+  resumoBtn.innerHTML = 'Resumo geral<span class="seats">4 disputas</span>';
+  resumoBtn.addEventListener('click', () => { activeRace = 'resumo'; renderTabs(); renderRace(); });
+  tabsEl.appendChild(resumoBtn);
+
+  RACE_ORDER.forEach(key => {
+    const r = races[key];
+    if(!r) return;
+    const btn = document.createElement('button');
+    btn.className = key === activeRace ? 'active' : '';
+    btn.innerHTML = r.label + '<span class="seats">' + (r.seatsLabel||'') + '</span>';
+    btn.addEventListener('click', () => irParaCargo(key));
+    tabsEl.appendChild(btn);
+  });
+}
+
+// Percentual médio de seções apuradas nos municípios (compartilhado por todas as disputas)
+function computePctGeral(){
+  return municipios.length
+    ? Math.round(municipios.reduce((s,m)=>s+(m.pct||0),0) / municipios.length)
+    : null;
+}
+
+function renderLanding(){
+  const landingEl = document.getElementById('landing');
+  landingEl.innerHTML = '';
+  const pctGeral = computePctGeral();
+
+  RACE_ORDER.forEach(key => {
+    const r = races[key];
+    const card = document.createElement('button');
+    card.className = 'race-card';
+    if(!r){
+      card.innerHTML = `<div class="rc-label">—</div><div class="rc-empty">Aguardando dados…</div>`;
+      card.disabled = true;
+      landingEl.appendChild(card);
+      return;
+    }
+    const candidatos = (r.candidatos || []).slice().sort((a,b) => (b.votos||0) - (a.votos||0));
+    const totalValidos = candidatos.reduce((s,c) => s + (c.votos||0), 0);
+    const lider = candidatos[0];
+    const semDados = totalValidos === 0 || !lider;
+
+    const liderHtml = semDados
+      ? `<div class="rc-leader-lbl">Líder</div><div class="rc-empty">Apuração ainda não iniciada</div>`
+      : `<div class="rc-leader-lbl">Líder</div>
+         <div class="rc-leader-name">${lider.nome}</div>
+         <div class="rc-leader-votes">${lider.partido||''} · ${fmtInt(lider.votos)} votos (${fmtPct((lider.votos||0)/totalValidos*100)})</div>`;
+
+    card.innerHTML = `
+      <div class="rc-label">${r.label}</div>
+      <div class="rc-seats">${r.seatsLabel||''}</div>
+      ${liderHtml}
+      <div class="rc-foot">
+        <span>Seções apuradas</span>
+        <b>${pctGeral === null ? '—' : pctGeral + '%'}</b>
+      </div>`;
+    card.addEventListener('click', () => irParaCargo(key));
+    landingEl.appendChild(card);
+  });
+}
+
+function renderRace(){
+  const landingEl = document.getElementById('landing');
+  const detailEl = document.getElementById('detail-view');
+
+  if(activeRace === 'resumo'){
+    landingEl.style.display = 'grid';
+    detailEl.style.display = 'none';
+    renderLanding();
+    return;
+  }
+  landingEl.style.display = 'none';
+  detailEl.style.display = 'grid';
+
+  const r = races[activeRace];
+  const toggleEl = document.getElementById('view-toggle');
+  const partyListEl = document.getElementById('party-list');
+  const filterEl = document.getElementById('party-filter');
+  const searchWrapEl = document.getElementById('cand-search-wrap');
+  const emptyBannerEl = document.getElementById('empty-banner');
+
+  if(!r){
+    document.getElementById('race-title').textContent = 'Aguardando dados…';
+    document.getElementById('race-sub').textContent = '';
+    document.getElementById('race-note').textContent = '';
+    candListEl.innerHTML = '';
+    toggleEl.style.display = 'none';
+    searchWrapEl.style.display = 'none';
+    emptyBannerEl.style.display = 'none';
+    return;
+  }
+  document.getElementById('race-title').textContent = r.label;
+  document.getElementById('race-sub').textContent = r.sub || '';
+  document.getElementById('race-note').textContent = r.note || '';
+
+  const todosCandidatos = (r.candidatos || []).slice().sort((a,b) => (b.votos||0) - (a.votos||0));
+  const totalVotosValidos = todosCandidatos.reduce((s,c) => s + (c.votos||0), 0);
+  const total = totalVotosValidos || 1;
+  const semDados = totalVotosValidos === 0;
+
+  if(semDados){
+    emptyBannerEl.style.display = 'flex';
+    emptyBannerEl.innerHTML = `<span>🕓</span><span><strong>Apuração ainda não iniciada</strong> para ${r.label} — os números abaixo (0 votos, 0%) refletem a ausência de boletins de urna recebidos até o momento, não um resultado real.</span>`;
+  } else {
+    emptyBannerEl.style.display = 'none';
+  }
+
+  const coefEl = document.getElementById('coef-block');
+  let apuracao = null;
+  if(r.proportional && r.seats){
+    apuracao = calcularCadeiras(todosCandidatos, r.seats);
+    coefEl.style.display = 'flex';
+    coefEl.innerHTML = `
+      <div class="coef-cell">
+        <div class="cc-val">${fmtInt(totalVotosValidos)}</div>
+        <div class="cc-lbl">Votos válidos</div>
+      </div>
+      <div class="coef-cell">
+        <div class="cc-val">${r.seats}</div>
+        <div class="cc-lbl">Vagas</div>
+      </div>
+      <div class="coef-cell cc-highlight">
+        <div class="cc-val">${fmtInt(apuracao.qe)}</div>
+        <div class="cc-lbl">Coeficiente eleitoral</div>
+      </div>`;
+    toggleEl.style.display = 'flex';
+  } else {
+    coefEl.style.display = 'none';
+    toggleEl.style.display = 'none';
+    viewMode = 'individual';
+  }
+
+  document.getElementById('btn-view-individual').className = 'view-btn' + (viewMode==='individual' ? ' active' : '');
+  document.getElementById('btn-view-partidos').className = 'view-btn' + (viewMode==='partidos' ? ' active' : '');
+  document.getElementById('btn-view-filtro').className = 'view-btn' + (viewMode==='filtro' ? ' active' : '');
+
+  // conjunto de candidatos projetados eleitos (via QP + sobras, quando proporcional)
+  const eleitosSet = new Set();
+  if(apuracao){
+    apuracao.partidos.forEach(p => {
+      p.candidatos.slice(0, p.total).forEach(c => eleitosSet.add(c));
+    });
+  }
+
+  candListEl.style.display = viewMode === 'individual' ? 'block' : 'none';
+  partyListEl.style.display = viewMode === 'partidos' ? 'block' : 'none';
+  filterEl.style.display = viewMode === 'filtro' ? 'block' : 'none';
+  // busca só faz sentido em listas longas (proporcionais); em Governador/Senador some
+  searchWrapEl.style.display = (viewMode === 'individual' && r.proportional) ? 'block' : 'none';
+
+  // ---------- Lista individual (com busca) ----------
+  const termo = normalizar(searchQuery.trim());
+  const candidatosFiltrados = termo
+    ? todosCandidatos.filter(c => normalizar(c.nome).includes(termo))
+    : todosCandidatos;
+
+  candListEl.innerHTML = '';
+  candidatosFiltrados.forEach((c) => {
+    const i = todosCandidatos.indexOf(c); // posição real no ranking geral
+    const pct = (c.votos||0) / total * 100;
+    const eleito = semDados ? false : (apuracao ? eleitosSet.has(c) : (i < (r.seats||0)));
+    const row = document.createElement('div');
+    row.className = 'cand-row' + (eleito ? ' elected' : '');
+    row.innerHTML = `
+      <div class="cand-rank">${i+1}º</div>
+      ${avatarHtml(c)}
+      <div class="cand-main">
+        <div class="name-line">
+          <span class="name"></span>
+          <span class="party"></span>
+          ${eleito ? '<span class="elected-tag">✓ ELEITO</span>' : ''}
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
+      </div>
+      <div class="cand-votes">
+        <div class="pct">${fmtPct(pct)}</div><div class="abs">${fmtInt(c.votos)} votos</div>
+      </div>`;
+    row.querySelector('.name').textContent = c.nome || '—';
+    row.querySelector('.party').textContent = c.partido || '';
+    candListEl.appendChild(row);
+  });
+
+  if(todosCandidatos.length === 0){
+    candListEl.innerHTML = '<p style="color:var(--text-muted);font-size:13px;">Nenhum dado carregado ainda para este cargo.</p>';
+  } else if(candidatosFiltrados.length === 0){
+    candListEl.innerHTML = '<p style="color:var(--text-muted);font-size:13px;">Nenhum candidato encontrado para "' + searchQuery + '".</p>';
+  }
+
+  // ---------- Visualização por partido: accordion (resumo + detalhe ao expandir) ----------
+  partyListEl.innerHTML = '';
+  if(apuracao){
+    if(!apuracao.pronto){
+      const note = document.createElement('p');
+      note.style.cssText = 'color:var(--text-muted);font-size:12px;margin-bottom:12px;';
+      note.textContent = 'Apuração ainda não iniciada (0 votos) — a distribuição de cadeiras por partido será calculada automaticamente conforme os votos chegarem.';
+      partyListEl.appendChild(note);
+    }
+    apuracao.partidos.forEach(p => {
+      const isOpen = expandedParty === p.partido;
+      const row = document.createElement('div');
+      row.className = 'party-row' + (isOpen ? ' expanded' : '');
+      const pctPartido = totalVotosValidos ? (p.votos/totalVotosValidos*100) : 0;
+
+      const detalheHtml = p.candidatos.map((c, i) => {
+        const pct = totalVotosValidos ? (c.votos||0)/totalVotosValidos*100 : 0;
+        const eleitoAqui = !semDados && i < p.total;
+        return `
+        <div class="cand-row${eleitoAqui ? ' elected' : ''}">
+          <div class="cand-rank">${i+1}º</div>
+          ${avatarHtml(c)}
+          <div class="cand-main">
+            <div class="name-line">
+              <span class="name">${c.nome || '—'}</span>
+              ${eleitoAqui ? '<span class="elected-tag">✓ POSSÍVEL ELEITO</span>' : ''}
+            </div>
+            <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
+          </div>
+          <div class="cand-votes">
+            <div class="pct">${fmtPct(pct)}</div>
+            <div class="abs">${fmtInt(c.votos)} votos</div>
+          </div>
+        </div>`;
+      }).join('');
+
+      row.innerHTML = `
+        <div class="party-head">
+          <span class="party-caret">▸</span>
+          <div class="pname"></div>
+          <div class="pqp">QP direto: ${p.qp}</div>
+          <div class="psobras">Sobras: ${p.sobras}</div>
+          <div class="ptotal" style="color:${p.total>0 ? 'var(--elected)' : 'var(--text-muted)'}">${p.total}</div>
+        </div>
+        <div class="pvotos">${fmtInt(p.votos)} votos · ${fmtPct(pctPartido)} da votação válida · ${p.candidatos.length} candidato${p.candidatos.length===1?'':'s'}</div>
+        <div class="party-detail">${detalheHtml}</div>
+      `;
+      row.querySelector('.pname').textContent = p.partido;
+      row.querySelector('.party-head').addEventListener('click', () => {
+        expandedParty = isOpen ? null : p.partido;
+        renderRace();
+      });
+      partyListEl.appendChild(row);
+    });
+  }
+
+  // ---------- Filtro por partido: candidatos e votos de um partido escolhido ----------
+  renderPartyFilter(apuracao, totalVotosValidos, semDados);
+}
+
+function renderPartyFilter(apuracao, totalVotosValidos, semDados){
+  const selectEl = document.getElementById('party-select');
+  const listEl = document.getElementById('party-filter-list');
+  if(!apuracao){
+    selectEl.innerHTML = '';
+    listEl.innerHTML = '';
+    return;
+  }
+
+  // popula o <select> (mantém o partido já selecionado, se ainda existir)
+  const partidosOrdenados = apuracao.partidos.slice().sort((a,b) => a.partido.localeCompare(b.partido, 'pt-BR'));
+  if(!selectedParty || !partidosOrdenados.some(p => p.partido === selectedParty)){
+    selectedParty = partidosOrdenados[0] ? partidosOrdenados[0].partido : null;
+  }
+  selectEl.innerHTML = '';
+  partidosOrdenados.forEach(p => {
+    const opt = document.createElement('option');
+    opt.value = p.partido;
+    opt.textContent = `${p.partido} (${p.candidatos.length} candidatos · ${p.total} vaga${p.total===1?'':'s'} projetada${p.total===1?'':'s'})`;
+    if(p.partido === selectedParty) opt.selected = true;
+    selectEl.appendChild(opt);
+  });
+
+  const partido = apuracao.partidos.find(p => p.partido === selectedParty);
+  listEl.innerHTML = '';
+  if(!partido){
+    listEl.innerHTML = '<p style="color:var(--text-muted);font-size:13px;">Nenhum partido disponível.</p>';
+    return;
+  }
+
+  const pctPartido = totalVotosValidos ? (partido.votos/totalVotosValidos*100) : 0;
+  const summary = document.createElement('div');
+  summary.className = 'pf-summary';
+  summary.innerHTML = `${fmtInt(partido.votos)} votos no total (${fmtPct(pctPartido)} da votação válida) · quociente partidário: <b>${partido.qp}</b> · sobras: <b>${partido.sobras}</b> · projeção total: <b>${partido.total} vaga${partido.total===1?'':'s'}</b>`;
+  listEl.appendChild(summary);
+
+  if(semDados){
+    const aviso = document.createElement('p');
+    aviso.style.cssText = 'color:var(--text-muted);font-size:12px;margin-bottom:10px;';
+    aviso.textContent = 'Apuração ainda não iniciada — nenhum candidato marcado como possível eleito até que existam votos.';
+    listEl.appendChild(aviso);
+  }
+
+  partido.candidatos.forEach((c, i) => {
+    const pct = totalVotosValidos ? (c.votos||0)/totalVotosValidos*100 : 0;
+    const eleito = !semDados && i < partido.total;
+    const row = document.createElement('div');
+    row.className = 'cand-row' + (eleito ? ' elected' : '');
+    row.innerHTML = `
+      <div class="cand-rank">${i+1}º</div>
+      ${avatarHtml(c)}
+      <div class="cand-main">
+        <div class="name-line">
+          <span class="name"></span>
+          ${eleito ? '<span class="elected-tag">✓ POSSÍVEL ELEITO</span>' : ''}
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
+      </div>
+      <div class="cand-votes">
+        <div class="pct">${fmtPct(pct)}</div>
+        <div class="abs">${fmtInt(c.votos)} votos</div>
+      </div>`;
+    row.querySelector('.name').textContent = c.nome || '—';
+    listEl.appendChild(row);
+  });
+}
+
+function renderMunicipios(){
+  muniListEl.innerHTML = '';
+  municipios.forEach(m => {
+    const pct = m.pct || 0;
+    const row = document.createElement('div');
+    row.className = 'muni-row';
+    row.innerHTML = `
+      <div class="mname"></div>
+      <div class="mpct">${pct}%</div>
+      <div class="mbar-track"><div class="mbar-fill${pct>=100?' done':''}" style="width:${pct}%"></div></div>`;
+    row.querySelector('.mname').textContent = m.nome || '';
+    muniListEl.appendChild(row);
+  });
+  const pctGeral = computePctGeral();
+  if(municipios.length === 0){
+    muniListEl.innerHTML = '<p style="color:var(--text-muted);font-size:13px;">Nenhum dado de município carregado ainda.</p>';
+  } else if(pctGeral === 0){
+    const nota = document.createElement('div');
+    nota.className = 'empty-banner';
+    nota.style.marginTop = '10px';
+    nota.style.marginBottom = '0';
+    nota.innerHTML = '<span>🕓</span><span><strong>Apuração ainda não iniciada</strong> em nenhum dos 16 municípios — as barras acima ficarão verdes conforme as seções forem apuradas.</span>';
+    muniListEl.appendChild(nota);
+  }
+  pctEl.textContent = pctGeral === null ? '—' : pctGeral + '%';
+  // se a tela-resumo estiver visível, o % apurado exibido em cada cargo também depende de municipios
+  if(activeRace === 'resumo') renderLanding();
+}
+
+function renderUpdatedAt(iso){
+  if(!iso){ clockEl.textContent = '—'; return; }
+  const d = new Date(iso);
+  if(isNaN(d.getTime())){ clockEl.textContent = '—'; return; }
+  clockEl.textContent = d.toLocaleString('pt-BR', {day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit'});
+}
+renderUpdatedAt(null);
+
+// ---------- Alternância de tema (claro/escuro) ----------
+(function(){
+  const ICON_SUN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12h2.5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"></path></svg>';
+  const ICON_MOON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"></path></svg>';
+  const STORAGE_KEY = 'apuracao-ap-tema';
+  const root = document.documentElement;
+  const btn = document.getElementById('theme-toggle');
+
+  function lido(){
+    try{ return localStorage.getItem(STORAGE_KEY); }catch(e){ return null; }
+  }
+  function gravar(v){
+    try{ localStorage.setItem(STORAGE_KEY, v); }catch(e){ /* modo privado ou storage bloqueado: ignora */ }
+  }
+  function prefereEscuroDoSistema(){
+    return !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  }
+  function temaAtivo(){
+    return root.getAttribute('data-theme') || (prefereEscuroDoSistema() ? 'dark' : 'light');
+  }
+  function aplicar(tema, persistir){
+    if(tema){ root.setAttribute('data-theme', tema); } else { root.removeAttribute('data-theme'); }
+    if(persistir) gravar(tema);
+    const ativo = temaAtivo();
+    btn.innerHTML = ativo === 'dark' ? ICON_SUN : ICON_MOON;
+    btn.setAttribute('aria-label', ativo === 'dark' ? 'Mudar para tema claro' : 'Mudar para tema escuro');
+    btn.title = ativo === 'dark' ? 'Tema escuro ativo — mudar para claro' : 'Tema claro ativo — mudar para escuro';
+  }
+
+  aplicar(lido(), false);
+  btn.addEventListener('click', () => {
+    aplicar(temaAtivo() === 'dark' ? 'light' : 'dark', true);
+  });
+})();
+
+document.getElementById('btn-view-individual').addEventListener('click', () => { viewMode = 'individual'; renderRace(); });
+document.getElementById('btn-view-partidos').addEventListener('click', () => { viewMode = 'partidos'; renderRace(); });
+document.getElementById('btn-view-filtro').addEventListener('click', () => { viewMode = 'filtro'; renderRace(); });
+document.getElementById('party-select').addEventListener('change', (e) => { selectedParty = e.target.value; renderRace(); });
+
+let searchDebounce = null;
+document.getElementById('cand-search').addEventListener('input', (e) => {
+  const valor = e.target.value;
+  clearTimeout(searchDebounce);
+  searchDebounce = setTimeout(() => { searchQuery = valor; renderRace(); }, 120);
+});
+
+renderTabs();
+renderRace();
+renderMunicipios();
+
+// ---------- Leitura do dados.json (gerado por atualizar_apuracao.py) ----------
+// Sem servidor, sem Claude, sem banco de dados: este painel só lê um arquivo
+// local que o script Python sobrescreve periodicamente. Repolling simples
+// via fetch, a cada POLL_MS milissegundos.
+const POLL_MS = 20000;
+const connBadge = document.getElementById('conn-badge');
+let ultimaLeituraOk = false;
+
+function mapRaca(chave, doc){
+  if(!doc) return null;
+  return {
+    label: doc.label || chave,
+    sub: doc.sub || '',
+    note: doc.note || '',
+    seatsLabel: doc.seatsLabel || '',
+    seats: doc.seats || 0,
+    proportional: !!doc.proportional,
+    candidatos: doc.candidatos || [],
+  };
+}
+
+async function buscarDados(){
+  try{
+    const resp = await fetch('./dados.json?_=' + Date.now(), { cache: 'no-store' });
+    if(!resp.ok) throw new Error('HTTP ' + resp.status);
+    const dados = await resp.json();
+
+    const next = {};
+    RACE_ORDER.forEach(chave => {
+      const r = mapRaca(chave, (dados.racas || {})[chave]);
+      if(r) next[chave] = r;
+    });
+    races = next;
+    municipios = dados.municipios || [];
+    renderUpdatedAt(dados.atualizadoEm || null);
+
+    ultimaLeituraOk = true;
+    connBadge.textContent = '● lendo dados.json a cada 20s';
+    connBadge.style.color = 'var(--teal)';
+    connBadge.style.borderColor = 'var(--teal)';
+
+    renderTabs();
+    renderRace();
+    renderMunicipios();
+  }catch(err){
+    console.error('Falha ao ler dados.json', err);
+    if(!ultimaLeituraOk){
+      connBadge.textContent = '● dados.json não encontrado — rode atualizar_apuracao.py';
+      connBadge.style.color = 'var(--brick)';
+      connBadge.style.borderColor = 'var(--brick)';
+    }
+    // se já tínhamos lido antes com sucesso, mantém os dados na tela e
+    // só tenta de novo no próximo ciclo — não apaga o que já estava certo.
+  }
+}
+
+buscarDados();
+setInterval(buscarDados, POLL_MS);
+</script>
+</body>
+</html>
