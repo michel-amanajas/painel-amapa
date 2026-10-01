@@ -442,7 +442,7 @@
   /* ---------- Candidate ranking ---------- */
   .cand-row{
     display:grid;
-    grid-template-columns: 26px 1fr auto;
+    grid-template-columns: 26px 32px 1fr auto;
     gap:12px;
     align-items:center;
     padding: 10px 8px;
@@ -459,6 +459,31 @@
     color:var(--text-muted);
   }
   .cand-row.elected .cand-rank{ color:var(--elected); }
+  .cand-avatar{
+    position:relative;
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    overflow:hidden;
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:var(--font-body);
+    font-size:11px;
+    font-weight:700;
+    color:#fff;
+    background: var(--av-bg, var(--river));
+    user-select:none;
+  }
+  .cand-avatar img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    background:var(--panel-2);
+  }
   .cand-main .name-line{
     display:flex;
     align-items:baseline;
@@ -787,6 +812,36 @@ function normalizar(s){
   return (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 }
 
+// ---------- Avatar do candidato (foto do TSE quando dispon\u00edvel, sen\u00e3o iniciais) ----------
+const AVATAR_CORES = ['#1E7A46','#4C90AC','#C79A3D','#8F5FBF','#C1594B','#2F9E73','#5C7BD9','#B0763D'];
+function iniciaisNome(nome){
+  const partes = (nome || '').trim().split(/\s+/).filter(Boolean);
+  if(partes.length === 0) return '?';
+  const primeira = partes[0][0] || '';
+  const ultima = partes.length > 1 ? (partes[partes.length - 1][0] || '') : '';
+  return (primeira + ultima).toUpperCase();
+}
+function corAvatar(nome){
+  const s = nome || '';
+  let hash = 0;
+  for(let i = 0; i < s.length; i++){ hash = (hash * 31 + s.charCodeAt(i)) >>> 0; }
+  return AVATAR_CORES[hash % AVATAR_CORES.length];
+}
+function escapeAttr(s){
+  return (s || '').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+}
+// c.foto \u00e9 opcional \u2014 vem preenchido quando o script de atualiza\u00e7\u00e3o conseguir
+// achar a foto oficial do candidato no TSE. Sem foto, mostra as iniciais.
+function avatarHtml(c){
+  const nome = c.nome || '';
+  const cor = corAvatar(nome + (c.partido||''));
+  const iniciais = iniciaisNome(nome);
+  const imgTag = c.foto
+    ? `<img src="${escapeAttr(c.foto)}" alt="" loading="lazy" onerror="this.remove()">`
+    : '';
+  return `<div class="cand-avatar" style="--av-bg:${cor}">${iniciais}${imgTag}</div>`;
+}
+
 // Quociente eleitoral, quociente partidário e distribuição de sobras
 // (Lei 9.504/1997, art. 106-109: sobras só disputadas por partido/federação
 // que atinja pelo menos 80% do quociente eleitoral, pelo método da maior média)
@@ -1025,6 +1080,7 @@ function renderRace(){
     row.className = 'cand-row' + (eleito ? ' elected' : '');
     row.innerHTML = `
       <div class="cand-rank">${i+1}º</div>
+      ${avatarHtml(c)}
       <div class="cand-main">
         <div class="name-line">
           <span class="name"></span>
@@ -1068,6 +1124,7 @@ function renderRace(){
         return `
         <div class="cand-row${eleitoAqui ? ' elected' : ''}">
           <div class="cand-rank">${i+1}º</div>
+          ${avatarHtml(c)}
           <div class="cand-main">
             <div class="name-line">
               <span class="name">${c.nome || '—'}</span>
@@ -1156,6 +1213,7 @@ function renderPartyFilter(apuracao, totalVotosValidos, semDados){
     row.className = 'cand-row' + (eleito ? ' elected' : '');
     row.innerHTML = `
       <div class="cand-rank">${i+1}º</div>
+      ${avatarHtml(c)}
       <div class="cand-main">
         <div class="name-line">
           <span class="name"></span>
