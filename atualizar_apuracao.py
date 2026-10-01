@@ -26,6 +26,21 @@ COMO USAR
    e abra http://localhost:8000/painel_local.html
    (o painel recarrega os dados sozinho a cada 20s)
 
+5) Para trazer a foto oficial de cadastro de cada candidato (a mesma
+   usada no site do TSE), use --fotos:
+     python atualizar_apuracao.py --once --fotos
+   Na PRIMEIRA vez que rodar com --fotos, o script baixa do Portal de
+   Dados Abertos do TSE (dadosabertos.tse.jus.br) a lista oficial de
+   candidatos do Amapá (CSV) e o pacote de fotos do Amapá (ZIP), extrai
+   só as fotos dos candidatos que aparecem no painel, salva cada uma em
+   fotos/<sqcandidato>.jpg e grava um "mapa" em fotos_mapa.json (nome do
+   candidato -> caminho da foto). Nas próximas vezes (inclusive no loop
+   de 5 em 5 minutos), ele só relê esse mapa local — não baixa tudo de
+   novo. Quem não tiver foto no pacote do TSE continua aparecendo com as
+   iniciais coloridas no painel. Lembre de commitar a pasta fotos/ e o
+   fotos_mapa.json junto com o dados.json (o workflow do GitHub Actions
+   já faz isso automaticamente).
+
 SOBRE O AMBIENTE DE PRODUÇÃO (confirmado em 28/09/2026)
 ---------------------------------------------------------
 BASE_URL já aponta para o ambiente OFICIAL do TSE:
@@ -46,11 +61,15 @@ válido).
 """
 
 import argparse
+import csv
+import io
 import json
+import re
 import sys
 import time
 import urllib.request
 import urllib.error
+import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -246,6 +265,162 @@ def confere_uf(payload) -> bool | None:
     return None
 
 
+# ---------------------------------------------------------------------------
+# Fotos dos candidatos (Portal de Dados Abertos do TSE — opcional, ver --fotos)
+# ---------------------------------------------------------------------------
+# Fonte: dadosabertos.tse.jus.br/dataset/candidatos-2026 — o mesmo portal
+# oficial de onde saem as fotos usadas no site do TSE. Dois arquivos:
+#   1) "Candidatos" (CSV, todas as UFs) — tem o número sequencial de cada
+#      candidato (SQ_CANDIDATO), nome de urna, cargo e partido.
+#   2) "AP - Fotos de candidatos" (ZIP) — as fotos em .jpg do Amapá; cada
+#      arquivo dentro do zip tem o SQ_CANDIDATO no nome.
+# Cruzando os dois dá pra ligar nome -> SQ_CANDIDATO -> arquivo de foto.
+# (Confirmado contra o formato usado por outros projetos abertos que já
+# processam esses mesmos arquivos do TSE.)
+DADOS_ABERTOS_CAND_ZIP_URL = "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip"
+DADOS_ABERTOS_FOTOS_ZIP_URL = f"https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/fotos/foto_cand2026_{UF.upper()}_div.zip"
+
+FOTOS_DIR = Path(__file__).parent / "fotos"
+FOTOS_MAPA_JSON = Path(__file__).parent / "fotos_mapa.json"
+
+# Códigos de cargo (CD_CARGO) no CSV do TSE — os mesmos números já usados
+# em CARGOS[...]["codigo"] acima (3=Governador, 5=Senador, 6=Dep. Federal,
+# 7=Dep. Estadual), então basta reaproveitar.
+CARGOS_CODIGOS = {info["codigo"] for info in CARGOS.values()}
+
+
+def normalizar_nome(s: str) -> str:
+    import unicodedata
+    s = unicodedata.normalize("NFD", s or "")
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    return s.upper().strip()
+
+
+def baixar_bytes(url: str) -> bytes | None:
+    """Baixa um arquivo binário (zip). Devolve None em caso de erro, sem
+    levantar exceção."""
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            return resp.read()
+    except urllib.error.HTTPError as e:
+        print(f"  [fotos] [erro HTTP {e.code}] {url}")
+    except urllib.error.URLError as e:
+        print(f"  [fotos] [erro de conexão] {url} — {e.reason}")
+    return None
+
+
+def carregar_candidatos_oficiais_ap() -> list:
+    """Baixa o CSV oficial de candidatos (Dados Abertos do TSE) e devolve
+    só as linhas do Amapá para os cargos que o painel mostra, como lista
+    de dicts {sq_candidato, nome_urna, cargo_codigo}."""
+    print(f"  [fotos] baixando lista oficial de candidatos ({DADOS_ABERTOS_CAND_ZIP_URL})...")
+    bruto = baixar_bytes(DADOS_ABERTOS_CAND_ZIP_URL)
+    if not bruto:
+        return []
+    try:
+        zf = zipfile.ZipFile(io.BytesIO(bruto))
+    except zipfile.BadZipFile:
+        print("  [fotos] o arquivo baixado não é um zip válido — pulando fotos.")
+        return []
+
+    # O zip traz um CSV por UF (ex.: consulta_cand_2026_AP.csv). Procura o
+    # do Amapá pelo sufixo do nome, sem depender do nome exato da pasta.
+    alvo = f"_{UF.upper()}.CSV"
+    nome_arquivo = next((n for n in zf.namelist() if n.upper().endswith(alvo)), None)
+    if not nome_arquivo:
+        print(f"  [fotos] não achei o CSV do Amapá dentro do zip (procurado: *{alvo}).")
+        return []
+
+    conteudo = zf.read(nome_arquivo)
+    # CSVs do TSE normalmente vêm em latin-1 e separados por ';'.
+    texto = conteudo.decode("latin-1", errors="replace")
+    leitor = csv.DictReader(io.StringIO(texto), delimiter=";")
+
+    candidatos = []
+    for linha in leitor:
+        cargo_codigo = (linha.get("CD_CARGO") or "").strip()
+        if cargo_codigo not in CARGOS_CODIGOS:
+            continue
+        sq = (linha.get("SQ_CANDIDATO") or "").strip()
+        nome_urna = (linha.get("NM_URNA_CANDIDATO") or linha.get("NM_CANDIDATO") or "").strip()
+        if not sq or not nome_urna:
+            continue
+        candidatos.append({"sq_candidato": sq, "nome_urna": nome_urna, "cargo_codigo": cargo_codigo})
+    print(f"  [fotos] {len(candidatos)} candidatos do Amapá encontrados no CSV oficial.")
+    return candidatos
+
+
+def baixar_fotos_uma_vez() -> dict:
+    """Baixa o CSV de candidatos + o zip de fotos do Amapá, extrai as fotos
+    dos candidatos relevantes para fotos/<sq_candidato>.jpg e devolve um
+    mapa {nome_normalizado: 'fotos/<sq_candidato>.jpg'}. Em qualquer falha,
+    devolve {} e deixa o painel usando as iniciais — nunca derruba o
+    script principal."""
+    candidatos = carregar_candidatos_oficiais_ap()
+    if not candidatos:
+        return {}
+    sqs_validos = {c["sq_candidato"] for c in candidatos}
+    nome_por_sq = {c["sq_candidato"]: c["nome_urna"] for c in candidatos}
+
+    print(f"  [fotos] baixando pacote de fotos do Amapá ({DADOS_ABERTOS_FOTOS_ZIP_URL})...")
+    bruto_fotos = baixar_bytes(DADOS_ABERTOS_FOTOS_ZIP_URL)
+    if not bruto_fotos:
+        return {}
+    try:
+        zf = zipfile.ZipFile(io.BytesIO(bruto_fotos))
+    except zipfile.BadZipFile:
+        print("  [fotos] pacote de fotos baixado não é um zip válido.")
+        return {}
+
+    FOTOS_DIR.mkdir(exist_ok=True)
+    mapa = {}
+    for entry in zf.infolist():
+        if entry.is_dir() or not re.search(r"\.(jpe?g|png)$", entry.filename, re.I):
+            continue
+        # O nome do arquivo dentro do zip traz o SQ_CANDIDATO em algum
+        # trecho numérico com 6+ dígitos — mesma convenção usada por
+        # outros projetos que já processam esse mesmo pacote do TSE.
+        achados = re.findall(r"\d{6,}", entry.filename)
+        sq = next((d for d in achados if d in sqs_validos), None)
+        if not sq:
+            continue
+        destino = FOTOS_DIR / f"{sq}.jpg"
+        destino.write_bytes(zf.read(entry))
+        mapa[normalizar_nome(nome_por_sq[sq])] = f"fotos/{sq}.jpg"
+
+    print(f"  [fotos] {len(mapa)}/{len(candidatos)} fotos extraídas e salvas em {FOTOS_DIR}/")
+    FOTOS_MAPA_JSON.write_text(json.dumps(mapa, ensure_ascii=False, indent=2), encoding="utf-8")
+    return mapa
+
+
+def carregar_mapa_fotos() -> dict:
+    """Lê o mapa já salvo em fotos_mapa.json, sem baixar nada da internet.
+    Usado nas rodadas normais do --loop para não repetir o download do
+    zip de fotos a cada 5 minutos."""
+    if FOTOS_MAPA_JSON.exists():
+        try:
+            return json.loads(FOTOS_MAPA_JSON.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            pass
+    return {}
+
+
+def aplicar_fotos(candidatos: list, mapa: dict) -> None:
+    """Preenche candidatos[i]['foto'] a partir do mapa já carregado (sem
+    acessar a rede). Uma falha de correspondência simplesmente deixa o
+    candidato sem foto (painel usa iniciais)."""
+    if not mapa:
+        return
+    achadas = 0
+    for c in candidatos:
+        caminho = mapa.get(normalizar_nome(c["nome"]))
+        if caminho:
+            c["foto"] = caminho
+            achadas += 1
+    print(f"  [fotos] {achadas}/{len(candidatos)} candidatos com foto aplicada")
+
+
 def buscar_cargo(chave: str, info: dict) -> list | None:
     print(f"Buscando {info['label']} (filtro: apenas Amapá)...")
     for url in urls_cargo(info["codigo"], info["eleicao"]):
@@ -338,13 +513,22 @@ def carregar_dados_atuais() -> dict:
     return {"racas": {}, "municipios": [], "atualizadoEm": None}
 
 
-def rodar_uma_vez():
+def rodar_uma_vez(buscar_fotos: bool = False):
     dados = carregar_dados_atuais()
     algo_mudou = False
+
+    mapa_fotos = {}
+    if buscar_fotos:
+        mapa_fotos = carregar_mapa_fotos()
+        if not mapa_fotos:
+            # primeira vez: baixa CSV + zip de fotos e grava o cache local
+            mapa_fotos = baixar_fotos_uma_vez()
 
     for chave, info in CARGOS.items():
         candidatos = buscar_cargo(chave, info)
         if candidatos is not None:
+            if buscar_fotos:
+                aplicar_fotos(candidatos, mapa_fotos)
             dados["racas"][chave] = {
                 "label": info["label"],
                 "seatsLabel": f"{info['seats']} vaga{'s' if info['seats'] != 1 else ''}",
@@ -378,6 +562,8 @@ def main():
                          help="segundos entre rodadas no modo --loop (padrão: 300 = 5 min)")
     parser.add_argument("--base-url", type=str, default=None,
                          help="sobrescreve BASE_URL (use a URL de produção do TSE)")
+    parser.add_argument("--fotos", action="store_true",
+                         help="baixa (uma vez) e aplica as fotos oficiais do TSE a cada candidato — ver item 5 do topo do arquivo")
     args = parser.parse_args()
 
     global BASE_URL
@@ -389,13 +575,13 @@ def main():
         sys.exit(1)
 
     if args.once:
-        rodar_uma_vez()
+        rodar_uma_vez(buscar_fotos=args.fotos)
         return
 
     print(f"Rodando em loop, a cada {args.intervalo}s. Ctrl+C para parar.\n")
     try:
         while True:
-            rodar_uma_vez()
+            rodar_uma_vez(buscar_fotos=args.fotos)
             time.sleep(args.intervalo)
     except KeyboardInterrupt:
         print("\nEncerrado pelo usuário.")
