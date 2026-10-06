@@ -7,29 +7,44 @@
       "proportional": false,
       "candidatos": [
         {
-          "nome": "CLÉCIO LUÍS VILHENA VIEIRA",
+          "nome": "Clécio",
           "partido": "—",
-          "votos": 165900
+          "votos": 165900,
+          "num": "44",
+          "sq": "30002536311",
+          "foto": "fotos/30002536311.jpg"
         },
         {
-          "nome": "ANTONIO PAULO DE OLIVEIRA FURLAN",
+          "nome": "Dr. Furlan",
           "partido": "—",
-          "votos": 281595
+          "votos": 281595,
+          "num": "55",
+          "sq": "30002530014",
+          "foto": "fotos/30002530014.jpg"
         },
         {
-          "nome": "JAIRO PALHETA DA SILVA MARQUES",
+          "nome": "Jairo Palheta",
           "partido": "—",
-          "votos": 315
+          "votos": 315,
+          "num": "29",
+          "sq": "30002551388",
+          "foto": "fotos/30002551388.jpg"
         },
         {
-          "nome": "MARCOS JOSE REATEGUI DE SOUZA",
+          "nome": "Delegado Marcos",
           "partido": "—",
-          "votos": 376
+          "votos": 376,
+          "num": "27",
+          "sq": "30002552017",
+          "foto": "fotos/30002552017.jpg"
         },
         {
-          "nome": "CARLOS CLEY RAMOS PAIVA",
+          "nome": "Carlos Cley",
           "partido": "—",
-          "votos": 561
+          "votos": 561,
+          "num": "16",
+          "sq": "30002536313",
+          "foto": "fotos/30002536313.jpg"
         }
       ]
     },
@@ -40,49 +55,76 @@
       "proportional": false,
       "candidatos": [
         {
-          "nome": "RANDOLPH FREDERICH RODRIGUES ALVES",
+          "nome": "Randolfe",
           "partido": "—",
-          "votos": 163857
+          "votos": 163857,
+          "num": "130",
+          "sq": "30002549909",
+          "foto": "fotos/30002549909.jpg"
         },
         {
-          "nome": "ALLINY SOUSA DA ROCHA SERRAO",
+          "nome": "Alliny Serrão",
           "partido": "—",
-          "votos": 85540
+          "votos": 85540,
+          "num": "444",
+          "sq": "30002551576",
+          "foto": "fotos/30002551576.jpg"
         },
         {
-          "nome": "HELIO PALHETA SILVA",
+          "nome": "Helio Silva",
           "partido": "—",
-          "votos": 696
+          "votos": 696,
+          "num": "290",
+          "sq": "30002553708",
+          "foto": "fotos/30002553708.jpg"
         },
         {
-          "nome": "JOENILDA LOBATO SILVA LENZI",
+          "nome": "Juíza Jô",
           "partido": "—",
-          "votos": 2616
+          "votos": 2616,
+          "num": "277",
+          "sq": "30002551382",
+          "foto": "fotos/30002551382.jpg"
         },
         {
-          "nome": "UZIAN PINTO MACHADO",
+          "nome": "Professor Uzian Pinto",
           "partido": "—",
-          "votos": 1068
+          "votos": 1068,
+          "num": "272",
+          "sq": "30002551381",
+          "foto": "fotos/30002551381.jpg"
         },
         {
-          "nome": "JOAO ALBERTO RODRIGUES CAPIBERIBE",
+          "nome": "Capi",
           "partido": "—",
-          "votos": 19380
+          "votos": 19380,
+          "num": "401",
+          "sq": "30002550229",
+          "foto": "fotos/30002550229.jpg"
         },
         {
-          "nome": "LUIZ CANTUARIA BARRETO",
+          "nome": "Lucas Barreto",
           "partido": "—",
-          "votos": 213948
+          "votos": 213948,
+          "num": "555",
+          "sq": "30002530069",
+          "foto": "fotos/30002530069.jpg"
         },
         {
-          "nome": "RAYSSA CADENA FURLAN",
+          "nome": "Rayssa Furlan",
           "partido": "—",
-          "votos": 264799
+          "votos": 264799,
+          "num": "200",
+          "sq": "30002530071",
+          "foto": "fotos/30002530071.jpg"
         },
         {
-          "nome": "ACACIO DA SILVA FAVACHO NETO",
+          "nome": "Acácio Favacho",
           "partido": "—",
-          "votos": 131321
+          "votos": 131321,
+          "num": "151",
+          "sq": "30002549911",
+          "foto": "fotos/30002549911.jpg"
         }
       ]
     },
@@ -93,424 +135,676 @@
       "proportional": true,
       "candidatos": [
         {
-          "nome": "JORGE ELSON SILVA DE SOUZA",
+          "nome": "Jorge Souza",
           "partido": "—",
-          "votos": 2631
+          "votos": 2631,
+          "num": "2212",
+          "sq": "30002538082",
+          "foto": "fotos/30002538082.jpg"
         },
         {
-          "nome": "MANOEL CAETANO BENTES MONTEIRO NETO",
+          "nome": "Caetano Bentes",
           "partido": "—",
-          "votos": 13576
+          "votos": 13576,
+          "num": "2280",
+          "sq": "30002538085",
+          "foto": "fotos/30002538085.jpg"
         },
         {
-          "nome": "VINICIUS DE AZEVEDO GURGEL",
+          "nome": "Vinicius Gurgel",
           "partido": "—",
-          "votos": 19625
+          "votos": 19625,
+          "num": "2222",
+          "sq": "30002538084",
+          "foto": "fotos/30002538084.jpg"
         },
         {
-          "nome": "PALMIRA DAS NEVES BITTENCOURT",
+          "nome": "Coronel Palmira",
           "partido": "—",
-          "votos": 1029
+          "votos": 1029,
+          "num": "2220",
+          "sq": "30002538087",
+          "foto": "fotos/30002538087.jpg"
         },
         {
-          "nome": "GESIEL DE SOUZA OLIVEIRA",
+          "nome": "Gesiel Oliveira",
           "partido": "—",
-          "votos": 4268
+          "votos": 4268,
+          "num": "2277",
+          "sq": "30002538081",
+          "foto": "fotos/30002538081.jpg"
         },
         {
-          "nome": "HUELMA MEDEIROS NOGUEIRA LIMA",
+          "nome": "Conselheira Huelma Medeiros",
           "partido": "—",
-          "votos": 1472
+          "votos": 1472,
+          "num": "2211",
+          "sq": "30002538083",
+          "foto": "fotos/30002538083.jpg"
         },
         {
-          "nome": "ANA BEATRIZ CORREA DA COSTA",
+          "nome": "Bia da Zilma",
           "partido": "—",
-          "votos": 6198
+          "votos": 6198,
+          "num": "2255",
+          "sq": "30002538086",
+          "foto": "fotos/30002538086.jpg"
         },
         {
-          "nome": "ELIAS REAL DA SILVA",
+          "nome": "Elias Real do Menino Jesus",
           "partido": "—",
-          "votos": 956
+          "votos": 956,
+          "num": "2223",
+          "sq": "30002538089",
+          "foto": "fotos/30002538089.jpg"
         },
         {
-          "nome": "RONDINELE MARQUES DOS SANTOS",
+          "nome": "Tenente Coronel Marques",
           "partido": "—",
-          "votos": 6071
+          "votos": 6071,
+          "num": "2225",
+          "sq": "30002538088",
+          "foto": "fotos/30002538088.jpg"
         },
         {
-          "nome": "VASTI BARBOSA RODRIGUES",
+          "nome": "Vasti Barbosa",
           "partido": "—",
-          "votos": 8
+          "votos": 8,
+          "num": "2999",
+          "sq": "30002553598",
+          "foto": "fotos/30002553598.jpg"
         },
         {
-          "nome": "ELIELTON MONTEIRO SILVA",
+          "nome": "Elielton Silva",
           "partido": "—",
-          "votos": 18
+          "votos": 18,
+          "num": "2929",
+          "sq": "30002553599",
+          "foto": "fotos/30002553599.jpg"
         },
         {
-          "nome": "MARCIO CLAY DA COSTA SERRAO",
+          "nome": "Marcio Serrão",
           "partido": "—",
-          "votos": 20796
+          "votos": 20796,
+          "num": "4444",
+          "sq": "30002536305",
+          "foto": "fotos/30002536305.jpg"
         },
         {
-          "nome": "FATIMA LUCIA PELAES",
+          "nome": "Fátima Pelaes",
           "partido": "—",
-          "votos": 5102
+          "votos": 5102,
+          "num": "4478",
+          "sq": "30002536302",
+          "foto": "fotos/30002536302.jpg"
         },
         {
-          "nome": "FELIPE EDSON PINTO",
+          "nome": "Felipe Show",
           "partido": "—",
-          "votos": 34587
+          "votos": 34587,
+          "num": "4480",
+          "sq": "30002536306",
+          "foto": "fotos/30002536306.jpg"
         },
         {
-          "nome": "CRISTIANO BEVILACQUA FURLAN",
+          "nome": "Cristiano Furlan",
           "partido": "—",
-          "votos": 8818
+          "votos": 8818,
+          "num": "4400",
+          "sq": "30002536309",
+          "foto": "fotos/30002536309.jpg"
         },
         {
-          "nome": "LUIZ CARLOS GOMES DOS SANTOS JUNIOR",
+          "nome": "Luiz Carlos",
           "partido": "—",
-          "votos": 6316
+          "votos": 6316,
+          "num": "4456",
+          "sq": "30002536303",
+          "foto": "fotos/30002536303.jpg"
         },
         {
-          "nome": "ALINE PARANHOS VARONIL GURGEL",
+          "nome": "Aline Gurgel",
           "partido": "—",
-          "votos": 25501
+          "votos": 25501,
+          "num": "4410",
+          "sq": "30002536304",
+          "foto": "fotos/30002536304.jpg"
         },
         {
-          "nome": "ANDRE DOS SANTOS ABDON",
+          "nome": "Andre Abdon",
           "partido": "—",
-          "votos": 10633
+          "votos": 10633,
+          "num": "1111",
+          "sq": "30002536307",
+          "foto": "fotos/30002536307.jpg"
         },
         {
-          "nome": "BENEDITA ROCHA BARBOSA COLARES",
+          "nome": "Bena Rocha",
           "partido": "—",
-          "votos": 10981
+          "votos": 10981,
+          "num": "1112",
+          "sq": "30002536308",
+          "foto": "fotos/30002536308.jpg"
         },
         {
-          "nome": "MARIA IVONEIDE OLIVEIRA CHAGAS",
+          "nome": "Ivone Chagas",
           "partido": "—",
-          "votos": 6810
+          "votos": 6810,
+          "num": "4343",
+          "sq": "30002533101",
+          "foto": "fotos/30002533101.jpg"
         },
         {
-          "nome": "LUCAS ABRAHAO ROSA CEZARIO DE ALMEIDA",
+          "nome": "Lucas Abrahao",
           "partido": "—",
-          "votos": 15998
+          "votos": 15998,
+          "num": "4321",
+          "sq": "30002533103",
+          "foto": "fotos/30002533103.jpg"
         },
         {
-          "nome": "CARLOS CAMILO GOES CAPIBERIBE",
+          "nome": "Camilo Capiberibe",
           "partido": "—",
-          "votos": 6296
+          "votos": 6296,
+          "num": "1340",
+          "sq": "30002533104",
+          "foto": "fotos/30002533104.jpg"
         },
         {
-          "nome": "IVANEIA DE SOUZA ALVES",
+          "nome": "Professora Ivanéia",
           "partido": "—",
-          "votos": 756
+          "votos": 756,
+          "num": "1313",
+          "sq": "30002533097",
+          "foto": "fotos/30002533097.jpg"
         },
         {
-          "nome": "PAULO CESAR LEMOS DE OLIVEIRA",
+          "nome": "Paulo Lemos",
           "partido": "—",
-          "votos": 16242
+          "votos": 16242,
+          "num": "1350",
+          "sq": "30002533100",
+          "foto": "fotos/30002533100.jpg"
         },
         {
-          "nome": "VIVIAN REGIA BANDEIRA DA SILVA",
+          "nome": "Professora Vivian",
           "partido": "—",
-          "votos": 225
+          "votos": 225,
+          "num": "6556",
+          "sq": "30002533102",
+          "foto": "fotos/30002533102.jpg"
         },
         {
-          "nome": "MARCIVANIA DO SOCORRO DA ROCHA FLEXA",
+          "nome": "Professora Marcivânia",
           "partido": "—",
-          "votos": 17913
+          "votos": 17913,
+          "num": "6565",
+          "sq": "30002533096",
+          "foto": "fotos/30002533096.jpg"
         },
         {
-          "nome": "JOAO DA SILVA COSTA",
+          "nome": "Dudão Costa",
           "partido": "—",
-          "votos": 3509
+          "votos": 3509,
+          "num": "6522",
+          "sq": "30002533098",
+          "foto": "fotos/30002533098.jpg"
         },
         {
-          "nome": "RAMONA TAYNÁ PANTOJA FERREIRA",
+          "nome": "Ramona Matarazzo",
           "partido": "—",
-          "votos": 230
+          "votos": 230,
+          "num": "5013",
+          "sq": "30002532427",
+          "foto": "fotos/30002532427.jpg"
         },
         {
-          "nome": "ANDREW AURÉLIO PINTO DE ALMEIDA COSTA",
+          "nome": "Andrew Costa",
           "partido": "—",
-          "votos": 1454
+          "votos": 1454,
+          "num": "5050",
+          "sq": "30002532428",
+          "foto": "fotos/30002532428.jpg"
         },
         {
-          "nome": "GILDOVAL FARIAS BARBOSA",
+          "nome": "Prof. Gil Barbosa",
           "partido": "—",
-          "votos": 111
+          "votos": 111,
+          "num": "5080",
+          "sq": "30002532426",
+          "foto": "fotos/30002532426.jpg"
         },
         {
-          "nome": "JAWARUWA WAIÃPI",
+          "nome": "Jawaruwa Wajãpi",
           "partido": "—",
-          "votos": 114
+          "votos": 114,
+          "num": "1834",
+          "sq": "30002532425",
+          "foto": "fotos/30002532425.jpg"
         },
         {
-          "nome": "CRISTIANE NUNES DA SILVA",
+          "nome": "Cris Nunes",
           "partido": "—",
-          "votos": 267
+          "votos": 267,
+          "num": "1818",
+          "sq": "30002532429",
+          "foto": "fotos/30002532429.jpg"
         },
         {
-          "nome": "MARCIA LUIZA SOUZA NERY",
+          "nome": "Marcia Nery",
           "partido": "—",
-          "votos": 29
+          "votos": 29,
+          "num": "1420",
+          "sq": "30002549915",
+          "foto": "fotos/30002549915.jpg"
         },
         {
-          "nome": "ISRAEL DOS SANTOS GOMES",
+          "nome": "Israel dos Santos",
           "partido": "—",
-          "votos": 241
+          "votos": 241,
+          "num": "1400",
+          "sq": "30002549914",
+          "foto": "fotos/30002549914.jpg"
         },
         {
-          "nome": "ROSEMEIRE SALVIANO PEREIRA",
+          "nome": "Meire Salviano",
           "partido": "—",
-          "votos": 99
+          "votos": 99,
+          "num": "1401",
+          "sq": "30002549916",
+          "foto": "fotos/30002549916.jpg"
         },
         {
-          "nome": "BRUNO BORGES LIMA",
+          "nome": "Bruno Borges",
           "partido": "—",
-          "votos": 89
+          "votos": 89,
+          "num": "1415",
+          "sq": "30002549913",
+          "foto": "fotos/30002549913.jpg"
         },
         {
-          "nome": "LUI RICARDO DE SOUSA BARBOSA",
+          "nome": "Luy Ricardo",
           "partido": "—",
-          "votos": 359
+          "votos": 359,
+          "num": "1414",
+          "sq": "30002549917",
+          "foto": "fotos/30002549917.jpg"
         },
         {
-          "nome": "MARIENE RODRIGUES DE SOUSA",
+          "nome": "Irmã Maria",
           "partido": "—",
-          "votos": 252
+          "votos": 252,
+          "num": "1599",
+          "sq": "30002549846",
+          "foto": "fotos/30002549846.jpg"
         },
         {
-          "nome": "ROMULO FERREIRA MONTEIRO",
+          "nome": "Rômulo Monteiro",
           "partido": "—",
-          "votos": 761
+          "votos": 761,
+          "num": "1580",
+          "sq": "30002549851",
+          "foto": "fotos/30002549851.jpg"
         },
         {
-          "nome": "MARIA ELIZAURA NUNES VIANA",
+          "nome": "Elizaura da Anápolis",
           "partido": "—",
-          "votos": 6380
+          "votos": 6380,
+          "num": "1555",
+          "sq": "30002549854",
+          "foto": "fotos/30002549854.jpg"
         },
         {
-          "nome": "KAURI WAIÃPI",
+          "nome": "Daldeia",
           "partido": "—",
-          "votos": 1889
+          "votos": 1889,
+          "num": "1526",
+          "sq": "30002549849",
+          "foto": "fotos/30002549849.jpg"
         },
         {
-          "nome": "ALINNE CRIS NASCIMENTO DA SILVA PEREIRA",
+          "nome": "Alinne Madeireiro",
           "partido": "—",
-          "votos": 950
+          "votos": 950,
+          "num": "1522",
+          "sq": "30002554423",
+          "foto": "fotos/30002554423.jpg"
         },
         {
-          "nome": "HELDER JOSE CARNEIRO DE SOUZA",
+          "nome": "Helder",
           "partido": "—",
-          "votos": 870
+          "votos": 870,
+          "num": "1511",
+          "sq": "30002549850",
+          "foto": "fotos/30002549850.jpg"
         },
         {
-          "nome": "MARIA ORLANDA MARQUES GARCIA",
+          "nome": "Maria Orlanda",
           "partido": "—",
-          "votos": 1376
+          "votos": 1376,
+          "num": "1545",
+          "sq": "30002549847",
+          "foto": "fotos/30002549847.jpg"
         },
         {
-          "nome": "LUCAS CHAVES MALAQUIAS DE ASSIS",
+          "nome": "Lucas da Gazeta",
           "partido": "—",
-          "votos": 4809
+          "votos": 4809,
+          "num": "1516",
+          "sq": "30002549852",
+          "foto": "fotos/30002549852.jpg"
         },
         {
-          "nome": "FRANCISCA FERREIRA FAVACHO",
+          "nome": "Francisca Favacho",
           "partido": "—",
-          "votos": 9746
+          "votos": 9746,
+          "num": "1515",
+          "sq": "30002549848",
+          "foto": "fotos/30002549848.jpg"
         },
         {
-          "nome": "KLEBER LUIZ SANTOS DOS SANTOS",
+          "nome": "Kleber Karipuna",
           "partido": "—",
-          "votos": 715
+          "votos": 715,
+          "num": "1200",
+          "sq": "30002532847",
+          "foto": "fotos/30002532847.jpg"
         },
         {
-          "nome": "JOSENILDO SANTOS ABRANTES",
+          "nome": "Josenildo",
           "partido": "—",
-          "votos": 26453
+          "votos": 26453,
+          "num": "1212",
+          "sq": "30002532841",
+          "foto": "fotos/30002532841.jpg"
         },
         {
-          "nome": "DORINALDO BARBOSA MALAFAIA",
+          "nome": "Dorinaldo Malafaia",
           "partido": "—",
-          "votos": 19382
+          "votos": 19382,
+          "num": "1222",
+          "sq": "30002532842",
+          "foto": "fotos/30002532842.jpg"
         },
         {
-          "nome": "WELTON BARREIROS ALVINO",
+          "nome": "Welton Barreiros",
           "partido": "—",
-          "votos": 987
+          "votos": 987,
+          "num": "1210",
+          "sq": "30002532845",
+          "foto": "fotos/30002532845.jpg"
         },
         {
-          "nome": "KÁTIA PAULINO DOS SANTOS",
+          "nome": "Professora Katia Paulino",
           "partido": "—",
-          "votos": 2258
+          "votos": 2258,
+          "num": "1220",
+          "sq": "30002532846",
+          "foto": "fotos/30002532846.jpg"
         },
         {
-          "nome": "RUZIELY DE JESUS PONTES DA SILVA",
+          "nome": "Jesus Pontes",
           "partido": "—",
-          "votos": 14031
+          "votos": 14031,
+          "num": "1234",
+          "sq": "30002532844",
+          "foto": "fotos/30002532844.jpg"
         },
         {
-          "nome": "LAUDENICE FERREIRA MONTEIRO",
+          "nome": "Lau Causa Animal",
           "partido": "—",
-          "votos": 787
+          "votos": 787,
+          "num": "1215",
+          "sq": "30002532848",
+          "foto": "fotos/30002532848.jpg"
         },
         {
-          "nome": "MARIA ISABEL NOGUEIRA DE SOUSA",
+          "nome": "Isabel Nogueira",
           "partido": "—",
-          "votos": 8112
+          "votos": 8112,
+          "num": "1213",
+          "sq": "30002532840",
+          "foto": "fotos/30002532840.jpg"
         },
         {
-          "nome": "SOLANGELO FONSECA DA COSTA",
+          "nome": "Pastor Solangelo",
           "partido": "—",
-          "votos": 10208
+          "votos": 10208,
+          "num": "1233",
+          "sq": "30002532843",
+          "foto": "fotos/30002532843.jpg"
         },
         {
-          "nome": "ERICA ARANHA DE SOUSA AYMORÉ",
+          "nome": "Dra. Erica",
           "partido": "—",
-          "votos": 15358
+          "votos": 15358,
+          "num": "2000",
+          "sq": "30002530514",
+          "foto": "fotos/30002530514.jpg"
         },
         {
-          "nome": "VINICIUS ARAUJO DE SOUSA REIS",
+          "nome": "Dr. Vinicius Reis",
           "partido": "—",
-          "votos": 14255
+          "votos": 14255,
+          "num": "2023",
+          "sq": "30002530513",
+          "foto": "fotos/30002530513.jpg"
         },
         {
-          "nome": "DIENY KAMILLE LIMA DE ALMEIDA COIMBRA",
+          "nome": "Kamille Almeida",
           "partido": "—",
-          "votos": 3409
+          "votos": 3409,
+          "num": "2030",
+          "sq": "30002530509",
+          "foto": "fotos/30002530509.jpg"
         },
         {
-          "nome": "SANDRA DOS SANTOS LACERDA",
+          "nome": "Sandra Lacerda",
           "partido": "—",
-          "votos": 10785
+          "votos": 10785,
+          "num": "2020",
+          "sq": "30002530516",
+          "foto": "fotos/30002530516.jpg"
         },
         {
-          "nome": "MARIA GORETH DA SILVA E SOUSA",
+          "nome": "Professora Goreth",
           "partido": "—",
-          "votos": 3460
+          "votos": 3460,
+          "num": "2027",
+          "sq": "30002530508",
+          "foto": "fotos/30002530508.jpg"
         },
         {
-          "nome": "KASSYO SANTOS RAMOS",
+          "nome": "Kassyo Ramos",
           "partido": "—",
-          "votos": 8393
+          "votos": 8393,
+          "num": "2026",
+          "sq": "30002530515",
+          "foto": "fotos/30002530515.jpg"
         },
         {
-          "nome": "ALEXANDRE RAMOS DA COSTA",
+          "nome": "Alexandre Azevedo",
           "partido": "—",
-          "votos": 14973
+          "votos": 14973,
+          "num": "2055",
+          "sq": "30002530510",
+          "foto": "fotos/30002530510.jpg"
         },
         {
-          "nome": "JOEL VITOR DA COSTA CAVALCANTE",
+          "nome": "Joel Cavalcante",
           "partido": "—",
-          "votos": 942
+          "votos": 942,
+          "num": "2022",
+          "sq": "30002530511",
+          "foto": "fotos/30002530511.jpg"
         },
         {
-          "nome": "MAYLA KALIME MATOS CARVALHO",
+          "nome": "Mayla Carvalho",
           "partido": "—",
-          "votos": 8636
+          "votos": 8636,
+          "num": "2010",
+          "sq": "30002530512",
+          "foto": "fotos/30002530512.jpg"
         },
         {
-          "nome": "RILANY RAFAELA MIRANDA SILVA",
+          "nome": "Professora Rilany Silva",
           "partido": "—",
-          "votos": 40
+          "votos": 40,
+          "num": "3026",
+          "sq": "30002530020",
+          "foto": "fotos/30002530020.jpg"
         },
         {
-          "nome": "LUÍS GUILHERME ARAÚJO MOREIRA",
+          "nome": "Luisão",
           "partido": "—",
-          "votos": 32
+          "votos": 32,
+          "num": "3088",
+          "sq": "30002530018",
+          "foto": "fotos/30002530018.jpg"
         },
         {
-          "nome": "EDILEUZA RODRIGUES PEREIRA",
+          "nome": "Edileuza Rodrigues",
           "partido": "—",
-          "votos": 27
+          "votos": 27,
+          "num": "3099",
+          "sq": "30002530017",
+          "foto": "fotos/30002530017.jpg"
         },
         {
-          "nome": "MARIA BERNADETH SILVA GARCIA",
+          "nome": "Beth Garcia",
           "partido": "—",
-          "votos": 62
+          "votos": 62,
+          "num": "3065",
+          "sq": "30002530016",
+          "foto": "fotos/30002530016.jpg"
         },
         {
-          "nome": "IRANEI LOPES OLIVEIRA",
+          "nome": "Iranei Lopes",
           "partido": "—",
-          "votos": 284
+          "votos": 284,
+          "num": "3030",
+          "sq": "30002530019",
+          "foto": "fotos/30002530019.jpg"
         },
         {
-          "nome": "ARISTIDES DA SILVA LOPES",
+          "nome": "Pr. Didio",
           "partido": "—",
-          "votos": 737
+          "votos": 737,
+          "num": "5522",
+          "sq": "30002532251",
+          "foto": "fotos/30002532251.jpg"
         },
         {
-          "nome": "LUIZ ALEX MONTEIRO DOS SANTOS",
+          "nome": "Luiz Alex",
           "partido": "—",
-          "votos": 859
+          "votos": 859,
+          "num": "5544",
+          "sq": "30002532248",
+          "foto": "fotos/30002532248.jpg"
         },
         {
-          "nome": "ANTONIO AUGUSTO DE AGUIAR",
+          "nome": "Augusto Aguiar",
           "partido": "—",
-          "votos": 279
+          "votos": 279,
+          "num": "5510",
+          "sq": "30002532253",
+          "foto": "fotos/30002532253.jpg"
         },
         {
-          "nome": "KELLY DANTAS DE VASCONCELOS",
+          "nome": "Kelly Dantas",
           "partido": "—",
-          "votos": 863
+          "votos": 863,
+          "num": "5555",
+          "sq": "30002554527",
+          "foto": "fotos/30002554527.jpg"
         },
         {
-          "nome": "LEDA MARIA SADALA BRITO",
+          "nome": "Leda Sadala",
           "partido": "—",
-          "votos": 865
+          "votos": 865,
+          "num": "5577",
+          "sq": "30002532250",
+          "foto": "fotos/30002532250.jpg"
         },
         {
-          "nome": "GIODILSON PINHEIRO BORGES",
+          "nome": "Dilson Borges",
           "partido": "—",
-          "votos": 668
+          "votos": 668,
+          "num": "5515",
+          "sq": "30002532247",
+          "foto": "fotos/30002532247.jpg"
         },
         {
-          "nome": "LUZIA BRITO GRUNHO",
+          "nome": "Tia Lu",
           "partido": "—",
-          "votos": 550
+          "votos": 550,
+          "num": "5512",
+          "sq": "30002532252",
+          "foto": "fotos/30002532252.jpg"
         },
         {
-          "nome": "RELSON DE ALMEIDA CARDOSO",
+          "nome": "Relson Cardoso",
           "partido": "—",
-          "votos": 2694
+          "votos": 2694,
+          "num": "5533",
+          "sq": "30002532255",
+          "foto": "fotos/30002532255.jpg"
         },
         {
-          "nome": "FERNANDA DOS SANTOS COSTA",
+          "nome": "Nanda",
           "partido": "—",
-          "votos": 1109
+          "votos": 1109,
+          "num": "5500",
+          "sq": "30002532254",
+          "foto": "fotos/30002532254.jpg"
         },
         {
-          "nome": "ROBSON MARCOS GUALBERTO DO CARMO",
+          "nome": "Robson Gualberto",
           "partido": "—",
-          "votos": 308
+          "votos": 308,
+          "num": "2727",
+          "sq": "30002552027",
+          "foto": "fotos/30002552027.jpg"
         },
         {
-          "nome": "WILGUER CARVALHO DA SILVA",
+          "nome": "Wilguer Carvalho",
           "partido": "—",
-          "votos": 32
+          "votos": 32,
+          "num": "2700",
+          "sq": "30002552029",
+          "foto": "fotos/30002552029.jpg"
         },
         {
-          "nome": "WESLEN FIGUEIREDO DOS SANTOS",
+          "nome": "Pimpolho",
           "partido": "—",
-          "votos": 13
+          "votos": 13,
+          "num": "2777",
+          "sq": "30002552023",
+          "foto": "fotos/30002552023.jpg"
         },
         {
-          "nome": "CARMINA DE OLIVEIRA RODRIGUES",
+          "nome": "Carmina Rodrigues",
           "partido": "—",
-          "votos": 10
+          "votos": 10,
+          "num": "2722",
+          "sq": "30002552025",
+          "foto": "fotos/30002552025.jpg"
         },
         {
-          "nome": "ELIADA DOS SANTOS FORO",
+          "nome": "Eliada Santos",
           "partido": "—",
-          "votos": 7
+          "votos": 7,
+          "num": "2770",
+          "sq": "30002552028",
+          "foto": "fotos/30002552028.jpg"
         },
         {
-          "nome": "SHIRLEI GOMES AMARAL",
+          "nome": "Shirley Amaral",
           "partido": "—",
-          "votos": 22
+          "votos": 22,
+          "num": "2719",
+          "sq": "30002552022",
+          "foto": "fotos/30002552022.jpg"
         }
       ]
     },
@@ -521,922 +815,1468 @@
       "proportional": true,
       "candidatos": [
         {
-          "nome": "JAIME DA SILVA PEREZ",
+          "nome": "Jaime Perez",
           "partido": "—",
-          "votos": 8222
+          "votos": 8222,
+          "num": "10789",
+          "sq": "30002549877",
+          "foto": "fotos/30002549877.jpg"
         },
         {
-          "nome": "JOSE BENEDITO MOREIRA",
+          "nome": "Bené do Plutão",
           "partido": "—",
-          "votos": 772
+          "votos": 772,
+          "num": "10100",
+          "sq": "30002549886",
+          "foto": "fotos/30002549886.jpg"
         },
         {
-          "nome": "RENAN DA SILVA ROSAS",
+          "nome": "Dr Renan Rosas",
           "partido": "—",
-          "votos": 1812
+          "votos": 1812,
+          "num": "10777",
+          "sq": "30002549887",
+          "foto": "fotos/30002549887.jpg"
         },
         {
-          "nome": "ENNIO DANILO DE ALMEIDA CAVALCANTE",
+          "nome": "Ennio Cavalcante",
           "partido": "—",
-          "votos": 1929
+          "votos": 1929,
+          "num": "10699",
+          "sq": "30002549874",
+          "foto": "fotos/30002549874.jpg"
         },
         {
-          "nome": "EDINOELSON PEREIRA DA TRINDADE",
+          "nome": "Careca da Talentus",
           "partido": "—",
-          "votos": 2801
+          "votos": 2801,
+          "num": "10110",
+          "sq": "30002549876",
+          "foto": "fotos/30002549876.jpg"
         },
         {
-          "nome": "CARLOS EDUARDO PIMENTEL BARBOSA",
+          "nome": "Dudu Barbosa",
           "partido": "—",
-          "votos": 6107
+          "votos": 6107,
+          "num": "10369",
+          "sq": "30002549892",
+          "foto": "fotos/30002549892.jpg"
         },
         {
-          "nome": "HUGO BARROSO SILVA",
+          "nome": "Dr. Hugo",
           "partido": "—",
-          "votos": 397
+          "votos": 397,
+          "num": "10333",
+          "sq": "30002549897",
+          "foto": "fotos/30002549897.jpg"
         },
         {
-          "nome": "EDUARDO DOS SANTOS TAVARES",
+          "nome": "Dudu Tavares",
           "partido": "—",
-          "votos": 2826
+          "votos": 2826,
+          "num": "10580",
+          "sq": "30002549878",
+          "foto": "fotos/30002549878.jpg"
         },
         {
-          "nome": "DIEGO JOSE MORPHEU FERREIRA MENDES",
+          "nome": "Professor Morpheu",
           "partido": "—",
-          "votos": 868
+          "votos": 868,
+          "num": "10700",
+          "sq": "30002549882",
+          "foto": "fotos/30002549882.jpg"
         },
         {
-          "nome": "ESTEFANE PINHEIRO DOS SANTOS",
+          "nome": "Estefane Raposa",
           "partido": "—",
-          "votos": 29
+          "votos": 29,
+          "num": "10144",
+          "sq": "30002549881",
+          "foto": "fotos/30002549881.jpg"
         },
         {
-          "nome": "RAYFRAN MACEDO BARROSO",
+          "nome": "Rayfran Beirão",
           "partido": "—",
-          "votos": 7301
+          "votos": 7301,
+          "num": "10678",
+          "sq": "30002549889",
+          "foto": "fotos/30002549889.jpg"
         },
         {
-          "nome": "TELMA ADRIANA NERY PAIVA",
+          "nome": "Telma Nery",
           "partido": "—",
-          "votos": 8545
+          "votos": 8545,
+          "num": "10000",
+          "sq": "30002549894",
+          "foto": "fotos/30002549894.jpg"
         },
         {
-          "nome": "DEBORA MARTINS SARMENTO",
+          "nome": "Débora Martins",
           "partido": "—",
-          "votos": 139
+          "votos": 139,
+          "num": "10010",
+          "sq": "30002549890",
+          "foto": "fotos/30002549890.jpg"
         },
         {
-          "nome": "ODILSON SERRA NUNES",
+          "nome": "Odilson Nunes",
           "partido": "—",
-          "votos": 2678
+          "votos": 2678,
+          "num": "10111",
+          "sq": "30002549883",
+          "foto": "fotos/30002549883.jpg"
         },
         {
-          "nome": "KARLA SAMILA GOMES SILVA",
+          "nome": "Karla Samila",
           "partido": "—",
-          "votos": 193
+          "votos": 193,
+          "num": "10321",
+          "sq": "30002549879",
+          "foto": "fotos/30002549879.jpg"
         },
         {
-          "nome": "MARCOS PAULO BERTOLO",
+          "nome": "Dr Marcos Paulo",
           "partido": "—",
-          "votos": 928
+          "votos": 928,
+          "num": "10123",
+          "sq": "30002549898",
+          "foto": "fotos/30002549898.jpg"
         },
         {
-          "nome": "HILDEGARD DE AZEVEDO GURGEL",
+          "nome": "Hildegard Gurgel",
           "partido": "—",
-          "votos": 12357
+          "votos": 12357,
+          "num": "10800",
+          "sq": "30002549884",
+          "foto": "fotos/30002549884.jpg"
         },
         {
-          "nome": "KINOVAK MARQUES TOURINHO",
+          "nome": "Kinovak",
           "partido": "—",
-          "votos": 9978
+          "votos": 9978,
+          "num": "10999",
+          "sq": "30002549880",
+          "foto": "fotos/30002549880.jpg"
         },
         {
-          "nome": "JEOVANA DA CONCEICAO PEREIRA",
+          "nome": "Sargento Geovana",
           "partido": "—",
-          "votos": 146
+          "votos": 146,
+          "num": "10555",
+          "sq": "30002549875",
+          "foto": "fotos/30002549875.jpg"
         },
         {
-          "nome": "ALDICLEIA LIRA GOES",
+          "nome": "Teka do Jory",
           "partido": "—",
-          "votos": 7977
+          "votos": 7977,
+          "num": "10300",
+          "sq": "30002554526",
+          "foto": "fotos/30002554526.jpg"
         },
         {
-          "nome": "ANDRE LUIZ DIAS DA COSTA",
+          "nome": "Coronel André Dias",
           "partido": "—",
-          "votos": 1048
+          "votos": 1048,
+          "num": "10190",
+          "sq": "30002549891",
+          "foto": "fotos/30002549891.jpg"
         },
         {
-          "nome": "ARNÓBIO FLEXA NASCIMENTO",
+          "nome": "Coronel Flexa",
           "partido": "—",
-          "votos": 8098
+          "votos": 8098,
+          "num": "10500",
+          "sq": "30002549896",
+          "foto": "fotos/30002549896.jpg"
         },
         {
-          "nome": "ROGÉRIO SANTOS LIMA",
+          "nome": "Prof. Rogério Lima",
           "partido": "—",
-          "votos": 329
+          "votos": 329,
+          "num": "20220",
+          "sq": "30002532026",
+          "foto": "fotos/30002532026.jpg"
         },
         {
-          "nome": "ELENICE MARIA MARMETT SCHERER",
+          "nome": "Elenice",
           "partido": "—",
-          "votos": 3271
+          "votos": 3271,
+          "num": "20200",
+          "sq": "30002532040",
+          "foto": "fotos/30002532040.jpg"
         },
         {
-          "nome": "LAENE SILVIA DANTAS FERREIRA",
+          "nome": "Laene Dantas",
           "partido": "—",
-          "votos": 210
+          "votos": 210,
+          "num": "20222",
+          "sq": "30002532030",
+          "foto": "fotos/30002532030.jpg"
         },
         {
-          "nome": "JORGE MACIEL DOS SANTOS",
+          "nome": "Jorginho Maciel",
           "partido": "—",
-          "votos": 203
+          "votos": 203,
+          "num": "20223",
+          "sq": "30002532020",
+          "foto": "fotos/30002532020.jpg"
         },
         {
-          "nome": "SANDRA REGINA MARTINS MACIEL ALCANTARA",
+          "nome": "Sandra Alcantara",
           "partido": "—",
-          "votos": 740
+          "votos": 740,
+          "num": "20111",
+          "sq": "30002532025",
+          "foto": "fotos/30002532025.jpg"
         },
         {
-          "nome": "ALAN FIGUEIREDO BARROS",
+          "nome": "Alan Figueiredo",
           "partido": "—",
-          "votos": 319
+          "votos": 319,
+          "num": "20123",
+          "sq": "30002532021",
+          "foto": "fotos/30002532021.jpg"
         },
         {
-          "nome": "CLAUDIA DIAS SABINO",
+          "nome": "Claudinha",
           "partido": "—",
-          "votos": 383
+          "votos": 383,
+          "num": "20500",
+          "sq": "30002532035",
+          "foto": "fotos/30002532035.jpg"
         },
         {
-          "nome": "MARIA CRISTINA DO ROSARIO ALMEIDA MENDES",
+          "nome": "Cristina Almeida",
           "partido": "—",
-          "votos": 1778
+          "votos": 1778,
+          "num": "20201",
+          "sq": "30002532023",
+          "foto": "fotos/30002532023.jpg"
         },
         {
-          "nome": "IVANILDO LUCIANO DA LUZ",
+          "nome": "Prof. Ivanildo Luz",
           "partido": "—",
-          "votos": 325
+          "votos": 325,
+          "num": "20120",
+          "sq": "30002532037",
+          "foto": "fotos/30002532037.jpg"
         },
         {
-          "nome": "JUCELINO FERNANDES",
+          "nome": "Jucelino Fernandes",
           "partido": "—",
           "votos": 243,
+          "num": "20888",
+          "sq": "30002532029",
           "foto": "fotos/30002532029.jpg"
         },
         {
-          "nome": "VANIA MARIA FONTOURA MOREIRA",
+          "nome": "Dra Vânia Fontoura",
           "partido": "—",
-          "votos": 155
+          "votos": 155,
+          "num": "20300",
+          "sq": "30002532031",
+          "foto": "fotos/30002532031.jpg"
         },
         {
-          "nome": "CARLOS MURILO PINHEIRO",
+          "nome": "Carlos Murilo",
           "partido": "—",
-          "votos": 3023
+          "votos": 3023,
+          "num": "20777",
+          "sq": "30002532017",
+          "foto": "fotos/30002532017.jpg"
         },
         {
-          "nome": "FERNANDA PAULA ALCANTARA DE VEIGA CABRAL",
+          "nome": "Nanda Cabral",
           "partido": "—",
-          "votos": 495
+          "votos": 495,
+          "num": "20180",
+          "sq": "30002532022",
+          "foto": "fotos/30002532022.jpg"
         },
         {
-          "nome": "HERISON ALEX DA SILVA DUARTE",
+          "nome": "Herison Tupan",
           "partido": "—",
-          "votos": 89
+          "votos": 89,
+          "num": "20555",
+          "sq": "30002532024",
+          "foto": "fotos/30002532024.jpg"
         },
         {
-          "nome": "MARIO ANTONIO BIANCHI",
+          "nome": "Mario Bianchi",
           "partido": "—",
-          "votos": 637
+          "votos": 637,
+          "num": "20000",
+          "sq": "30002532036",
+          "foto": "fotos/30002532036.jpg"
         },
         {
-          "nome": "ERRINELSON VIEIRA PIMENTEL",
+          "nome": "R Nelson",
           "partido": "—",
-          "votos": 10286
+          "votos": 10286,
+          "num": "20193",
+          "sq": "30002532038",
+          "foto": "fotos/30002532038.jpg"
         },
         {
-          "nome": "JOÃO MARCO DY SÁ Y MENDONÇA",
+          "nome": "João Mendonça",
           "partido": "—",
-          "votos": 8736
+          "votos": 8736,
+          "num": "20800",
+          "sq": "30002532034",
+          "foto": "fotos/30002532034.jpg"
         },
         {
-          "nome": "ANGELO DE SOUZA FERREIRA",
+          "nome": "Dr. Angelo",
           "partido": "—",
-          "votos": 868
+          "votos": 868,
+          "num": "20333",
+          "sq": "30002532027",
+          "foto": "fotos/30002532027.jpg"
         },
         {
-          "nome": "BENEDITO DA GAMA MACHADO",
+          "nome": "Prof. Bené Bingota",
           "partido": "—",
-          "votos": 900
+          "votos": 900,
+          "num": "20789",
+          "sq": "30002532033",
+          "foto": "fotos/30002532033.jpg"
         },
         {
-          "nome": "JOSE RIBAMAR COSTA FILHO",
+          "nome": "Costa Filho",
           "partido": "—",
-          "votos": 346
+          "votos": 346,
+          "num": "20155",
+          "sq": "30002532016",
+          "foto": "fotos/30002532016.jpg"
         },
         {
-          "nome": "ISRAEL DOS SANTOS COSTA",
+          "nome": "Israel Santos",
           "partido": "—",
-          "votos": 38
+          "votos": 38,
+          "num": "20416",
+          "sq": "30002532018",
+          "foto": "fotos/30002532018.jpg"
         },
         {
-          "nome": "SANDRO DOS SANTOS CARVALHO",
+          "nome": "Dr. Sandro Carvalho",
           "partido": "—",
-          "votos": 157
+          "votos": 157,
+          "num": "20666",
+          "sq": "30002532032",
+          "foto": "fotos/30002532032.jpg"
         },
         {
-          "nome": "CESAR MACEDO DE FARIAS",
+          "nome": "Cesar Farias",
           "partido": "—",
-          "votos": 168
+          "votos": 168,
+          "num": "20321",
+          "sq": "30002532019",
+          "foto": "fotos/30002532019.jpg"
         },
         {
-          "nome": "RUANY CAMILA SOARES DA SILVA",
+          "nome": "Julia Soares",
           "partido": "—",
-          "votos": 351
+          "votos": 351,
+          "num": "20100",
+          "sq": "30002532028",
+          "foto": "fotos/30002532028.jpg"
         },
         {
-          "nome": "ANTÔNIA DO SOCORRO NOGUEIRA DE SOUZA",
+          "nome": "Socorro Nogueira",
           "partido": "—",
-          "votos": 9253
+          "votos": 9253,
+          "num": "13123",
+          "sq": "30002533112",
+          "foto": "fotos/30002533112.jpg"
         },
         {
-          "nome": "EDIVANDRO JOAO VILHENA DE OLIVEIRA",
+          "nome": "Van Vilhena",
           "partido": "—",
-          "votos": 647
+          "votos": 647,
+          "num": "13130",
+          "sq": "30002533118",
+          "foto": "fotos/30002533118.jpg"
         },
         {
-          "nome": "ZENEIDE DA SILVA COSTA",
+          "nome": "Zeneide Costa",
           "partido": "—",
-          "votos": 3516
+          "votos": 3516,
+          "num": "13456",
+          "sq": "30002533116",
+          "foto": "fotos/30002533116.jpg"
         },
         {
-          "nome": "JARDEL ELIEZER OLIVEIRA SILVA",
+          "nome": "Jardel Eliezer",
           "partido": "—",
-          "votos": 72
+          "votos": 72,
+          "num": "13141",
+          "sq": "30002533106",
+          "foto": "fotos/30002533106.jpg"
         },
         {
-          "nome": "CELISA PENNA MELO CAPELARI",
+          "nome": "Celisa Melo",
           "partido": "—",
-          "votos": 199
+          "votos": 199,
+          "num": "13113",
+          "sq": "30002533109",
+          "foto": "fotos/30002533109.jpg"
         },
         {
-          "nome": "MANOEL ARAUJO DO CARMO",
+          "nome": "Manoel Araujo",
           "partido": "—",
-          "votos": 53
+          "votos": 53,
+          "num": "13289",
+          "sq": "30002533117",
+          "foto": "fotos/30002533117.jpg"
         },
         {
-          "nome": "JOSÉ CARLOS SILVA CARMEZIM",
+          "nome": "Carlos Carmezim",
           "partido": "—",
-          "votos": 264
+          "votos": 264,
+          "num": "13047",
+          "sq": "30002533121",
+          "foto": "fotos/30002533121.jpg"
         },
         {
-          "nome": "ALCINETE FERREIRA DOS SANTOS",
+          "nome": "Alcinete Santos",
           "partido": "—",
-          "votos": 343
+          "votos": 343,
+          "num": "13333",
+          "sq": "30002533111",
+          "foto": "fotos/30002533111.jpg"
         },
         {
-          "nome": "ELINDOMAR SILVA DA SILVA",
+          "nome": "Elindomar Silva",
           "partido": "—",
-          "votos": 115
+          "votos": 115,
+          "num": "43043",
+          "sq": "30002533114",
+          "foto": "fotos/30002533114.jpg"
         },
         {
-          "nome": "ALESSON TOURINHO CAVALCANTE",
+          "nome": "Alesson Cavalvante",
           "partido": "—",
-          "votos": 3
+          "votos": 3,
+          "num": "43333",
+          "sq": "30002533110",
+          "foto": "fotos/30002533110.jpg"
         },
         {
-          "nome": "LILIANE CORDEIRO DE ABREU",
+          "nome": "Liliane Abreu",
           "partido": "—",
-          "votos": 8335
+          "votos": 8335,
+          "num": "43456",
+          "sq": "30002533113",
+          "foto": "fotos/30002533113.jpg"
         },
         {
-          "nome": "EDNA AUZIER",
+          "nome": "Edna Auzier",
           "partido": "—",
           "votos": 5299,
+          "num": "43444",
+          "sq": "30002533108",
           "foto": "fotos/30002533108.jpg"
         },
         {
-          "nome": "RAUDISON SENA DOS SANTOS",
+          "nome": "Professor Raudison Sena",
           "partido": "—",
-          "votos": 209
+          "votos": 209,
+          "num": "65000",
+          "sq": "30002533120",
+          "foto": "fotos/30002533120.jpg"
         },
         {
-          "nome": "MARCOS DE MORAIS",
+          "nome": "Professor Marcos",
           "partido": "—",
-          "votos": 284
+          "votos": 284,
+          "num": "65123",
+          "sq": "30002533115",
+          "foto": "fotos/30002533115.jpg"
         },
         {
-          "nome": "CICERA PEREIRA SILVA ALBUQUERQUE",
+          "nome": "Silvia Artesã",
           "partido": "—",
-          "votos": 58
+          "votos": 58,
+          "num": "65222",
+          "sq": "30002533105",
+          "foto": "fotos/30002533105.jpg"
         },
         {
-          "nome": "ELIZABETH PELAES DOS SANTOS",
+          "nome": "Beth Pelaes",
           "partido": "—",
-          "votos": 3713
+          "votos": 3713,
+          "num": "44478",
+          "sq": "30002539117",
+          "foto": "fotos/30002539117.jpg"
         },
         {
-          "nome": "JOAO ALVARO ROCHA RODRIGUES",
+          "nome": "Divino Rocha",
           "partido": "—",
-          "votos": 5350
+          "votos": 5350,
+          "num": "44580",
+          "sq": "30002539116",
+          "foto": "fotos/30002539116.jpg"
         },
         {
-          "nome": "PAULO ALCEU AVILA RAMOS",
+          "nome": "Paulinho Ramos",
           "partido": "—",
-          "votos": 3393
+          "votos": 3393,
+          "num": "44000",
+          "sq": "30002539113",
+          "foto": "fotos/30002539113.jpg"
         },
         {
-          "nome": "ANDERSON RICARDO DE ALMEIDA FEIO",
+          "nome": "Anderson Almeida",
           "partido": "—",
-          "votos": 4519
+          "votos": 4519,
+          "num": "44144",
+          "sq": "30002539125",
+          "foto": "fotos/30002539125.jpg"
         },
         {
-          "nome": "REGINALDO DA SILVA RODRIGUES",
+          "nome": "Reginaldo Faraó",
           "partido": "—",
-          "votos": 5516
+          "votos": 5516,
+          "num": "44800",
+          "sq": "30002539108",
+          "foto": "fotos/30002539108.jpg"
         },
         {
-          "nome": "ANGELO VICTOR RODRIGUES DOS SANTOS",
+          "nome": "Engenheiro Angelo",
           "partido": "—",
-          "votos": 2773
+          "votos": 2773,
+          "num": "44444",
+          "sq": "30002539115",
+          "foto": "fotos/30002539115.jpg"
         },
         {
-          "nome": "RODOLFO SOUSA FOLHA DO VALE",
+          "nome": "Rodolfo Vale",
           "partido": "—",
-          "votos": 15863
+          "votos": 15863,
+          "num": "44044",
+          "sq": "30002539119",
+          "foto": "fotos/30002539119.jpg"
         },
         {
-          "nome": "ANA BEATRIZ MOREIRA POMBO",
+          "nome": "Bia Pombo",
           "partido": "—",
-          "votos": 9771
+          "votos": 9771,
+          "num": "44123",
+          "sq": "30002539120",
+          "foto": "fotos/30002539120.jpg"
         },
         {
-          "nome": "ELIZETE TRINDADE DA CRUZ",
+          "nome": "Elizete Trindade",
           "partido": "—",
-          "votos": 601
+          "votos": 601,
+          "num": "44577",
+          "sq": "30002539126",
+          "foto": "fotos/30002539126.jpg"
         },
         {
-          "nome": "DEUZINETE MATIAS DOS SANTOS",
+          "nome": "Nete Matias",
           "partido": "—",
-          "votos": 4832
+          "votos": 4832,
+          "num": "44130",
+          "sq": "30002539112",
+          "foto": "fotos/30002539112.jpg"
         },
         {
-          "nome": "LUCELIA ARAUJO QUARESMA",
+          "nome": "Lucélia Quaresma",
           "partido": "—",
-          "votos": 2015
+          "votos": 2015,
+          "num": "44789",
+          "sq": "30002539118",
+          "foto": "fotos/30002539118.jpg"
         },
         {
-          "nome": "ALBERTO SILVA NEGRAO",
+          "nome": "Dr. Negrão",
           "partido": "—",
-          "votos": 2709
+          "votos": 2709,
+          "num": "44999",
+          "sq": "30002539111",
+          "foto": "fotos/30002539111.jpg"
         },
         {
-          "nome": "ANTONIO ROBERTO RODRIGUES GOES DA SILVA",
+          "nome": "Roberto Góes",
           "partido": "—",
-          "votos": 7990
+          "votos": 7990,
+          "num": "44111",
+          "sq": "30002539124",
+          "foto": "fotos/30002539124.jpg"
         },
         {
-          "nome": "ROSELI DE ARAUJO CORREA TEIXEIRA",
+          "nome": "Roseli Matos",
           "partido": "—",
-          "votos": 3477
+          "votos": 3477,
+          "num": "44456",
+          "sq": "30002539114",
+          "foto": "fotos/30002539114.jpg"
         },
         {
-          "nome": "OFIRNEY DA CONCEICAO SADALA",
+          "nome": "Ofirney Sadala",
           "partido": "—",
-          "votos": 4778
+          "votos": 4778,
+          "num": "44777",
+          "sq": "30002539121",
+          "foto": "fotos/30002539121.jpg"
         },
         {
-          "nome": "MARIA APARECIDA DOS SANTOS SALOMAO",
+          "nome": "Aparecida Salomão",
           "partido": "—",
-          "votos": 6202
+          "votos": 6202,
+          "num": "44700",
+          "sq": "30002539110",
+          "foto": "fotos/30002539110.jpg"
         },
         {
-          "nome": "JORGE EMANOEL AMANAJAS CARDOSO",
+          "nome": "Jorge Amanajas",
           "partido": "—",
-          "votos": 8078
+          "votos": 8078,
+          "num": "44222",
+          "sq": "30002539122",
+          "foto": "fotos/30002539122.jpg"
         },
         {
-          "nome": "SELMA AIRES DE PAULA",
+          "nome": "Selma de Paula",
           "partido": "—",
-          "votos": 462
+          "votos": 462,
+          "num": "11123",
+          "sq": "30002539123",
+          "foto": "fotos/30002539123.jpg"
         },
         {
-          "nome": "JOSELYO DE AGUIAR SOARES",
+          "nome": "Joselyo Mais Saúde",
           "partido": "—",
-          "votos": 7301
+          "votos": 7301,
+          "num": "11700",
+          "sq": "30002539109",
+          "foto": "fotos/30002539109.jpg"
         },
         {
-          "nome": "ARACICLEUMA COSTA DOS SANTOS PINHEIRO",
+          "nome": "Cleuma Duarte",
           "partido": "—",
-          "votos": 1210
+          "votos": 1210,
+          "num": "15125",
+          "sq": "30002549867",
+          "foto": "fotos/30002549867.jpg"
         },
         {
-          "nome": "OZIEL DOS SANTOS COUTINHO",
+          "nome": "Fulêra",
           "partido": "—",
-          "votos": 178
+          "votos": 178,
+          "num": "15444",
+          "sq": "30002549866",
+          "foto": "fotos/30002549866.jpg"
         },
         {
-          "nome": "JO PEREIRA FERREIRA",
+          "nome": "Jó Pereira",
           "partido": "—",
-          "votos": 416
+          "votos": 416,
+          "num": "15007",
+          "sq": "30002553615",
+          "foto": "fotos/30002553615.jpg"
         },
         {
-          "nome": "BERENICE GOMES LAZAME",
+          "nome": "Apóstola Berenice Lazamé",
           "partido": "—",
-          "votos": 62
+          "votos": 62,
+          "num": "15321",
+          "sq": "30002549870",
+          "foto": "fotos/30002549870.jpg"
         },
         {
-          "nome": "ANNE CAROLINE MONTEIRO PEREIRA",
+          "nome": "Carol Monteiro",
           "partido": "—",
-          "votos": 6092
+          "votos": 6092,
+          "num": "15000",
+          "sq": "30002549863",
+          "foto": "fotos/30002549863.jpg"
         },
         {
-          "nome": "ARANTHU ADRYANNUS CAVALCANTE RAMOS",
+          "nome": "Aranthu",
           "partido": "—",
-          "votos": 3912
+          "votos": 3912,
+          "num": "15555",
+          "sq": "30002549868",
+          "foto": "fotos/30002549868.jpg"
         },
         {
-          "nome": "AGNALDO BALIEIRO DA GAMA",
+          "nome": "Balieiro",
           "partido": "—",
-          "votos": 567
+          "votos": 567,
+          "num": "15190",
+          "sq": "30002549871",
+          "foto": "fotos/30002549871.jpg"
         },
         {
-          "nome": "AMIRALDO DA SILVA FAVACHO JUNIOR",
+          "nome": "Junior Favacho",
           "partido": "—",
-          "votos": 8005
+          "votos": 8005,
+          "num": "15699",
+          "sq": "30002549864",
+          "foto": "fotos/30002549864.jpg"
         },
         {
-          "nome": "HELOIZA HELENA DE OLIVEIRA SILVA",
+          "nome": "Helô",
           "partido": "—",
-          "votos": 329
+          "votos": 329,
+          "num": "15777",
+          "sq": "30002549869",
+          "foto": "fotos/30002549869.jpg"
         },
         {
-          "nome": "SALMON DOS SANTOS SILVA SANTANA",
+          "nome": "Salmon Santana",
           "partido": "—",
-          "votos": 2449
+          "votos": 2449,
+          "num": "15222",
+          "sq": "30002549872",
+          "foto": "fotos/30002549872.jpg"
         },
         {
-          "nome": "DIOGO WENCESLAU VILHENA SENIOR",
+          "nome": "Diogo Senior",
           "partido": "—",
-          "votos": 10050
+          "votos": 10050,
+          "num": "15123",
+          "sq": "30002549865",
+          "foto": "fotos/30002549865.jpg"
         },
         {
-          "nome": "ELIANA BRANDAO MONTEIRO",
+          "nome": "Eliana Brandão",
           "partido": "—",
-          "votos": 15
+          "votos": 15,
+          "num": "29999",
+          "sq": "30002553596",
+          "foto": "fotos/30002553596.jpg"
         },
         {
-          "nome": "CLAUDIO JORGE SILVA COSTA",
+          "nome": "Claudio Costa",
           "partido": "—",
-          "votos": 7
+          "votos": 7,
+          "num": "29000",
+          "sq": "30002553597",
+          "foto": "fotos/30002553597.jpg"
         },
         {
-          "nome": "JOSE AUGUSTO MARCOS CARDOSO JUNIOR",
+          "nome": "Augusto Júnior",
           "partido": "—",
-          "votos": 90
+          "votos": 90,
+          "num": "30888",
+          "sq": "30002530087",
+          "foto": "fotos/30002530087.jpg"
         },
         {
-          "nome": "KARYNA SANTOS RAMOS",
+          "nome": "Karyna Ramos",
           "partido": "—",
-          "votos": 1143
+          "votos": 1143,
+          "num": "30222",
+          "sq": "30002530076",
+          "foto": "fotos/30002530076.jpg"
         },
         {
-          "nome": "YURI ALESI DA SILVA ARAUJO",
+          "nome": "Dr Yuri Alesi",
           "partido": "—",
-          "votos": 862
+          "votos": 862,
+          "num": "30555",
+          "sq": "30002530074",
+          "foto": "fotos/30002530074.jpg"
         },
         {
-          "nome": "HELSON ROBERTO GOMES DE FREITAS",
+          "nome": "Helson Freitas",
           "partido": "—",
-          "votos": 1495
+          "votos": 1495,
+          "num": "30123",
+          "sq": "30002530077",
+          "foto": "fotos/30002530077.jpg"
         },
         {
-          "nome": "ADEMAR CLEMENTINO LEITE",
+          "nome": "Ten Cel Ademar",
           "partido": "—",
-          "votos": 567
+          "votos": 567,
+          "num": "30190",
+          "sq": "30002530080",
+          "foto": "fotos/30002530080.jpg"
         },
         {
-          "nome": "WINNIE KAREN DE FARIAS LIMA PIRES",
+          "nome": "Winnie Ataliba",
           "partido": "—",
-          "votos": 680
+          "votos": 680,
+          "num": "30200",
+          "sq": "30002530089",
+          "foto": "fotos/30002530089.jpg"
         },
         {
-          "nome": "DANIELA FORTUNATO BARBOSA DE LIMA",
+          "nome": "Daniela Fortunato",
           "partido": "—",
-          "votos": 62
+          "votos": 62,
+          "num": "30300",
+          "sq": "30002530082",
+          "foto": "fotos/30002530082.jpg"
         },
         {
-          "nome": "SATH FALCONY VAZ LEITE DOS SANTOS",
+          "nome": "Dr Sath",
           "partido": "—",
-          "votos": 586
+          "votos": 586,
+          "num": "30999",
+          "sq": "30002530078",
+          "foto": "fotos/30002530078.jpg"
         },
         {
-          "nome": "MARCELO DE OLIVEIRA DO NASCIMENTO",
+          "nome": "Marcelo Oliveira",
           "partido": "—",
-          "votos": 339
+          "votos": 339,
+          "num": "30000",
+          "sq": "30002530075",
+          "foto": "fotos/30002530075.jpg"
         },
         {
-          "nome": "VERA LUCIA DOS SANTOS AGUIAR",
+          "nome": "Vera da Farmácia",
           "partido": "—",
-          "votos": 1090
+          "votos": 1090,
+          "num": "30321",
+          "sq": "30002530086",
+          "foto": "fotos/30002530086.jpg"
         },
         {
-          "nome": "WALDEIR GARCIA RIBEIRO",
+          "nome": "Waldeir",
           "partido": "—",
-          "votos": 1695
+          "votos": 1695,
+          "num": "30111",
+          "sq": "30002530083",
+          "foto": "fotos/30002530083.jpg"
         },
         {
-          "nome": "DULCELINA LOPES MENDES LAUZID",
+          "nome": "Dulce do Jari",
           "partido": "—",
-          "votos": 77
+          "votos": 77,
+          "num": "30333",
+          "sq": "30002530085",
+          "foto": "fotos/30002530085.jpg"
         },
         {
-          "nome": "IRISMAR VILHENA PEREIRA",
+          "nome": "Irismar Vilhena",
           "partido": "—",
-          "votos": 91
+          "votos": 91,
+          "num": "30456",
+          "sq": "30002530079",
+          "foto": "fotos/30002530079.jpg"
         },
         {
-          "nome": "JOSE NATANAEL LIMA DOS ANJOS",
+          "nome": "Natanael dos Anjos",
           "partido": "—",
-          "votos": 101
+          "votos": 101,
+          "num": "30151",
+          "sq": "30002530084",
+          "foto": "fotos/30002530084.jpg"
         },
         {
-          "nome": "MARLUCE SILVA DA COSTA",
+          "nome": "Marluce Costa",
           "partido": "—",
-          "votos": 85
+          "votos": 85,
+          "num": "30500",
+          "sq": "30002530090",
+          "foto": "fotos/30002530090.jpg"
         },
         {
-          "nome": "ALAN DOS SANTOS COSTA",
+          "nome": "Alan Santos",
           "partido": "—",
-          "votos": 86
+          "votos": 86,
+          "num": "30192",
+          "sq": "30002530081",
+          "foto": "fotos/30002530081.jpg"
         },
         {
-          "nome": "JORIELSON BRITO NASCIMENTO",
+          "nome": "Jorielson",
           "partido": "—",
-          "votos": 2200
+          "votos": 2200,
+          "num": "22333",
+          "sq": "30002538143",
+          "foto": "fotos/30002538143.jpg"
         },
         {
-          "nome": "MARIA DE JESUS MENDES",
+          "nome": "Pastora Maria de Jesus",
           "partido": "—",
-          "votos": 460
+          "votos": 460,
+          "num": "22722",
+          "sq": "30002538134",
+          "foto": "fotos/30002538134.jpg"
         },
         {
-          "nome": "ALEX DE ALMEIDA PEREIRA",
+          "nome": "Alex",
           "partido": "—",
-          "votos": 4805
+          "votos": 4805,
+          "num": "22123",
+          "sq": "30002538135",
+          "foto": "fotos/30002538135.jpg"
         },
         {
-          "nome": "CELINA MACEDO PEREIRA",
+          "nome": "Índia Potira",
           "partido": "—",
-          "votos": 62
+          "votos": 62,
+          "num": "22190",
+          "sq": "30002554364",
+          "foto": "fotos/30002554364.jpg"
         },
         {
-          "nome": "WALCIMAR RIBEIRO FONSECA",
+          "nome": "Walcimar Fonseca",
           "partido": "—",
-          "votos": 1578
+          "votos": 1578,
+          "num": "22000",
+          "sq": "30002538149",
+          "foto": "fotos/30002538149.jpg"
         },
         {
-          "nome": "EDI DOS SANTOS SOUZA",
+          "nome": "Soedi",
           "partido": "—",
-          "votos": 289
+          "votos": 289,
+          "num": "22321",
+          "sq": "30002538150",
+          "foto": "fotos/30002538150.jpg"
         },
         {
-          "nome": "ANTONIO CIRILO FERNANDES BORGES",
+          "nome": "Cirilo Fernandes",
           "partido": "—",
-          "votos": 398
+          "votos": 398,
+          "num": "22580",
+          "sq": "30002538140",
+          "foto": "fotos/30002538140.jpg"
         },
         {
-          "nome": "CARLOS RODRIGO RAMOS EVANGELISTA CARDOSO",
+          "nome": "Carlos Evangelista",
           "partido": "—",
-          "votos": 827
+          "votos": 827,
+          "num": "22022",
+          "sq": "30002538142",
+          "foto": "fotos/30002538142.jpg"
         },
         {
-          "nome": "GIRLENE RODRIGUES BARROSO",
+          "nome": "Girlene Barroso",
           "partido": "—",
-          "votos": 82
+          "votos": 82,
+          "num": "22100",
+          "sq": "30002538092",
+          "foto": "fotos/30002538092.jpg"
         },
         {
-          "nome": "WANNA RAYRA SILVA DE SOUZA",
+          "nome": "Wanna Queiroga",
           "partido": "—",
-          "votos": 206
+          "votos": 206,
+          "num": "22789",
+          "sq": "30002538147",
+          "foto": "fotos/30002538147.jpg"
         },
         {
-          "nome": "ADOLPHO EUGENIO DE OLIVEIRA NERY FILHO",
+          "nome": "Adolfo Nery",
           "partido": "—",
-          "votos": 515
+          "votos": 515,
+          "num": "22999",
+          "sq": "30002538139",
+          "foto": "fotos/30002538139.jpg"
         },
         {
-          "nome": "PATRICK DARGAINS MEDRADO",
+          "nome": "Dr. Patrick Medrado",
           "partido": "—",
-          "votos": 278
+          "votos": 278,
+          "num": "22240",
+          "sq": "30002538138",
+          "foto": "fotos/30002538138.jpg"
         },
         {
-          "nome": "ACHILES EDUARDO PONTES CAMPOS",
+          "nome": "Dr Achiles",
           "partido": "—",
-          "votos": 2635
+          "votos": 2635,
+          "num": "22456",
+          "sq": "30002538091",
+          "foto": "fotos/30002538091.jpg"
         },
         {
-          "nome": "ANNE TÁVORA DE ARAÚJO",
+          "nome": "Anne Távora",
           "partido": "—",
-          "votos": 868
+          "votos": 868,
+          "num": "22111",
+          "sq": "30002538152",
+          "foto": "fotos/30002538152.jpg"
         },
         {
-          "nome": "JOSE REINALDO DOS SANTOS PORTILHO",
+          "nome": "Dr Reinaldo Portilho",
           "partido": "—",
-          "votos": 557
+          "votos": 557,
+          "num": "22666",
+          "sq": "30002538093",
+          "foto": "fotos/30002538093.jpg"
         },
         {
-          "nome": "ALDO MAURICIO NASCIMENTO DOS SANTOS",
+          "nome": "Aldo Maurício",
           "partido": "—",
-          "votos": 857
+          "votos": 857,
+          "num": "22777",
+          "sq": "30002538145",
+          "foto": "fotos/30002538145.jpg"
         },
         {
-          "nome": "EDUARDO HENRIQUE ANDRADE DE SIQUEIRA",
+          "nome": "Edu Siqueira",
           "partido": "—",
-          "votos": 2087
+          "votos": 2087,
+          "num": "22555",
+          "sq": "30002538137",
+          "foto": "fotos/30002538137.jpg"
         },
         {
-          "nome": "MADSON MILLOR LIMA RODRIGUES",
+          "nome": "Madson Millor",
           "partido": "—",
-          "votos": 1934
+          "votos": 1934,
+          "num": "22222",
+          "sq": "30002538090",
+          "foto": "fotos/30002538090.jpg"
         },
         {
-          "nome": "GIANCARLO DARLA PINON NERY",
+          "nome": "Gian do Nae",
           "partido": "—",
-          "votos": 2550
+          "votos": 2550,
+          "num": "22122",
+          "sq": "30002538136",
+          "foto": "fotos/30002538136.jpg"
         },
         {
-          "nome": "FRANCILENE LOBO MARTINS NASCIMENTO",
+          "nome": "Obreira Lene Lobo",
           "partido": "—",
-          "votos": 172
+          "votos": 172,
+          "num": "22101",
+          "sq": "30002538148",
+          "foto": "fotos/30002538148.jpg"
         },
         {
-          "nome": "JOSE ARANHA NETO",
+          "nome": "Aranha",
           "partido": "—",
-          "votos": 2398
+          "votos": 2398,
+          "num": "22800",
+          "sq": "30002538141",
+          "foto": "fotos/30002538141.jpg"
         },
         {
-          "nome": "ALEXANDRE VERCOSA DE SOUZA",
+          "nome": "Alexandre Verçosa",
           "partido": "—",
-          "votos": 2515
+          "votos": 2515,
+          "num": "22223",
+          "sq": "30002538144",
+          "foto": "fotos/30002538144.jpg"
         },
         {
-          "nome": "RONILDO DOS SANTOS NOBRE",
+          "nome": "Ronildo Nobre",
           "partido": "—",
-          "votos": 4534
+          "votos": 4534,
+          "num": "55222",
+          "sq": "30002532239",
+          "foto": "fotos/30002532239.jpg"
         },
         {
-          "nome": "CARLA DIANE QUEIROZ DA COSTA",
+          "nome": "Prof. Carla",
           "partido": "—",
-          "votos": 1023
+          "votos": 1023,
+          "num": "55111",
+          "sq": "30002532234",
+          "foto": "fotos/30002532234.jpg"
         },
         {
-          "nome": "SEBASTIAO FILHO DE OLIVEIRA POSSA",
+          "nome": "Sebastião Filho",
           "partido": "—",
-          "votos": 58
+          "votos": 58,
+          "num": "55888",
+          "sq": "30002532242",
+          "foto": "fotos/30002532242.jpg"
         },
         {
-          "nome": "MEZAQUE BAIA DE OLIVEIRA",
+          "nome": "Pr. Mezaque",
           "partido": "—",
-          "votos": 743
+          "votos": 743,
+          "num": "55321",
+          "sq": "30002532238",
+          "foto": "fotos/30002532238.jpg"
         },
         {
-          "nome": "FRANCO AURÉLIO BRITO DE SOUZA",
+          "nome": "Franco",
           "partido": "—",
-          "votos": 5566
+          "votos": 5566,
+          "num": "55555",
+          "sq": "30002531192",
+          "foto": "fotos/30002531192.jpg"
         },
         {
-          "nome": "ADRIANO PEREIRA ALMEIDA",
+          "nome": "Capitão Adriano",
           "partido": "—",
-          "votos": 441
+          "votos": 441,
+          "num": "55666",
+          "sq": "30002532244",
+          "foto": "fotos/30002532244.jpg"
         },
         {
-          "nome": "LILIANE ARAÚJO DE CARVALHO ALBUQUERQUE",
+          "nome": "Dr. Liliane Albuquerque",
           "partido": "—",
-          "votos": 5004
+          "votos": 5004,
+          "num": "55200",
+          "sq": "30002531188",
+          "foto": "fotos/30002531188.jpg"
         },
         {
-          "nome": "PAULO ROGÉRIO DA COSTA SERRÃO",
+          "nome": "Rogério Serrão",
           "partido": "—",
-          "votos": 3500
+          "votos": 3500,
+          "num": "55123",
+          "sq": "30002532240",
+          "foto": "fotos/30002532240.jpg"
         },
         {
-          "nome": "ARIENZO LIMA GOES",
+          "nome": "Ari Goes",
           "partido": "—",
-          "votos": 545
+          "votos": 545,
+          "num": "55000",
+          "sq": "30002531190",
+          "foto": "fotos/30002531190.jpg"
         },
         {
-          "nome": "ELAINE RIBEIRO TAVARES DA IGREJA",
+          "nome": "Elaine Igreja",
           "partido": "—",
-          "votos": 4478
+          "votos": 4478,
+          "num": "55699",
+          "sq": "30002532243",
+          "foto": "fotos/30002532243.jpg"
         },
         {
-          "nome": "RAFAEL PIMENTEL FLEXA",
+          "nome": "Rafael Pimentel",
           "partido": "—",
-          "votos": 2713
+          "votos": 2713,
+          "num": "55190",
+          "sq": "30002532235",
+          "foto": "fotos/30002532235.jpg"
         },
         {
-          "nome": "LUIZ FELIPE MORAES DOS SANTOS",
+          "nome": "Instrutor Santos",
           "partido": "—",
-          "votos": 121
+          "votos": 121,
+          "num": "55622",
+          "sq": "30002532245",
+          "foto": "fotos/30002532245.jpg"
         },
         {
-          "nome": "REGINALDO FERNANDES LOBATO",
+          "nome": "Careca Lobato",
           "partido": "—",
-          "votos": 94
+          "votos": 94,
+          "num": "55122",
+          "sq": "30002532241",
+          "foto": "fotos/30002532241.jpg"
         },
         {
-          "nome": "MARIA DO SOCORRO PEREIRA FONSECA",
+          "nome": "Socorro Marques",
           "partido": "—",
-          "votos": 2085
+          "votos": 2085,
+          "num": "55369",
+          "sq": "30002532236",
+          "foto": "fotos/30002532236.jpg"
         },
         {
-          "nome": "DEOLINDA LUZ DO NASCIMENTO",
+          "nome": "Deolinda Luz",
           "partido": "—",
-          "votos": 854
+          "votos": 854,
+          "num": "55455",
+          "sq": "30002531191",
+          "foto": "fotos/30002531191.jpg"
         },
         {
-          "nome": "JACQUELINE MAGALHÃES AMARAL",
+          "nome": "Jacqueline Amaral",
           "partido": "—",
-          "votos": 892
+          "votos": 892,
+          "num": "55800",
+          "sq": "30002532237",
+          "foto": "fotos/30002532237.jpg"
         },
         {
-          "nome": "LORRAN DAMASCENO BARRETO",
+          "nome": "Lorran Barreto",
           "partido": "—",
-          "votos": 5460
+          "votos": 5460,
+          "num": "55055",
+          "sq": "30002531189",
+          "foto": "fotos/30002531189.jpg"
         },
         {
-          "nome": "BRYAN MENDONÇA DE MORAIS",
+          "nome": "Bryan Mendonça",
           "partido": "—",
-          "votos": 111
+          "votos": 111,
+          "num": "55155",
+          "sq": "30002532246",
+          "foto": "fotos/30002532246.jpg"
         },
         {
-          "nome": "DARIANY SARAIVA GUEDES",
+          "nome": "Dary Guedes",
           "partido": "—",
-          "votos": 36
+          "votos": 36,
+          "num": "55789",
+          "sq": "30002531193",
+          "foto": "fotos/30002531193.jpg"
         },
         {
-          "nome": "ANTONIO LINDOLFO DE AGUIAR",
+          "nome": "Toinho Aguiar",
           "partido": "—",
-          "votos": 42
+          "votos": 42,
+          "num": "55100",
+          "sq": "30002531187",
+          "foto": "fotos/30002531187.jpg"
         },
         {
-          "nome": "JACK HOUAT HARB",
+          "nome": "Jack Jk",
           "partido": "—",
-          "votos": 13278
+          "votos": 13278,
+          "num": "12222",
+          "sq": "30002533720",
+          "foto": "fotos/30002533720.jpg"
         },
         {
-          "nome": "JOSE CLAUDIO DE SOUZA PELAES",
+          "nome": "Claudio do Povão",
           "partido": "—",
-          "votos": 109
+          "votos": 109,
+          "num": "12100",
+          "sq": "30002533728",
+          "foto": "fotos/30002533728.jpg"
         },
         {
-          "nome": "ANTONIO KLEBER DA LUZ DINIZ",
+          "nome": "Kleber Diniz",
           "partido": "—",
-          "votos": 139
+          "votos": 139,
+          "num": "12369",
+          "sq": "30002533726",
+          "foto": "fotos/30002533726.jpg"
         },
         {
-          "nome": "CRISTINA SANTOS DE OLIVEIRA",
+          "nome": "Cris da Abb",
           "partido": "—",
-          "votos": 205
+          "votos": 205,
+          "num": "12777",
+          "sq": "30002533723",
+          "foto": "fotos/30002533723.jpg"
         },
         {
-          "nome": "JIM DAVIS ROCHA DE ALMEIDA",
+          "nome": "Jim Davis",
           "partido": "—",
-          "votos": 110
+          "votos": 110,
+          "num": "12789",
+          "sq": "30002533717",
+          "foto": "fotos/30002533717.jpg"
         },
         {
-          "nome": "IZAMAR DE SENA CARDOSO",
+          "nome": "Pastora Izamar",
           "partido": "—",
-          "votos": 113
+          "votos": 113,
+          "num": "12377",
+          "sq": "30002533724",
+          "foto": "fotos/30002533724.jpg"
         },
         {
-          "nome": "JOÃO PEDRO BRITO XAVIER GÓES",
+          "nome": "João Pedro",
           "partido": "—",
-          "votos": 17559
+          "votos": 17559,
+          "num": "12123",
+          "sq": "30002533718",
+          "foto": "fotos/30002533718.jpg"
         },
         {
-          "nome": "CARLOS ANTONIO OLIVEIRA SANTOS",
+          "nome": "Pastor Oliveira",
           "partido": "—",
-          "votos": 6368
+          "votos": 6368,
+          "num": "12147",
+          "sq": "30002533727",
+          "foto": "fotos/30002533727.jpg"
         },
         {
-          "nome": "CLEICY LEÃO MIRANDA",
+          "nome": "Cleicy Leão",
           "partido": "—",
-          "votos": 103
+          "votos": 103,
+          "num": "12131",
+          "sq": "30002553947",
+          "foto": "fotos/30002553947.jpg"
         },
         {
-          "nome": "LEILA VIANA DO CARMO",
+          "nome": "Leila Viana",
           "partido": "—",
-          "votos": 156
+          "votos": 156,
+          "num": "12555",
+          "sq": "30002533725",
+          "foto": "fotos/30002533725.jpg"
         },
         {
-          "nome": "VALDILENE MONTEIRO DA COSTA DIAS",
+          "nome": "Val Dias",
           "partido": "—",
-          "votos": 244
+          "votos": 244,
+          "num": "12345",
+          "sq": "30002553948",
+          "foto": "fotos/30002553948.jpg"
         },
         {
-          "nome": "MARICLEY RIBEIRO DA SILVA",
+          "nome": "Maricley Ribeiro",
           "partido": "—",
-          "votos": 93
+          "votos": 93,
+          "num": "12678",
+          "sq": "30002533722",
+          "foto": "fotos/30002533722.jpg"
         },
         {
-          "nome": "ROSILEIA DOS SANTOS DE OLIVEIRA PELAES",
+          "nome": "Pastora Léia Pelaes",
           "partido": "—",
-          "votos": 6174
+          "votos": 6174,
+          "num": "12300",
+          "sq": "30002533719",
+          "foto": "fotos/30002533719.jpg"
         },
         {
-          "nome": "ALDILENE MATOS DE SOUZA",
+          "nome": "Aldilene Souza",
           "partido": "—",
-          "votos": 6896
+          "votos": 6896,
+          "num": "12456",
+          "sq": "30002533721",
+          "foto": "fotos/30002533721.jpg"
         },
         {
-          "nome": "JOSÉ ROBERTO AFONSO PANTOJA",
+          "nome": "Zé Roberto",
           "partido": "—",
-          "votos": 1300
+          "votos": 1300,
+          "num": "18147",
+          "sq": "30002533031",
+          "foto": "fotos/30002533031.jpg"
         },
         {
-          "nome": "JOSÉ RIBAMAR SOARES DA SILVA",
+          "nome": "Riba das Mesas",
           "partido": "—",
-          "votos": 21
+          "votos": 21,
+          "num": "18144",
+          "sq": "30002533030",
+          "foto": "fotos/30002533030.jpg"
         },
         {
-          "nome": "DAYSE MARQUES",
+          "nome": "Dayse Marques",
           "partido": "—",
           "votos": 5543,
+          "num": "18789",
+          "sq": "30002533018",
           "foto": "fotos/30002533018.jpg"
         },
         {
-          "nome": "ANDRELINA BARBOSA DA CUNHA",
+          "nome": "Marina Sá",
           "partido": "—",
-          "votos": 118
+          "votos": 118,
+          "num": "18111",
+          "sq": "30002533017",
+          "foto": "fotos/30002533017.jpg"
         },
         {
-          "nome": "MANOEL DO SOCORRO DOS SANTOS LOBATO",
+          "nome": "Lobato",
           "partido": "—",
-          "votos": 35
+          "votos": 35,
+          "num": "18139",
+          "sq": "30002533019",
+          "foto": "fotos/30002533019.jpg"
         },
         {
-          "nome": "FABRICIO BEVILACQUA FURLAN",
+          "nome": "Fabricio Furlan",
           "partido": "—",
-          "votos": 6999
+          "votos": 6999,
+          "num": "18000",
+          "sq": "30002533034",
+          "foto": "fotos/30002533034.jpg"
         },
         {
-          "nome": "SIMONE VIDAL DA SILVA",
+          "nome": "Simone Karipuna",
           "partido": "—",
-          "votos": 3003
+          "votos": 3003,
+          "num": "18888",
+          "sq": "30002533033",
+          "foto": "fotos/30002533033.jpg"
         },
         {
-          "nome": "VICTOR ANDRÉ DE FREITAS AMORAS",
+          "nome": "Dr. Victor Amoras",
           "partido": "—",
-          "votos": 9383
+          "votos": 9383,
+          "num": "18001",
+          "sq": "30002533021",
+          "foto": "fotos/30002533021.jpg"
         },
         {
-          "nome": "FRANCISCO DE ASSIS RODRIGUES DA SILVA",
+          "nome": "Chiquinho do Povo",
           "partido": "—",
-          "votos": 82
+          "votos": 82,
+          "num": "18777",
+          "sq": "30002533032",
+          "foto": "fotos/30002533032.jpg"
         },
         {
-          "nome": "MARIA LUCIDALVA MENEZES DA SILVA",
+          "nome": "Professora Dalva",
           "partido": "—",
-          "votos": 39
+          "votos": 39,
+          "num": "18222",
+          "sq": "30002533022",
+          "foto": "fotos/30002533022.jpg"
         },
         {
-          "nome": "HÉLIO DE SOUZA CASTRO PINTO",
+          "nome": "Helinho Castro",
           "partido": "—",
-          "votos": 3966
+          "votos": 3966,
+          "num": "18130",
+          "sq": "30002533026",
+          "foto": "fotos/30002533026.jpg"
         },
         {
-          "nome": "RICARDO MAGNO PALHETA DOS SANTOS",
+          "nome": "Ricardo Magno",
           "partido": "—",
-          "votos": 434
+          "votos": 434,
+          "num": "18122",
+          "sq": "30002533023",
+          "foto": "fotos/30002533023.jpg"
         },
         {
-          "nome": "ANNE CHRYSTIANE DA SILVA MARQUES",
+          "nome": "Anne Marques",
           "partido": "—",
-          "votos": 2692
+          "votos": 2692,
+          "num": "18180",
+          "sq": "30002533025",
+          "foto": "fotos/30002533025.jpg"
         },
         {
-          "nome": "JOELSON  COSTA DE ALENCAR",
+          "nome": "Joelson Alencar",
           "partido": "—",
-          "votos": 205
+          "votos": 205,
+          "num": "18123",
+          "sq": "30002533028",
+          "foto": "fotos/30002533028.jpg"
         },
         {
-          "nome": "FRANCISCO RAFAEL MACIEL SIMÕES",
+          "nome": "Rafael Masim",
           "partido": "—",
-          "votos": 2427
+          "votos": 2427,
+          "num": "18193",
+          "sq": "30002533027",
+          "foto": "fotos/30002533027.jpg"
         },
         {
-          "nome": "MARCO ANTÔNIO PELAES COSTA",
+          "nome": "Professor Marco Antonio",
           "partido": "—",
-          "votos": 1046
+          "votos": 1046,
+          "num": "18667",
+          "sq": "30002533024",
+          "foto": "fotos/30002533024.jpg"
         },
         {
-          "nome": "HARIFE NASCIMENTO VIEGAS",
+          "nome": "Harife Viegas",
           "partido": "—",
-          "votos": 585
+          "votos": 585,
+          "num": "18500",
+          "sq": "30002533029",
+          "foto": "fotos/30002533029.jpg"
         },
         {
-          "nome": "JULIANA QUEILA CARVALHO DOS SANTOS RAMOS",
+          "nome": "Juliana Carvalho",
           "partido": "—",
-          "votos": 143
+          "votos": 143,
+          "num": "18143",
+          "sq": "30002533020",
+          "foto": "fotos/30002533020.jpg"
         }
       ]
     }
@@ -1507,5 +2347,5 @@
       "pct": 100
     }
   ],
-  "atualizadoEm": "2026-10-06T18:58:36.450673+00:00"
+  "atualizadoEm": "2026-10-06T19:03:32.351296+00:00"
 }
