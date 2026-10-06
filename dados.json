@@ -10,32 +10,30 @@
         {
           "nome": "Clécio Luís",
           "partido": "UNIÃO",
-          "votos": 0
+          "votos": 165900
         },
         {
           "nome": "Dr. Furlan",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002530014.jpg"
+          "votos": 281595
         },
         {
           "nome": "Jairo Palheta",
           "partido": "PCO",
-          "votos": 0,
-          "foto": "fotos/30002551388.jpg"
+          "votos": 315
         },
         {
           "nome": "Carlos Cley",
           "partido": "PSTU",
-          "votos": 0,
-          "foto": "fotos/30002536313.jpg"
+          "votos": 561
         },
         {
-          "nome": "Marcos Reátegui",
+          "nome": "Delegado Marcos",
           "partido": "DC",
-          "votos": 0
+          "votos": 376
         }
-      ]
+      ],
+      "note": "Resultado final — 100% das seções apuradas (1.914 de 1.914), dados de 04/10/2026 21:04. Fonte: TSE via Canal Rural."
     },
     "senador": {
       "label": "Senador",
@@ -47,58 +45,50 @@
         {
           "nome": "Acácio Favacho",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549911.jpg"
+          "votos": 131321
         },
         {
           "nome": "Alliny Serrão",
           "partido": "UNIÃO",
-          "votos": 0,
-          "foto": "fotos/30002551576.jpg"
+          "votos": 85540
         },
         {
           "nome": "Capi",
           "partido": "PSB",
-          "votos": 0,
-          "foto": "fotos/30002550229.jpg"
+          "votos": 0
         },
         {
           "nome": "Helio Silva",
           "partido": "PCO",
-          "votos": 0,
-          "foto": "fotos/30002553708.jpg"
+          "votos": 0
         },
         {
           "nome": "Juíza Jô",
           "partido": "DC",
-          "votos": 0,
-          "foto": "fotos/30002551382.jpg"
+          "votos": 0
         },
         {
           "nome": "Lucas Barreto",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002530069.jpg"
+          "votos": 213948
         },
         {
           "nome": "Professor Uzian Pinto",
           "partido": "DC",
-          "votos": 0,
-          "foto": "fotos/30002551381.jpg"
+          "votos": 0
         },
         {
           "nome": "Randolfe",
           "partido": "PT",
-          "votos": 0,
-          "foto": "fotos/30002549909.jpg"
+          "votos": 163857
         },
         {
           "nome": "Rayssa Furlan",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002530071.jpg"
+          "votos": 264799
         }
-      ]
+      ],
+      "note": "Resultado final — 100% das seções apuradas. Votos informados apenas para os 5 mais votados (Capi, Helio Silva, Juíza Jô e Prof. Uzian Pinto sem votos disponíveis na fonte, aparecem com 0). Fonte: TSE via Canal Rural."
     },
     "dep_federal": {
       "label": "Deputado Federal",
@@ -110,544 +100,455 @@
         {
           "nome": "Carmina Rodrigues",
           "partido": "DC",
-          "votos": 0,
-          "foto": "fotos/30002552025.jpg"
+          "votos": 0
         },
         {
           "nome": "Eliada Santos",
           "partido": "DC",
-          "votos": 0,
-          "foto": "fotos/30002552028.jpg"
+          "votos": 0
         },
         {
           "nome": "Jeová Sá",
           "partido": "DC",
-          "votos": 0,
-          "foto": "fotos/30002552024.jpg"
+          "votos": 0
         },
         {
           "nome": "Pimpolho",
           "partido": "DC",
-          "votos": 0,
-          "foto": "fotos/30002552023.jpg"
+          "votos": 0
         },
         {
           "nome": "Robson Gualberto",
           "partido": "DC",
-          "votos": 0,
-          "foto": "fotos/30002552027.jpg"
+          "votos": 0
         },
         {
           "nome": "Shirley Amaral",
           "partido": "DC",
-          "votos": 0,
-          "foto": "fotos/30002552022.jpg"
+          "votos": 0
         },
         {
           "nome": "Siulan Bacelar",
           "partido": "DC",
-          "votos": 0,
-          "foto": "fotos/30002552021.jpg"
+          "votos": 0
         },
         {
           "nome": "Vico Negrão",
           "partido": "DC",
-          "votos": 0,
-          "foto": "fotos/30002552026.jpg"
+          "votos": 0
         },
         {
           "nome": "Wilguer Carvalho",
           "partido": "DC",
-          "votos": 0,
-          "foto": "fotos/30002552029.jpg"
+          "votos": 0
         },
         {
           "nome": "Alinne Madeireiro",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002554423.jpg"
+          "votos": 0
         },
         {
           "nome": "Daldeia",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549849.jpg"
+          "votos": 0
         },
         {
           "nome": "Elizaura da Anápolis",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549854.jpg"
+          "votos": 0
         },
         {
           "nome": "Francisca Favacho",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549848.jpg"
+          "votos": 0
         },
         {
           "nome": "Guaracy",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549853.jpg"
+          "votos": 0
         },
         {
           "nome": "Helder",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549850.jpg"
+          "votos": 0
         },
         {
           "nome": "Irmã Maria",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549846.jpg"
+          "votos": 0
         },
         {
           "nome": "Lucas da Gazeta",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549852.jpg"
+          "votos": 0
         },
         {
           "nome": "Maria Orlanda",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549847.jpg"
+          "votos": 0
         },
         {
           "nome": "Rômulo Monteiro",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549851.jpg"
+          "votos": 0
         },
         {
           "nome": "Dudão Costa",
           "partido": "PCDOB",
-          "votos": 0,
-          "foto": "fotos/30002533098.jpg"
+          "votos": 0
         },
         {
           "nome": "Professora Marcivânia",
           "partido": "PCDOB",
-          "votos": 0,
-          "foto": "fotos/30002533096.jpg"
+          "votos": 17913
         },
         {
           "nome": "Professora Vivian",
           "partido": "PCDOB",
-          "votos": 0,
-          "foto": "fotos/30002533102.jpg"
+          "votos": 0
         },
         {
           "nome": "Elielton Silva",
           "partido": "PCO",
-          "votos": 0,
-          "foto": "fotos/30002553599.jpg"
+          "votos": 0
         },
         {
           "nome": "Vasti Barbosa",
           "partido": "PCO",
-          "votos": 0,
-          "foto": "fotos/30002553598.jpg"
+          "votos": 0
         },
         {
           "nome": "Dorinaldo Malafaia",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002532842.jpg"
+          "votos": 19382
         },
         {
           "nome": "Isabel Nogueira",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002532840.jpg"
+          "votos": 0
         },
         {
           "nome": "Jesus Pontes",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002532844.jpg"
+          "votos": 0
         },
         {
           "nome": "Josenildo",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002532841.jpg"
+          "votos": 26453
         },
         {
           "nome": "Kleber Karipuna",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002532847.jpg"
+          "votos": 0
         },
         {
           "nome": "Lau Causa Animal",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002532848.jpg"
+          "votos": 0
         },
         {
           "nome": "Pastor Solangelo",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002532843.jpg"
+          "votos": 0
         },
         {
           "nome": "Professora Katia Paulino",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002532846.jpg"
+          "votos": 0
         },
         {
           "nome": "Welton Barreiros",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002532845.jpg"
+          "votos": 0
         },
         {
           "nome": "Camilo Capiberibe",
           "partido": "PT",
-          "votos": 0,
-          "foto": "fotos/30002533104.jpg"
+          "votos": 0
         },
         {
           "nome": "Paulo Lemos",
           "partido": "PT",
-          "votos": 0,
-          "foto": "fotos/30002533100.jpg"
+          "votos": 0
         },
         {
           "nome": "Professora Ivanéia",
           "partido": "PT",
-          "votos": 0,
-          "foto": "fotos/30002533097.jpg"
+          "votos": 0
         },
         {
           "nome": "Bia da Zilma",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538086.jpg"
+          "votos": 0
         },
         {
           "nome": "Caetano Bentes",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538085.jpg"
+          "votos": 0
         },
         {
           "nome": "Conselheira Huelma Medeiros",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538083.jpg"
+          "votos": 0
         },
         {
           "nome": "Coronel Palmira",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538087.jpg"
+          "votos": 0
         },
         {
           "nome": "Elias Real do Menino Jesus",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538089.jpg"
+          "votos": 0
         },
         {
           "nome": "Gesiel Oliveira",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538081.jpg"
+          "votos": 0
         },
         {
           "nome": "Jorge Souza",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538082.jpg"
+          "votos": 0
         },
         {
           "nome": "Tenente Coronel Marques",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538088.jpg"
+          "votos": 0
         },
         {
           "nome": "Vinicius Gurgel",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538084.jpg"
+          "votos": 19625
         },
         {
           "nome": "Bruno Borges",
           "partido": "MISSÃO",
-          "votos": 0,
-          "foto": "fotos/30002549913.jpg"
+          "votos": 0
         },
         {
           "nome": "Israel dos Santos",
           "partido": "MISSÃO",
-          "votos": 0,
-          "foto": "fotos/30002549914.jpg"
+          "votos": 0
         },
         {
           "nome": "Luy Ricardo",
           "partido": "MISSÃO",
-          "votos": 0,
-          "foto": "fotos/30002549917.jpg"
+          "votos": 0
         },
         {
           "nome": "Marcia Nery",
           "partido": "MISSÃO",
-          "votos": 0,
-          "foto": "fotos/30002549915.jpg"
+          "votos": 0
         },
         {
           "nome": "Meire Salviano",
           "partido": "MISSÃO",
-          "votos": 0,
-          "foto": "fotos/30002549916.jpg"
+          "votos": 0
         },
         {
           "nome": "Beth Garcia",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530016.jpg"
+          "votos": 0
         },
         {
           "nome": "Edileuza Rodrigues",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530017.jpg"
+          "votos": 0
         },
         {
           "nome": "George",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530021.jpg"
+          "votos": 0
         },
         {
           "nome": "Iranei Lopes",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530019.jpg"
+          "votos": 0
         },
         {
           "nome": "Luisão",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530018.jpg"
+          "votos": 0
         },
         {
           "nome": "Professora Rilany Silva",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530020.jpg"
+          "votos": 0
         },
         {
           "nome": "Augusto Aguiar",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532253.jpg"
+          "votos": 0
         },
         {
           "nome": "Dilson Borges",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532247.jpg"
+          "votos": 0
         },
         {
           "nome": "Dr. Brasil",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532249.jpg"
+          "votos": 0
         },
         {
           "nome": "Leda Sadala",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532250.jpg"
+          "votos": 0
         },
         {
           "nome": "Luiz Alex",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532248.jpg"
+          "votos": 0
         },
         {
           "nome": "Nanda",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532254.jpg"
+          "votos": 0
         },
         {
           "nome": "Pr. Didio",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532251.jpg"
+          "votos": 0
         },
         {
           "nome": "Relson Cardoso",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532255.jpg"
+          "votos": 0
         },
         {
           "nome": "Tia Lu",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532252.jpg"
+          "votos": 0
         },
         {
           "nome": "Andrew Costa",
           "partido": "PSOL",
-          "votos": 0,
-          "foto": "fotos/30002532428.jpg"
+          "votos": 0
         },
         {
           "nome": "Prof. Gil Barbosa",
           "partido": "PSOL",
-          "votos": 0,
-          "foto": "fotos/30002532426.jpg"
+          "votos": 0
         },
         {
           "nome": "Ramona Matarazzo",
           "partido": "PSOL",
-          "votos": 0,
-          "foto": "fotos/30002532427.jpg"
+          "votos": 0
         },
         {
           "nome": "Capitão N Miranda",
           "partido": "PV",
-          "votos": 0,
-          "foto": "fotos/30002533099.jpg"
+          "votos": 0
         },
         {
           "nome": "Ivone Chagas",
           "partido": "PV",
-          "votos": 0,
-          "foto": "fotos/30002533101.jpg"
+          "votos": 0
         },
         {
           "nome": "Lucas Abrahao",
           "partido": "PV",
-          "votos": 0,
-          "foto": "fotos/30002533103.jpg"
+          "votos": 0
         },
         {
           "nome": "Alexandre Azevedo",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002530510.jpg"
+          "votos": 0
         },
         {
           "nome": "Dr. Vinicius Reis",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002530513.jpg"
+          "votos": 0
         },
         {
           "nome": "Dra. Erica",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002530514.jpg"
+          "votos": 15358
         },
         {
           "nome": "Joel Cavalcante",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002530511.jpg"
+          "votos": 0
         },
         {
           "nome": "Kamille Almeida",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002530509.jpg"
+          "votos": 0
         },
         {
           "nome": "Kassyo Ramos",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002530515.jpg"
+          "votos": 0
         },
         {
           "nome": "Mayla Carvalho",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002530512.jpg"
+          "votos": 0
         },
         {
           "nome": "Professora Goreth",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002530508.jpg"
+          "votos": 0
         },
         {
           "nome": "Sandra Lacerda",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002530516.jpg"
+          "votos": 0
         },
         {
           "nome": "Andre Abdon",
           "partido": "PP",
-          "votos": 0,
-          "foto": "fotos/30002536307.jpg"
+          "votos": 0
         },
         {
           "nome": "Bena Rocha",
           "partido": "PP",
-          "votos": 0,
-          "foto": "fotos/30002536308.jpg"
+          "votos": 0
         },
         {
           "nome": "Cris Nunes",
           "partido": "REDE",
-          "votos": 0,
-          "foto": "fotos/30002532429.jpg"
+          "votos": 0
         },
         {
           "nome": "Jawaruwa Wajãpi",
           "partido": "REDE",
-          "votos": 0,
-          "foto": "fotos/30002532425.jpg"
+          "votos": 0
         },
         {
           "nome": "Aline Gurgel",
           "partido": "UNIÃO",
-          "votos": 0,
-          "foto": "fotos/30002536304.jpg"
+          "votos": 25501
         },
         {
           "nome": "Cristiano Furlan",
           "partido": "UNIÃO",
-          "votos": 0,
-          "foto": "fotos/30002536309.jpg"
+          "votos": 0
         },
         {
           "nome": "Fátima Pelaes",
           "partido": "UNIÃO",
-          "votos": 0,
-          "foto": "fotos/30002536302.jpg"
+          "votos": 0
         },
         {
           "nome": "Felipe Show",
           "partido": "UNIÃO",
-          "votos": 0,
-          "foto": "fotos/30002536306.jpg"
+          "votos": 34587
         },
         {
           "nome": "Luiz Carlos",
           "partido": "UNIÃO",
-          "votos": 0,
-          "foto": "fotos/30002536303.jpg"
+          "votos": 0
         },
         {
           "nome": "Marcio Serrão",
           "partido": "UNIÃO",
-          "votos": 0,
-          "foto": "fotos/30002536305.jpg"
+          "votos": 20796
         }
-      ]
+      ],
+      "note": "ATENÇÃO: só estão preenchidos os votos dos 8 ELEITOS (fonte: CNN Brasil, 100% apurado). Os demais candidatos aparecem com 0 por falta de dado — por isso o coeficiente eleitoral e os percentuais abaixo NÃO são reais. O ranking dos eleitos está correto."
     },
     "dep_estadual": {
       "label": "Deputado Estadual",
@@ -659,236 +560,197 @@
         {
           "nome": "Adolfo Nery",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538139.jpg"
+          "votos": 0
         },
         {
           "nome": "Alan Figueiredo",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532021.jpg"
+          "votos": 0
         },
         {
           "nome": "Alan Santos",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530081.jpg"
+          "votos": 0
         },
         {
           "nome": "Alcinete Santos",
           "partido": "FE BRASIL",
-          "votos": 0,
-          "foto": "fotos/30002533111.jpg"
+          "votos": 0
         },
         {
           "nome": "Aldilene Souza",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002533721.jpg"
+          "votos": 6896
         },
         {
           "nome": "Aldo Maurício",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538145.jpg"
+          "votos": 0
         },
         {
           "nome": "Alesson Cavalvante",
           "partido": "FE BRASIL",
-          "votos": 0,
-          "foto": "fotos/30002533110.jpg"
+          "votos": 0
         },
         {
           "nome": "Alex",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538135.jpg"
+          "votos": 4805
         },
         {
           "nome": "Alexandre Verçosa",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538144.jpg"
+          "votos": 0
         },
         {
           "nome": "Anderson Almeida",
           "partido": "FE UNIÃO PROG",
-          "votos": 0,
-          "foto": "fotos/30002539125.jpg"
+          "votos": 0
         },
         {
           "nome": "Anne Marques",
           "partido": "FE PSOL REDE",
-          "votos": 0,
-          "foto": "fotos/30002533025.jpg"
+          "votos": 0
         },
         {
           "nome": "Anne Távora",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538152.jpg"
+          "votos": 0
         },
         {
           "nome": "Aparecida Salomão",
           "partido": "FE UNIÃO PROG",
-          "votos": 0,
-          "foto": "fotos/30002539110.jpg"
+          "votos": 6202
         },
         {
           "nome": "Apóstola Berenice Lazamé",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549870.jpg"
+          "votos": 0
         },
         {
           "nome": "Aranha",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538141.jpg"
+          "votos": 0
         },
         {
           "nome": "Aranthu",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549868.jpg"
+          "votos": 0
         },
         {
           "nome": "Ari Goes",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002531190.jpg"
+          "votos": 0
         },
         {
           "nome": "Augusto Júnior",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530087.jpg"
+          "votos": 0
         },
         {
           "nome": "Balieiro",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549871.jpg"
+          "votos": 0
         },
         {
           "nome": "Bené do Plutão",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549886.jpg"
+          "votos": 0
         },
         {
           "nome": "Beth Pelaes",
           "partido": "FE UNIÃO PROG",
-          "votos": 0,
-          "foto": "fotos/30002539117.jpg"
+          "votos": 0
         },
         {
           "nome": "Bia Pombo",
           "partido": "FE UNIÃO PROG",
-          "votos": 0,
-          "foto": "fotos/30002539120.jpg"
+          "votos": 9771
         },
         {
           "nome": "Bryan Mendonça",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532246.jpg"
+          "votos": 0
         },
         {
           "nome": "Capitão Adriano",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532244.jpg"
+          "votos": 0
         },
         {
           "nome": "Careca da Talentus",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549876.jpg"
+          "votos": 0
         },
         {
           "nome": "Careca Lobato",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532241.jpg"
+          "votos": 0
         },
         {
           "nome": "Carlos Carmezim",
           "partido": "FE BRASIL",
-          "votos": 0,
-          "foto": "fotos/30002533121.jpg"
+          "votos": 0
         },
         {
           "nome": "Carlos Evangelista",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538142.jpg"
+          "votos": 0
         },
         {
           "nome": "Carlos Murilo",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532017.jpg"
+          "votos": 0
         },
         {
           "nome": "Carol Monteiro",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549863.jpg"
+          "votos": 0
         },
         {
           "nome": "Celisa Melo",
           "partido": "FE BRASIL",
-          "votos": 0,
-          "foto": "fotos/30002533109.jpg"
+          "votos": 0
         },
         {
           "nome": "Cesar Farias",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532019.jpg"
+          "votos": 0
         },
         {
           "nome": "Chiquinho do Povo",
           "partido": "FE PSOL REDE",
-          "votos": 0,
-          "foto": "fotos/30002533032.jpg"
+          "votos": 0
         },
         {
           "nome": "Cirilo Fernandes",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538140.jpg"
+          "votos": 0
         },
         {
           "nome": "Claudinha",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532035.jpg"
+          "votos": 0
         },
         {
           "nome": "Claudio Costa",
           "partido": "PCO",
-          "votos": 0,
-          "foto": "fotos/30002553597.jpg"
+          "votos": 0
         },
         {
           "nome": "Claudio do Povão",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002533728.jpg"
+          "votos": 0
         },
         {
           "nome": "Cleicy Leão",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002553947.jpg"
+          "votos": 0
         },
         {
           "nome": "Cleuma Duarte",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549867.jpg"
+          "votos": 0
         },
         {
           "nome": "Conselheira Elizete",
@@ -898,782 +760,652 @@
         {
           "nome": "Coronel André Dias",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549891.jpg"
+          "votos": 0
         },
         {
           "nome": "Coronel Flexa",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549896.jpg"
+          "votos": 8098
         },
         {
           "nome": "Costa Filho",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532016.jpg"
+          "votos": 0
         },
         {
           "nome": "Cris da ABB",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002533723.jpg"
+          "votos": 0
         },
         {
           "nome": "Cristina Almeida",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532023.jpg"
+          "votos": 0
         },
         {
           "nome": "Daimini",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538146.jpg"
+          "votos": 0
         },
         {
           "nome": "Daniela Fortunato",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530082.jpg"
+          "votos": 0
         },
         {
           "nome": "Dary Guedes",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002531193.jpg"
+          "votos": 0
         },
         {
           "nome": "Dayse Marques",
           "partido": "FE PSOL REDE",
-          "votos": 0,
-          "foto": "fotos/30002533018.jpg"
+          "votos": 0
         },
         {
           "nome": "Débora Martins",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549890.jpg"
+          "votos": 0
         },
         {
           "nome": "Deolinda Luz",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002531191.jpg"
+          "votos": 0
         },
         {
           "nome": "Diogo Senior",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549865.jpg"
+          "votos": 10050
         },
         {
           "nome": "Divino Rocha",
           "partido": "FE UNIÃO PROG",
-          "votos": 0,
-          "foto": "fotos/30002539116.jpg"
+          "votos": 0
         },
         {
           "nome": "Dr Achiles",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538091.jpg"
+          "votos": 0
         },
         {
           "nome": "Dr. Angelo",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532027.jpg"
+          "votos": 0
         },
         {
           "nome": "Dra Vânia Fontoura",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532031.jpg"
+          "votos": 0
         },
         {
           "nome": "Dr. Hugo",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549897.jpg"
+          "votos": 0
         },
         {
           "nome": "Dr. Liliane Albuquerque",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002531188.jpg"
+          "votos": 0
         },
         {
           "nome": "Dr Marcos Paulo",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549898.jpg"
+          "votos": 0
         },
         {
           "nome": "Dr. Negrão",
           "partido": "FE UNIÃO PROG",
-          "votos": 0,
-          "foto": "fotos/30002539111.jpg"
+          "votos": 0
         },
         {
           "nome": "Dr. Patrick Medrado",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538138.jpg"
+          "votos": 0
         },
         {
           "nome": "Dr Reinaldo Portilho",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538093.jpg"
+          "votos": 0
         },
         {
           "nome": "Dr Renan Rosas",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549887.jpg"
+          "votos": 0
         },
         {
           "nome": "Dr. Sandro Carvalho",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532032.jpg"
+          "votos": 0
         },
         {
           "nome": "Dr Sath",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530078.jpg"
+          "votos": 0
         },
         {
           "nome": "Dr. Victor Amoras",
           "partido": "FE PSOL REDE",
-          "votos": 0,
-          "foto": "fotos/30002533021.jpg"
+          "votos": 9383
         },
         {
           "nome": "Dr Yuri Alesi",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530074.jpg"
+          "votos": 0
         },
         {
           "nome": "Dudu Barbosa",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549892.jpg"
+          "votos": 0
         },
         {
           "nome": "Dudu Tavares",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549878.jpg"
+          "votos": 0
         },
         {
           "nome": "Dulce do Jari",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530085.jpg"
+          "votos": 0
         },
         {
           "nome": "Edna Auzier",
           "partido": "FE BRASIL",
-          "votos": 0,
-          "foto": "fotos/30002533108.jpg"
+          "votos": 0
         },
         {
           "nome": "Edu Siqueira",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538137.jpg"
+          "votos": 0
         },
         {
           "nome": "Elaine Igreja",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532243.jpg"
+          "votos": 0
         },
         {
           "nome": "Elenice",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532040.jpg"
+          "votos": 0
         },
         {
           "nome": "Eliana Brandão",
           "partido": "PCO",
-          "votos": 0,
-          "foto": "fotos/30002553596.jpg"
+          "votos": 0
         },
         {
           "nome": "Elindomar Silva",
           "partido": "FE BRASIL",
-          "votos": 0,
-          "foto": "fotos/30002533114.jpg"
+          "votos": 0
         },
         {
           "nome": "Engenheiro Angelo",
           "partido": "FE UNIÃO PROG",
-          "votos": 0,
-          "foto": "fotos/30002539115.jpg"
+          "votos": 0
         },
         {
           "nome": "Ennio Cavalcante",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549874.jpg"
+          "votos": 0
         },
         {
           "nome": "Estefane Raposa",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549881.jpg"
+          "votos": 0
         },
         {
           "nome": "Fabricio Furlan",
           "partido": "FE PSOL REDE",
-          "votos": 0,
-          "foto": "fotos/30002533034.jpg"
+          "votos": 6999
         },
         {
           "nome": "Franco",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002531192.jpg"
+          "votos": 5566
         },
         {
           "nome": "Fulêra",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549866.jpg"
+          "votos": 0
         },
         {
           "nome": "Gian do Nae",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538136.jpg"
+          "votos": 0
         },
         {
           "nome": "Girlene Barroso",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538092.jpg"
+          "votos": 0
         },
         {
           "nome": "Harife Viegas",
           "partido": "FE PSOL REDE",
-          "votos": 0,
-          "foto": "fotos/30002533029.jpg"
+          "votos": 0
         },
         {
           "nome": "Helinho Castro",
           "partido": "FE PSOL REDE",
-          "votos": 0,
-          "foto": "fotos/30002533026.jpg"
+          "votos": 0
         },
         {
           "nome": "Helô",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549869.jpg"
+          "votos": 0
         },
         {
           "nome": "Helson Freitas",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530077.jpg"
+          "votos": 0
         },
         {
           "nome": "Herison Tupan",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532024.jpg"
+          "votos": 0
         },
         {
           "nome": "Hildegard Gurgel",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549884.jpg"
+          "votos": 12357
         },
         {
           "nome": "Instrutor Santos",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532245.jpg"
+          "votos": 0
         },
         {
           "nome": "Irismar Vilhena",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530079.jpg"
+          "votos": 0
         },
         {
           "nome": "Israel Santos",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532018.jpg"
+          "votos": 0
         },
         {
           "nome": "Jack JK",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002533720.jpg"
+          "votos": 13278
         },
         {
           "nome": "Jacqueline Amaral",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532237.jpg"
+          "votos": 0
         },
         {
           "nome": "Jaime Perez",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549877.jpg"
+          "votos": 8222
         },
         {
           "nome": "Jardel Eliezer",
           "partido": "FE BRASIL",
-          "votos": 0,
-          "foto": "fotos/30002533106.jpg"
+          "votos": 0
         },
         {
           "nome": "Jim Davis",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002533717.jpg"
+          "votos": 0
         },
         {
           "nome": "João Mendonça",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532034.jpg"
+          "votos": 8736
         },
         {
           "nome": "João Pedro",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002533718.jpg"
+          "votos": 17559
         },
         {
           "nome": "Joelson Alencar",
           "partido": "FE PSOL REDE",
-          "votos": 0,
-          "foto": "fotos/30002533028.jpg"
+          "votos": 0
         },
         {
           "nome": "Jó Pereira",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002553615.jpg"
+          "votos": 0
         },
         {
           "nome": "Jorge Amanajás",
           "partido": "FE UNIÃO PROG",
-          "votos": 0,
-          "foto": "fotos/30002539122.jpg"
+          "votos": 8078
         },
         {
           "nome": "Jorginho Maciel",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532020.jpg"
+          "votos": 0
         },
         {
           "nome": "Jorielson",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538143.jpg"
+          "votos": 0
         },
         {
-          "nome": "Jory Oeiras",
+          "nome": "Teka do Jory",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549885.jpg"
+          "votos": 0
         },
         {
           "nome": "Joselyo Mais Saúde",
           "partido": "FE UNIÃO PROG",
-          "votos": 0,
-          "foto": "fotos/30002539109.jpg"
+          "votos": 7301
         },
         {
           "nome": "Jucelino Fernandes",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532029.jpg"
+          "votos": 0
         },
         {
           "nome": "Juliana Carvalho",
           "partido": "FE PSOL REDE",
-          "votos": 0,
-          "foto": "fotos/30002533020.jpg"
+          "votos": 0
         },
         {
           "nome": "Julia Soares",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532028.jpg"
+          "votos": 0
         },
         {
           "nome": "Junior Favacho",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549864.jpg"
+          "votos": 8005
         },
         {
           "nome": "Karla Samila",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549879.jpg"
+          "votos": 0
         },
         {
           "nome": "Karyna Ramos",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530076.jpg"
+          "votos": 0
         },
         {
           "nome": "Kinovak",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549880.jpg"
+          "votos": 9978
         },
         {
           "nome": "Kleber Diniz",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002533726.jpg"
+          "votos": 0
         },
         {
           "nome": "Laene Dantas",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532030.jpg"
+          "votos": 0
         },
         {
           "nome": "Leila Viana",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002533725.jpg"
+          "votos": 0
         },
         {
           "nome": "Liliane Abreu",
           "partido": "FE BRASIL",
-          "votos": 0,
-          "foto": "fotos/30002533113.jpg"
+          "votos": 0
         },
         {
           "nome": "Lobato",
           "partido": "FE PSOL REDE",
-          "votos": 0,
-          "foto": "fotos/30002533019.jpg"
+          "votos": 0
         },
         {
           "nome": "Lorran Barreto",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002531189.jpg"
+          "votos": 5460
         },
         {
           "nome": "Lucélia Quaresma",
           "partido": "FE UNIÃO PROG",
-          "votos": 0,
-          "foto": "fotos/30002539118.jpg"
+          "votos": 0
         },
         {
           "nome": "Madson Millor",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538090.jpg"
+          "votos": 0
         },
         {
           "nome": "Manoel Araujo",
           "partido": "FE BRASIL",
-          "votos": 0,
-          "foto": "fotos/30002533117.jpg"
+          "votos": 0
         },
         {
           "nome": "Marcelo Oliveira",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530075.jpg"
+          "votos": 0
         },
         {
           "nome": "Maricley Ribeiro",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002533722.jpg"
+          "votos": 0
         },
         {
           "nome": "Marina Sá",
           "partido": "FE PSOL REDE",
-          "votos": 0,
-          "foto": "fotos/30002533017.jpg"
+          "votos": 0
         },
         {
           "nome": "Mario Bianchi",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532036.jpg"
+          "votos": 0
         },
         {
           "nome": "Marluce Costa",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530090.jpg"
+          "votos": 0
         },
         {
           "nome": "Max da AABB",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549895.jpg"
+          "votos": 0
         },
         {
           "nome": "Mercúrio",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549873.jpg"
+          "votos": 0
         },
         {
           "nome": "Nanda Cabral",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532022.jpg"
+          "votos": 0
         },
         {
           "nome": "Natanael dos Anjos",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530084.jpg"
+          "votos": 0
         },
         {
           "nome": "Nete Matias",
           "partido": "FE UNIÃO PROG",
-          "votos": 0,
-          "foto": "fotos/30002539112.jpg"
+          "votos": 0
         },
         {
           "nome": "Obreira Lene Lobo",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538148.jpg"
+          "votos": 0
         },
         {
           "nome": "Odilson Nunes",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549883.jpg"
+          "votos": 0
         },
         {
           "nome": "Ofirney Sadala",
           "partido": "FE UNIÃO PROG",
-          "votos": 0,
-          "foto": "fotos/30002539121.jpg"
+          "votos": 0
         },
         {
           "nome": "Pastora Izamar",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002533724.jpg"
+          "votos": 0
         },
         {
           "nome": "Pastora Léia Pelaes",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002533719.jpg"
+          "votos": 0
         },
         {
           "nome": "Pastora Maria de Jesus",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538134.jpg"
+          "votos": 0
         },
         {
           "nome": "Pastor Oliveira",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002533727.jpg"
+          "votos": 0
         },
         {
           "nome": "Paulinho Ramos",
           "partido": "FE UNIÃO PROG",
-          "votos": 0,
-          "foto": "fotos/30002539113.jpg"
+          "votos": 0
         },
         {
           "nome": "Pr. Mezaque",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532238.jpg"
+          "votos": 0
         },
         {
           "nome": "Prof. Bené Bingota",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532033.jpg"
+          "votos": 0
         },
         {
           "nome": "Prof. Carla",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532234.jpg"
+          "votos": 0
         },
         {
           "nome": "Professora Dalva",
           "partido": "FE PSOL REDE",
-          "votos": 0,
-          "foto": "fotos/30002533022.jpg"
+          "votos": 0
         },
         {
           "nome": "Professora Sara",
           "partido": "FE BRASIL",
-          "votos": 0,
-          "foto": "fotos/30002533107.jpg"
+          "votos": 0
         },
         {
           "nome": "Professor Marco Antonio",
           "partido": "FE PSOL REDE",
-          "votos": 0,
-          "foto": "fotos/30002533024.jpg"
+          "votos": 0
         },
         {
           "nome": "Professor Marcos",
           "partido": "FE BRASIL",
-          "votos": 0,
-          "foto": "fotos/30002533115.jpg"
+          "votos": 0
         },
         {
           "nome": "Professor Morpheu",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549882.jpg"
+          "votos": 0
         },
         {
           "nome": "Professor Raudison Sena",
           "partido": "FE BRASIL",
-          "votos": 0,
-          "foto": "fotos/30002533120.jpg"
+          "votos": 0
         },
         {
           "nome": "Prof. Ivanildo Luz",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532037.jpg"
+          "votos": 0
         },
         {
           "nome": "Prof. Rogério Lima",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532026.jpg"
+          "votos": 0
         },
         {
           "nome": "Rafael Masim",
           "partido": "FE PSOL REDE",
-          "votos": 0,
-          "foto": "fotos/30002533027.jpg"
+          "votos": 0
         },
         {
           "nome": "Rafael Pimentel",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532235.jpg"
+          "votos": 0
         },
         {
           "nome": "Rayfran Beirão",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549889.jpg"
+          "votos": 0
         },
         {
           "nome": "Rayra Araújo",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549893.jpg"
+          "votos": 0
         },
         {
           "nome": "Reginaldo Faraó",
           "partido": "FE UNIÃO PROG",
-          "votos": 0,
-          "foto": "fotos/30002539108.jpg"
+          "votos": 0
         },
         {
           "nome": "Riba das Mesas",
           "partido": "FE PSOL REDE",
-          "votos": 0,
-          "foto": "fotos/30002533030.jpg"
+          "votos": 0
         },
         {
           "nome": "Ricardo Magno",
           "partido": "FE PSOL REDE",
-          "votos": 0,
-          "foto": "fotos/30002533023.jpg"
+          "votos": 0
         },
         {
           "nome": "R Nelson",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532038.jpg"
+          "votos": 10286
         },
         {
           "nome": "Roberto Góes",
           "partido": "FE UNIÃO PROG",
-          "votos": 0,
-          "foto": "fotos/30002539124.jpg"
+          "votos": 7990
         },
         {
           "nome": "Rodolfo Vale",
           "partido": "FE UNIÃO PROG",
-          "votos": 0,
-          "foto": "fotos/30002539119.jpg"
+          "votos": 15863
         },
         {
           "nome": "Rogério Serrão",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532240.jpg"
+          "votos": 0
         },
         {
           "nome": "Ronildo Nobre",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532239.jpg"
+          "votos": 0
         },
         {
           "nome": "Roseli Matos",
           "partido": "FE UNIÃO PROG",
-          "votos": 0,
-          "foto": "fotos/30002539114.jpg"
+          "votos": 0
         },
         {
           "nome": "Salmon Santana",
           "partido": "MDB",
-          "votos": 0,
-          "foto": "fotos/30002549872.jpg"
+          "votos": 0
         },
         {
           "nome": "Sandra Alcantara",
           "partido": "PODE",
-          "votos": 0,
-          "foto": "fotos/30002532025.jpg"
+          "votos": 0
         },
         {
           "nome": "Sargento Geovana",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549875.jpg"
+          "votos": 0
         },
         {
           "nome": "Sargento Gracinete",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549888.jpg"
+          "votos": 0
         },
         {
           "nome": "Sebastião Leitão",
           "partido": "FE BRASIL",
-          "votos": 0,
-          "foto": "fotos/30002533119.jpg"
+          "votos": 0
         },
         {
           "nome": "Sebastião Vampiro",
@@ -1683,185 +1415,167 @@
         {
           "nome": "Selma de Paula",
           "partido": "FE UNIÃO PROG",
-          "votos": 0,
-          "foto": "fotos/30002539123.jpg"
+          "votos": 0
         },
         {
           "nome": "Silvia Artesã",
           "partido": "FE BRASIL",
-          "votos": 0,
-          "foto": "fotos/30002533105.jpg"
+          "votos": 0
         },
         {
           "nome": "Simone Karipuna",
           "partido": "FE PSOL REDE",
-          "votos": 0,
-          "foto": "fotos/30002533033.jpg"
+          "votos": 0
         },
         {
           "nome": "Socorro Marques",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002532236.jpg"
+          "votos": 0
         },
         {
           "nome": "Socorro Nogueira",
           "partido": "FE BRASIL",
-          "votos": 0,
-          "foto": "fotos/30002533112.jpg"
+          "votos": 9253
         },
         {
           "nome": "Soedi",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538150.jpg"
+          "votos": 0
         },
         {
           "nome": "Telma Nery",
           "partido": "REPUBLICANOS",
-          "votos": 0,
-          "foto": "fotos/30002549894.jpg"
+          "votos": 8545
         },
         {
           "nome": "Ten Cel Ademar",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530080.jpg"
+          "votos": 0
         },
         {
           "nome": "Tenente Solange",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538151.jpg"
+          "votos": 0
         },
         {
           "nome": "Toinho Aguiar",
           "partido": "PSD",
-          "votos": 0,
-          "foto": "fotos/30002531187.jpg"
+          "votos": 0
         },
         {
           "nome": "Val Dias",
           "partido": "PDT",
-          "votos": 0,
-          "foto": "fotos/30002553948.jpg"
+          "votos": 0
         },
         {
           "nome": "Van Vilhena",
           "partido": "FE BRASIL",
-          "votos": 0,
-          "foto": "fotos/30002533118.jpg"
+          "votos": 0
         },
         {
           "nome": "Vera da Farmácia",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530086.jpg"
+          "votos": 0
         },
         {
           "nome": "Walcimar Fonseca",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538149.jpg"
+          "votos": 0
         },
         {
           "nome": "Waldeir",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530083.jpg"
+          "votos": 0
         },
         {
           "nome": "Wanna Queiroga",
           "partido": "PL",
-          "votos": 0,
-          "foto": "fotos/30002538147.jpg"
+          "votos": 0
         },
         {
           "nome": "Winnie Ataliba",
           "partido": "NOVO",
-          "votos": 0,
-          "foto": "fotos/30002530089.jpg"
+          "votos": 0
         },
         {
           "nome": "Zeneide Costa",
           "partido": "FE BRASIL",
-          "votos": 0,
-          "foto": "fotos/30002533116.jpg"
+          "votos": 0
         },
         {
           "nome": "Zé Roberto",
           "partido": "FE PSOL REDE",
-          "votos": 0,
-          "foto": "fotos/30002533031.jpg"
+          "votos": 0
         }
-      ]
+      ],
+      "note": "ATENÇÃO: só estão preenchidos os votos dos 24 ELEITOS (fonte: CNN Brasil, 100% apurado). Os demais candidatos aparecem com 0 por falta de dado — por isso o coeficiente eleitoral e os percentuais abaixo NÃO são reais. O ranking dos eleitos está correto."
     }
   },
   "municipios": [
     {
       "nome": "Macapá",
-      "pct": 0
+      "pct": 100
     },
     {
       "nome": "Santana",
-      "pct": 0
+      "pct": 100
     },
     {
       "nome": "Laranjal do Jari",
-      "pct": 0
+      "pct": 100
     },
     {
       "nome": "Oiapoque",
-      "pct": 0
+      "pct": 100
     },
     {
       "nome": "Mazagão",
-      "pct": 0
+      "pct": 100
     },
     {
       "nome": "Porto Grande",
-      "pct": 0
+      "pct": 100
     },
     {
       "nome": "Ferreira Gomes",
-      "pct": 0
+      "pct": 100
     },
     {
       "nome": "Amapá",
-      "pct": 0
+      "pct": 100
     },
     {
       "nome": "Pedra Branca do Amapari",
-      "pct": 0
+      "pct": 100
     },
     {
       "nome": "Pracuúba",
-      "pct": 0
+      "pct": 100
     },
     {
       "nome": "Tartarugalzinho",
-      "pct": 0
+      "pct": 100
     },
     {
       "nome": "Calçoene",
-      "pct": 0
+      "pct": 100
     },
     {
       "nome": "Cutias",
-      "pct": 0
+      "pct": 100
     },
     {
       "nome": "Itaubal",
-      "pct": 0
+      "pct": 100
     },
     {
       "nome": "Serra do Navio",
-      "pct": 0
+      "pct": 100
     },
     {
       "nome": "Vitória do Jari",
-      "pct": 0
+      "pct": 100
     }
   ],
-  "atualizadoEm": "2026-10-01T11:32:43.986127+00:00"
+  "atualizadoEm": "2026-10-06T17:10:13.704349+00:00"
 }
