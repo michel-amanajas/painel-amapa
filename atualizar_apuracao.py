@@ -521,7 +521,7 @@ def carregar_tabela_candidatos() -> list:
     return tab
 
 
-def harmonizar_nomes(candidatos: list, cargo_codigo: str, tabela: list) -> None:
+def harmonizar_nomes(candidatos: list, cargo_codigo: str, tabela: list, silencioso: bool = False) -> None:
     """O arquivo novo do TSE traz o nome completo; o painel usa o NOME DE URNA
     (o mesmo das fotos). Casa por nome completo ou pelo número do candidato e
     troca para o nome de urna. Quem não casar fica como veio."""
@@ -538,7 +538,8 @@ def harmonizar_nomes(candidatos: list, cargo_codigo: str, tabela: list) -> None:
         if t:
             c["nome"] = _nome_bonito(t["nome_urna"])
             trocados += 1
-    print(f"  [nomes] {trocados}/{len(candidatos)} candidatos casados com o nome de urna oficial")
+    if not silencioso:
+        print(f"  [nomes] {trocados}/{len(candidatos)} candidatos casados com o nome de urna oficial")
 
 
 def aplicar_fotos(candidatos: list, mapa: dict) -> None:
@@ -634,6 +635,8 @@ def buscar_votos_municipios(dados: dict) -> dict:
         if not candidatos:
             continue
         por_nome = {normalizar_nome(c["nome"]): c["nome"] for c in candidatos}
+        por_num = {c["num"]: c["nome"] for c in candidatos if c.get("num")}
+        tabela = carregar_tabela_candidatos()
         saida = {}
         ok = 0
         for cod, nome_mun in MUNICIPIOS.items():
@@ -645,11 +648,16 @@ def buscar_votos_municipios(dados: dict) -> dict:
             if payload is None:
                 continue
             ok += 1
-            for c in extrair_candidatos(payload):
-                nome = por_nome.get(normalizar_nome(c["nome"]))
+            lista_mun = extrair_candidatos(payload)
+            # o arquivo municipal também traz o nome completo: converte para o
+            # nome de urna (o mesmo do painel) antes de casar
+            harmonizar_nomes(lista_mun, info["codigo"], tabela, silencioso=True)
+            for c in lista_mun:
+                nome = por_nome.get(normalizar_nome(c["nome"])) or (por_num.get(c.get("num")) if c.get("num") else None)
                 if nome:
                     saida.setdefault(nome, {})[nome_mun] = c["votos"]
-        print(f"  [municípios] {info['label']}: {ok}/{len(MUNICIPIOS)} municípios lidos")
+        print(f"  [municípios] {info['label']}: {ok}/{len(MUNICIPIOS)} municípios lidos, "
+              f"{len(saida)}/{len(candidatos)} candidatos com votos por município")
         if saida:
             resultado[chave] = saida
     return resultado
