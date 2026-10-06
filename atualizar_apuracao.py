@@ -306,17 +306,24 @@ UF_ESPERADA = "AP"  # Amapá — trava de segurança contra dado de outro estado
 CAMPOS_UF_PAYLOAD = ("uf", "sg_uf", "sguf", "esae", "abr")
 
 
+UFS_BR = {"AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR",
+          "PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO","BR","ZZ"}
+
+
 def confere_uf(payload) -> bool | None:
-    """Confere se o JSON baixado é mesmo do Amapá, olhando os campos que o
-    TSE costuma usar para indicar a sigla do estado. Retorna True/False
-    quando consegue confirmar, ou None quando o arquivo não tem nenhum
-    desses campos (nesse caso não bloqueamos — a UF já está fixa na URL)."""
+    """Confere se o arquivo é do Amapá. Só BLOQUEIA (False) quando acha, em
+    campos de UF, uma sigla de estado válida que não seja AP. Valores que não
+    são sigla de UF (ex.: 's', 'n', códigos de agrupamento) são ignorados —
+    a UF já está fixa no endereço (/ap/). Mostra no log o campo usado."""
     if not isinstance(payload, dict):
         return None
-    for campo in CAMPOS_UF_PAYLOAD:
+    for campo in ("uf", "sg_uf", "sguf", "cdabr", "abr", "esae"):
         valor = payload.get(campo)
-        if isinstance(valor, str) and len(valor) <= 3:
-            return valor.strip().upper() == UF_ESPERADA
+        if isinstance(valor, str) and valor.strip().upper() in UFS_BR:
+            ok = valor.strip().upper() == UF_ESPERADA
+            if not ok:
+                print(f"  [aviso] campo '{campo}' = '{valor}' (esperado AP)")
+            return ok
     return None
 
 
@@ -476,6 +483,24 @@ def aplicar_fotos(candidatos: list, mapa: dict) -> None:
     print(f"  [fotos] {achadas}/{len(candidatos)} candidatos com foto aplicada")
 
 
+def _diagnostico(payload, nivel=0, limite=2):
+    """Mostra no log as chaves do arquivo (para ajustar o formato se preciso)."""
+    if nivel == 0:
+        print(f"  [diagnóstico] tipo={type(payload).__name__}")
+    if isinstance(payload, dict):
+        resumo = {k: (type(v).__name__ if isinstance(v, (dict, list)) else str(v)[:40]) for k, v in list(payload.items())[:25]}
+        print("  " * (nivel + 1) + f"[diagnóstico] chaves: {resumo}")
+        if nivel < limite:
+            for v in payload.values():
+                if isinstance(v, (dict, list)):
+                    _diagnostico(v, nivel + 1, limite)
+                    break
+    elif isinstance(payload, list) and payload:
+        print("  " * (nivel + 1) + f"[diagnóstico] lista com {len(payload)} itens")
+        if nivel < limite:
+            _diagnostico(payload[0], nivel + 1, limite)
+
+
 def buscar_cargo(chave: str, info: dict) -> list | None:
     print(f"Buscando {info['label']} (filtro: apenas Amapá)...")
     for url in urls_cargo(info["codigo"], info["eleicao"]):
@@ -494,6 +519,7 @@ def buscar_cargo(chave: str, info: dict) -> list | None:
         if not candidatos:
             print(f"  [aviso] essa URL respondeu, mas sem candidatos "
                   f"reconhecíveis no formato esperado — tentando a próxima.")
+            _diagnostico(payload)
             continue
         print(f"  ok ({url}) — {len(candidatos)} candidatos, "
               f"{sum(c['votos'] for c in candidatos)} votos totais"
