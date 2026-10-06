@@ -169,6 +169,12 @@ def urls_cargo(cargo_codigo: str, eleicao: str) -> list:
     eleicao6 = eleicao.zfill(6)
     candidatos = []
 
+    # 0) Produção — padrão com ano na pasta (como em 2022: /oficial/ele2022/<eleicao>/...)
+    for pasta in (eleicao, PLEITO):
+        candidatos.append(
+            f"{BASE_URL}/ele2026/{pasta}/dados-simplificados/{UF}/{UF}-c{cargo4}-e{eleicao6}-r.json"
+        )
+
     # 1) Produção — pasta = pleito (padrão confirmado)
     candidatos.append(
         f"{BASE_URL}/{PLEITO}/dados-simplificados/{UF}/{UF}-c{cargo4}-e{eleicao6}-r.json"
@@ -454,6 +460,8 @@ def urls_cargo_municipio(cod_mun: str, cargo_codigo: str, eleicao: str) -> list:
     cargo4, eleicao6 = cargo_codigo.zfill(4), eleicao.zfill(6)
     nome = f"{UF}{cod_mun}-c{cargo4}-e{eleicao6}-r.json"
     return [
+        f"{BASE_URL}/ele2026/{eleicao}/dados-simplificados/{UF}/{nome}",
+        f"{BASE_URL}/ele2026/{PLEITO}/dados-simplificados/{UF}/{nome}",
         f"{BASE_URL}/{PLEITO}/dados-simplificados/{UF}/{nome}",
         f"{BASE_URL}/{eleicao}/dados-simplificados/{UF}/{nome}",
         f"{BASE_URL}/{PLEITO}/dados-simplificados/{UF}/{cod_mun}-c{cargo4}-e{eleicao6}-r.json",
