@@ -98,8 +98,8 @@ PLEITO = "3220"           # código do pleito 1º turno 04/10/2026 (confirmado)
 # o mesmo pleito e a mesma data de votação.
 CARGOS = {
     "governador":   {"codigo": "3", "eleicao": "6259", "label": "Governador",         "proportional": False, "seats": 1},
-    "senador":      {"codigo": "5", "eleicao": "6257", "label": "Senador",            "proportional": False, "seats": 2},
-    "dep_federal":  {"codigo": "6", "eleicao": "6257", "label": "Deputado Federal",   "proportional": True,  "seats": 8},
+    "senador":      {"codigo": "5", "eleicao": "6259", "label": "Senador",            "proportional": False, "seats": 2},
+    "dep_federal":  {"codigo": "6", "eleicao": "6259", "label": "Deputado Federal",   "proportional": True,  "seats": 8},
     "dep_estadual": {"codigo": "7", "eleicao": "6259", "label": "Deputado Estadual",  "proportional": True,  "seats": 24},
 }
 
