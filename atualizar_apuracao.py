@@ -234,21 +234,33 @@ def urls_cargo(cargo_codigo: str, eleicao: str) -> list:
 
 
 def _achar_lista_candidatos(no):
-    """Procura, em qualquer nível do JSON, a lista de dicts com nome e votos
-    ('nm' + 'vap'), para aceitar variações do formato novo do TSE."""
-    if isinstance(no, list):
-        if no and all(isinstance(x, dict) for x in no) and any("nm" in x and "vap" in x for x in no):
-            return no
-        for x in no:
-            r = _achar_lista_candidatos(x)
-            if r:
-                return r
-    elif isinstance(no, dict):
-        for v in no.values():
-            r = _achar_lista_candidatos(v)
-            if r:
-                return r
-    return None
+    """Junta TODAS as listas de candidatos ('nm' + 'vap') encontradas em qualquer
+    nível do JSON (ex.: uma lista por partido) numa só, sem duplicar o mesmo
+    candidato. Aceita variações do formato novo (.jws) do TSE."""
+    achadas = []
+
+    def varrer(x):
+        if isinstance(x, list):
+            if x and all(isinstance(i, dict) for i in x) and any("nm" in i and "vap" in i for i in x):
+                achadas.extend(i for i in x if "nm" in i)
+            else:
+                for i in x:
+                    varrer(i)
+        elif isinstance(x, dict):
+            for v in x.values():
+                varrer(v)
+
+    varrer(no)
+    vistos = {}
+    for c in achadas:
+        chave = str(c.get("sqcand") or c.get("sq") or c.get("n") or "") + "|" + str(c.get("nm"))
+        try:
+            v = int(c.get("vap") or 0)
+        except (TypeError, ValueError):
+            v = 0
+        if chave not in vistos or v > int(vistos[chave].get("vap") or 0):
+            vistos[chave] = c
+    return list(vistos.values()) or None
 
 
 def extrair_candidatos(payload) -> list:
@@ -269,8 +281,9 @@ def extrair_candidatos(payload) -> list:
     lista = payload.get("cand") if isinstance(payload, dict) else None
     if lista is None and isinstance(payload, list):
         lista = payload
-    if not lista:
-        lista = _achar_lista_candidatos(payload)
+    todos = _achar_lista_candidatos(payload)
+    if todos and (not lista or len(todos) > len(lista)):
+        lista = todos
 
     if not lista:
         return candidatos
@@ -521,6 +534,10 @@ def buscar_cargo(chave: str, info: dict) -> list | None:
                   f"reconhecíveis no formato esperado — tentando a próxima.")
             _diagnostico(payload)
             continue
+        if isinstance(payload, dict):
+            print("  [estrutura] chaves do arquivo: " + ", ".join(
+                f"{k}={type(v).__name__}{'['+str(len(v))+']' if isinstance(v,(list,dict)) else ''}"
+                for k, v in list(payload.items())[:20]))
         print(f"  ok ({url}) — {len(candidatos)} candidatos, "
               f"{sum(c['votos'] for c in candidatos)} votos totais"
               f"{' [UF confirmada: AP]' if eh_amapa else ' [UF não confirmada no payload, mas URL já é de AP]'}")
