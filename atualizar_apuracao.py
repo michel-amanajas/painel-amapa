@@ -305,7 +305,14 @@ def extrair_candidatos(payload) -> list:
             votos = int(votos_raw)
         except (TypeError, ValueError):
             votos = 0
-        candidatos.append({"nome": nome, "partido": partido, "votos": votos})
+        item = {"nome": nome, "partido": partido, "votos": votos}
+        num = c.get("n") or c.get("nr") or c.get("numero")
+        sq = c.get("sqcand") or c.get("sq")
+        if num:
+            item["num"] = str(num)
+        if sq:
+            item["sq"] = str(sq)
+        candidatos.append(item)
 
     return candidatos
 
@@ -421,7 +428,11 @@ def carregar_candidatos_oficiais_ap() -> list:
         nome_urna = (linha.get("NM_URNA_CANDIDATO") or linha.get("NM_CANDIDATO") or "").strip()
         if not sq or not nome_urna:
             continue
-        candidatos.append({"sq_candidato": sq, "nome_urna": nome_urna, "cargo_codigo": cargo_codigo})
+        candidatos.append({
+            "sq_candidato": sq, "nome_urna": nome_urna, "cargo_codigo": cargo_codigo,
+            "nome_completo": (linha.get("NM_CANDIDATO") or "").strip(),
+            "numero": (linha.get("NR_CANDIDATO") or "").strip(),
+        })
     print(f"  [fotos] {len(candidatos)} candidatos do Amapá encontrados no CSV oficial.")
     return candidatos
 
@@ -479,6 +490,55 @@ def carregar_mapa_fotos() -> dict:
         except json.JSONDecodeError:
             pass
     return {}
+
+
+CANDIDATOS_AP_JSON = Path(__file__).parent / "candidatos_ap.json"
+
+_PARTICULAS = {"DA", "DE", "DO", "DAS", "DOS", "E"}
+
+
+def _nome_bonito(nome: str) -> str:
+    """'JAIME PEREZ' -> 'Jaime Perez'; 'DR. FURLAN' -> 'Dr. Furlan'."""
+    partes = []
+    for i, p in enumerate(nome.split()):
+        partes.append(p.lower() if (i > 0 and p.upper() in _PARTICULAS) else p[:1].upper() + p[1:].lower())
+    return " ".join(partes)
+
+
+def carregar_tabela_candidatos() -> list:
+    """Tabela oficial (nome de urna, nome completo, número, SQ) do Amapá.
+    Fica em candidatos_ap.json para não baixar o CSV a cada rodada."""
+    if CANDIDATOS_AP_JSON.exists():
+        try:
+            tab = json.loads(CANDIDATOS_AP_JSON.read_text(encoding="utf-8"))
+            if tab:
+                return tab
+        except json.JSONDecodeError:
+            pass
+    tab = carregar_candidatos_oficiais_ap()
+    if tab:
+        CANDIDATOS_AP_JSON.write_text(json.dumps(tab, ensure_ascii=False), encoding="utf-8")
+    return tab
+
+
+def harmonizar_nomes(candidatos: list, cargo_codigo: str, tabela: list) -> None:
+    """O arquivo novo do TSE traz o nome completo; o painel usa o NOME DE URNA
+    (o mesmo das fotos). Casa por nome completo ou pelo número do candidato e
+    troca para o nome de urna. Quem não casar fica como veio."""
+    if not tabela:
+        return
+    por_nome = {(t["cargo_codigo"], normalizar_nome(t["nome_completo"])): t for t in tabela if t.get("nome_completo")}
+    por_num = {(t["cargo_codigo"], t["numero"]): t for t in tabela if t.get("numero")}
+    por_urna = {(t["cargo_codigo"], normalizar_nome(t["nome_urna"])): t for t in tabela}
+    trocados = 0
+    for c in candidatos:
+        t = (por_nome.get((cargo_codigo, normalizar_nome(c["nome"])))
+             or por_urna.get((cargo_codigo, normalizar_nome(c["nome"])))
+             or (por_num.get((cargo_codigo, c.get("num"))) if c.get("num") else None))
+        if t:
+            c["nome"] = _nome_bonito(t["nome_urna"])
+            trocados += 1
+    print(f"  [nomes] {trocados}/{len(candidatos)} candidatos casados com o nome de urna oficial")
 
 
 def aplicar_fotos(candidatos: list, mapa: dict) -> None:
@@ -673,6 +733,8 @@ def rodar_uma_vez(buscar_fotos: bool = False, votos_municipio: bool = False):
 
     for chave, info in CARGOS.items():
         candidatos = buscar_cargo(chave, info)
+        if candidatos is not None and buscar_fotos:
+            harmonizar_nomes(candidatos, info["codigo"], carregar_tabela_candidatos())
         if candidatos is not None:
             antigo = (dados["racas"].get(chave) or {}).get("candidatos") or []
             tot_antigo = sum(int(c.get("votos") or 0) for c in antigo)
