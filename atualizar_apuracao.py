@@ -138,19 +138,44 @@ DADOS_JSON = Path(__file__).parent / "dados.json"
 # Busca e parsing
 # ---------------------------------------------------------------------------
 
+def decodificar_corpo(bruto: bytes):
+    """Decodifica o corpo baixado: JSON puro, ou JWS (3 partes separadas por
+    '.', com o conteúdo na parte do meio em base64url), usado pelos arquivos
+    .jws do TSE em 2026. Devolve o objeto Python ou levanta ValueError."""
+    import base64, gzip, zlib
+    texto = bruto.strip()
+    if texto[:2] == b"\x1f\x8b":
+        texto = gzip.decompress(texto)
+    try:
+        return json.loads(texto.decode("utf-8-sig"))
+    except (ValueError, UnicodeDecodeError):
+        pass
+    partes = texto.decode("ascii", "ignore").strip().strip('"').split(".")
+    if len(partes) >= 2:
+        carga = partes[1]
+        carga += "=" * (-len(carga) % 4)
+        dados = base64.urlsafe_b64decode(carga)
+        for tentativa in (lambda d: d, gzip.decompress, zlib.decompress):
+            try:
+                return json.loads(tentativa(dados).decode("utf-8-sig"))
+            except Exception:
+                continue
+    raise ValueError("formato não reconhecido")
+
+
 def buscar_json(url: str):
-    """Baixa e decodifica um JSON do TSE. Devolve None em caso de erro,
+    """Baixa e decodifica um JSON/JWS do TSE. Devolve None em caso de erro,
     sem levantar exceção (para o loop continuar tentando na próxima rodada)."""
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     try:
         with urllib.request.urlopen(req, timeout=TIMEOUT_SEGUNDOS) as resp:
-            return json.loads(resp.read().decode("utf-8"))
+            return decodificar_corpo(resp.read())
     except urllib.error.HTTPError as e:
         print(f"  [erro HTTP {e.code}] {url}")
     except urllib.error.URLError as e:
         print(f"  [erro de conexão] {url} — {e.reason}")
-    except json.JSONDecodeError:
-        print(f"  [erro] resposta não é um JSON válido: {url}")
+    except ValueError:
+        print(f"  [erro] resposta não é JSON/JWS válido: {url}")
     return None
 
 
@@ -169,11 +194,15 @@ def urls_cargo(cargo_codigo: str, eleicao: str) -> list:
     eleicao6 = eleicao.zfill(6)
     candidatos = []
 
-    # 0) Produção — padrão com ano na pasta (como em 2022: /oficial/ele2022/<eleicao>/...)
-    for pasta in (eleicao, PLEITO):
+    # 0) Produção 2026 — padrão REAL visto no site do TSE:
+    #    /oficial/ele2026/<eleicao>/dados/<uf>/<uf>-c<cargo>-e<eleicao>-u.jws
+    for ext in ("u.jws", "r.jws", "u.json"):
         candidatos.append(
-            f"{BASE_URL}/ele2026/{pasta}/dados-simplificados/{UF}/{UF}-c{cargo4}-e{eleicao6}-r.json"
+            f"{BASE_URL}/ele2026/{eleicao}/dados/{UF}/{UF}-c{cargo4}-e{eleicao6}-{ext}"
         )
+    candidatos.append(
+        f"{BASE_URL}/ele2026/{eleicao}/dados-simplificados/{UF}/{UF}-c{cargo4}-e{eleicao6}-r.json"
+    )
 
     # 1) Produção — pasta = pleito (padrão confirmado)
     candidatos.append(
@@ -204,6 +233,24 @@ def urls_cargo(cargo_codigo: str, eleicao: str) -> list:
     return unicos
 
 
+def _achar_lista_candidatos(no):
+    """Procura, em qualquer nível do JSON, a lista de dicts com nome e votos
+    ('nm' + 'vap'), para aceitar variações do formato novo do TSE."""
+    if isinstance(no, list):
+        if no and all(isinstance(x, dict) for x in no) and any("nm" in x and "vap" in x for x in no):
+            return no
+        for x in no:
+            r = _achar_lista_candidatos(x)
+            if r:
+                return r
+    elif isinstance(no, dict):
+        for v in no.values():
+            r = _achar_lista_candidatos(v)
+            if r:
+                return r
+    return None
+
+
 def extrair_candidatos(payload) -> list:
     """Converte o JSON bruto do TSE numa lista [{nome, partido, votos}, ...].
 
@@ -222,6 +269,8 @@ def extrair_candidatos(payload) -> list:
     lista = payload.get("cand") if isinstance(payload, dict) else None
     if lista is None and isinstance(payload, list):
         lista = payload
+    if not lista:
+        lista = _achar_lista_candidatos(payload)
 
     if not lista:
         return candidatos
@@ -459,7 +508,10 @@ def urls_cargo_municipio(cod_mun: str, cargo_codigo: str, eleicao: str) -> list:
     <uf><cod_municipio>-c<cargo>-e<eleicao>-r.json, ex.: ap06050-c0006-e006257-r.json)."""
     cargo4, eleicao6 = cargo_codigo.zfill(4), eleicao.zfill(6)
     nome = f"{UF}{cod_mun}-c{cargo4}-e{eleicao6}-r.json"
+    base_mun = f"{UF}{cod_mun}-c{cargo4}-e{eleicao6}"
     return [
+        f"{BASE_URL}/ele2026/{eleicao}/dados/{UF}/{base_mun}-u.jws",
+        f"{BASE_URL}/ele2026/{eleicao}/dados/{UF}/{base_mun}-r.jws",
         f"{BASE_URL}/ele2026/{eleicao}/dados-simplificados/{UF}/{nome}",
         f"{BASE_URL}/ele2026/{PLEITO}/dados-simplificados/{UF}/{nome}",
         f"{BASE_URL}/{PLEITO}/dados-simplificados/{UF}/{nome}",
