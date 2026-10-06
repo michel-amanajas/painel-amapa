@@ -2,200 +2,1513 @@
   "racas": {
     "governador": {
       "label": "Governador",
+      "sub": "Amapá — eleição majoritária",
       "seatsLabel": "1 vaga",
       "seats": 1,
       "proportional": false,
       "candidatos": [
         {
-          "nome": "CLÉCIO LUÍS VILHENA VIEIRA",
-          "partido": "—",
+          "nome": "Clécio Luís",
+          "partido": "UNIÃO",
           "votos": 165900
+        },
+        {
+          "nome": "Dr. Furlan",
+          "partido": "PSD",
+          "votos": 281595
+        },
+        {
+          "nome": "Jairo Palheta",
+          "partido": "PCO",
+          "votos": 315
+        },
+        {
+          "nome": "Carlos Cley",
+          "partido": "PSTU",
+          "votos": 561
+        },
+        {
+          "nome": "Delegado Marcos",
+          "partido": "DC",
+          "votos": 376
         }
-      ]
+      ],
+      "note": "Resultado final — 100% das seções apuradas (1.914 de 1.914), dados de 04/10/2026 21:04. Fonte: TSE via Canal Rural."
     },
     "senador": {
       "label": "Senador",
+      "sub": "Amapá — 2 vagas em disputa",
       "seatsLabel": "2 vagas",
       "seats": 2,
       "proportional": false,
       "candidatos": [
         {
-          "nome": "RANDOLPH FREDERICH RODRIGUES ALVES",
-          "partido": "—",
+          "nome": "Acácio Favacho",
+          "partido": "MDB",
+          "votos": 131321
+        },
+        {
+          "nome": "Alliny Serrão",
+          "partido": "UNIÃO",
+          "votos": 85540
+        },
+        {
+          "nome": "Capi",
+          "partido": "PSB",
+          "votos": 0
+        },
+        {
+          "nome": "Helio Silva",
+          "partido": "PCO",
+          "votos": 0
+        },
+        {
+          "nome": "Juíza Jô",
+          "partido": "DC",
+          "votos": 0
+        },
+        {
+          "nome": "Lucas Barreto",
+          "partido": "PSD",
+          "votos": 213948
+        },
+        {
+          "nome": "Professor Uzian Pinto",
+          "partido": "DC",
+          "votos": 0
+        },
+        {
+          "nome": "Randolfe",
+          "partido": "PT",
           "votos": 163857
+        },
+        {
+          "nome": "Rayssa Furlan",
+          "partido": "PODE",
+          "votos": 264799
         }
-      ]
+      ],
+      "note": "Resultado final — 100% das seções apuradas. Votos informados apenas para os 5 mais votados (Capi, Helio Silva, Juíza Jô e Prof. Uzian Pinto sem votos disponíveis na fonte, aparecem com 0). Fonte: TSE via Canal Rural."
     },
     "dep_federal": {
       "label": "Deputado Federal",
+      "sub": "Amapá — sistema proporcional",
       "seatsLabel": "8 vagas",
       "seats": 8,
       "proportional": true,
       "candidatos": [
         {
-          "nome": "JORGE ELSON SILVA DE SOUZA",
-          "partido": "—",
-          "votos": 2631
+          "nome": "Carmina Rodrigues",
+          "partido": "DC",
+          "votos": 0
         },
         {
-          "nome": "MANOEL CAETANO BENTES MONTEIRO NETO",
-          "partido": "—",
-          "votos": 13576
+          "nome": "Eliada Santos",
+          "partido": "DC",
+          "votos": 0
         },
         {
-          "nome": "VINICIUS DE AZEVEDO GURGEL",
-          "partido": "—",
+          "nome": "Jeová Sá",
+          "partido": "DC",
+          "votos": 0
+        },
+        {
+          "nome": "Pimpolho",
+          "partido": "DC",
+          "votos": 0
+        },
+        {
+          "nome": "Robson Gualberto",
+          "partido": "DC",
+          "votos": 0
+        },
+        {
+          "nome": "Shirley Amaral",
+          "partido": "DC",
+          "votos": 0
+        },
+        {
+          "nome": "Siulan Bacelar",
+          "partido": "DC",
+          "votos": 0
+        },
+        {
+          "nome": "Vico Negrão",
+          "partido": "DC",
+          "votos": 0
+        },
+        {
+          "nome": "Wilguer Carvalho",
+          "partido": "DC",
+          "votos": 0
+        },
+        {
+          "nome": "Alinne Madeireiro",
+          "partido": "MDB",
+          "votos": 0
+        },
+        {
+          "nome": "Daldeia",
+          "partido": "MDB",
+          "votos": 0
+        },
+        {
+          "nome": "Elizaura da Anápolis",
+          "partido": "MDB",
+          "votos": 0
+        },
+        {
+          "nome": "Francisca Favacho",
+          "partido": "MDB",
+          "votos": 0
+        },
+        {
+          "nome": "Guaracy",
+          "partido": "MDB",
+          "votos": 0
+        },
+        {
+          "nome": "Helder",
+          "partido": "MDB",
+          "votos": 0
+        },
+        {
+          "nome": "Irmã Maria",
+          "partido": "MDB",
+          "votos": 0
+        },
+        {
+          "nome": "Lucas da Gazeta",
+          "partido": "MDB",
+          "votos": 0
+        },
+        {
+          "nome": "Maria Orlanda",
+          "partido": "MDB",
+          "votos": 0
+        },
+        {
+          "nome": "Rômulo Monteiro",
+          "partido": "MDB",
+          "votos": 0
+        },
+        {
+          "nome": "Dudão Costa",
+          "partido": "PCDOB",
+          "votos": 0
+        },
+        {
+          "nome": "Professora Marcivânia",
+          "partido": "PCDOB",
+          "votos": 17913
+        },
+        {
+          "nome": "Professora Vivian",
+          "partido": "PCDOB",
+          "votos": 0
+        },
+        {
+          "nome": "Elielton Silva",
+          "partido": "PCO",
+          "votos": 0
+        },
+        {
+          "nome": "Vasti Barbosa",
+          "partido": "PCO",
+          "votos": 0
+        },
+        {
+          "nome": "Dorinaldo Malafaia",
+          "partido": "PDT",
+          "votos": 19382
+        },
+        {
+          "nome": "Isabel Nogueira",
+          "partido": "PDT",
+          "votos": 0
+        },
+        {
+          "nome": "Jesus Pontes",
+          "partido": "PDT",
+          "votos": 0
+        },
+        {
+          "nome": "Josenildo",
+          "partido": "PDT",
+          "votos": 26453
+        },
+        {
+          "nome": "Kleber Karipuna",
+          "partido": "PDT",
+          "votos": 0
+        },
+        {
+          "nome": "Lau Causa Animal",
+          "partido": "PDT",
+          "votos": 0
+        },
+        {
+          "nome": "Pastor Solangelo",
+          "partido": "PDT",
+          "votos": 0
+        },
+        {
+          "nome": "Professora Katia Paulino",
+          "partido": "PDT",
+          "votos": 0
+        },
+        {
+          "nome": "Welton Barreiros",
+          "partido": "PDT",
+          "votos": 0
+        },
+        {
+          "nome": "Camilo Capiberibe",
+          "partido": "PT",
+          "votos": 0
+        },
+        {
+          "nome": "Paulo Lemos",
+          "partido": "PT",
+          "votos": 0
+        },
+        {
+          "nome": "Professora Ivanéia",
+          "partido": "PT",
+          "votos": 0
+        },
+        {
+          "nome": "Bia da Zilma",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Caetano Bentes",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Conselheira Huelma Medeiros",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Coronel Palmira",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Elias Real do Menino Jesus",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Gesiel Oliveira",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Jorge Souza",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Tenente Coronel Marques",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Vinicius Gurgel",
+          "partido": "PL",
           "votos": 19625
         },
         {
-          "nome": "PALMIRA DAS NEVES BITTENCOURT",
-          "partido": "—",
-          "votos": 1029
+          "nome": "Bruno Borges",
+          "partido": "MISSÃO",
+          "votos": 0
         },
         {
-          "nome": "GESIEL DE SOUZA OLIVEIRA",
-          "partido": "—",
-          "votos": 4268
+          "nome": "Israel dos Santos",
+          "partido": "MISSÃO",
+          "votos": 0
         },
         {
-          "nome": "HUELMA MEDEIROS NOGUEIRA LIMA",
-          "partido": "—",
-          "votos": 1472
+          "nome": "Luy Ricardo",
+          "partido": "MISSÃO",
+          "votos": 0
         },
         {
-          "nome": "ANA BEATRIZ CORREA DA COSTA",
-          "partido": "—",
-          "votos": 6198
+          "nome": "Marcia Nery",
+          "partido": "MISSÃO",
+          "votos": 0
         },
         {
-          "nome": "ELIAS REAL DA SILVA",
-          "partido": "—",
-          "votos": 956
+          "nome": "Meire Salviano",
+          "partido": "MISSÃO",
+          "votos": 0
         },
         {
-          "nome": "RONDINELE MARQUES DOS SANTOS",
-          "partido": "—",
-          "votos": 6071
+          "nome": "Beth Garcia",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Edileuza Rodrigues",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "George",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Iranei Lopes",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Luisão",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Professora Rilany Silva",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Augusto Aguiar",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Dilson Borges",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Dr. Brasil",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Leda Sadala",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Luiz Alex",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Nanda",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Pr. Didio",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Relson Cardoso",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Tia Lu",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Andrew Costa",
+          "partido": "PSOL",
+          "votos": 0
+        },
+        {
+          "nome": "Prof. Gil Barbosa",
+          "partido": "PSOL",
+          "votos": 0
+        },
+        {
+          "nome": "Ramona Matarazzo",
+          "partido": "PSOL",
+          "votos": 0
+        },
+        {
+          "nome": "Capitão N Miranda",
+          "partido": "PV",
+          "votos": 0
+        },
+        {
+          "nome": "Ivone Chagas",
+          "partido": "PV",
+          "votos": 0
+        },
+        {
+          "nome": "Lucas Abrahao",
+          "partido": "PV",
+          "votos": 0
+        },
+        {
+          "nome": "Alexandre Azevedo",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Dr. Vinicius Reis",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Dra. Erica",
+          "partido": "PODE",
+          "votos": 15358
+        },
+        {
+          "nome": "Joel Cavalcante",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Kamille Almeida",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Kassyo Ramos",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Mayla Carvalho",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Professora Goreth",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Sandra Lacerda",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Andre Abdon",
+          "partido": "PP",
+          "votos": 0
+        },
+        {
+          "nome": "Bena Rocha",
+          "partido": "PP",
+          "votos": 0
+        },
+        {
+          "nome": "Cris Nunes",
+          "partido": "REDE",
+          "votos": 0
+        },
+        {
+          "nome": "Jawaruwa Wajãpi",
+          "partido": "REDE",
+          "votos": 0
+        },
+        {
+          "nome": "Aline Gurgel",
+          "partido": "UNIÃO",
+          "votos": 25501
+        },
+        {
+          "nome": "Cristiano Furlan",
+          "partido": "UNIÃO",
+          "votos": 0
+        },
+        {
+          "nome": "Fátima Pelaes",
+          "partido": "UNIÃO",
+          "votos": 0
+        },
+        {
+          "nome": "Felipe Show",
+          "partido": "UNIÃO",
+          "votos": 34587
+        },
+        {
+          "nome": "Luiz Carlos",
+          "partido": "UNIÃO",
+          "votos": 0
+        },
+        {
+          "nome": "Marcio Serrão",
+          "partido": "UNIÃO",
+          "votos": 20796
         }
-      ]
+      ],
+      "note": "ATENÇÃO: só estão preenchidos os votos dos 8 ELEITOS (fonte: CNN Brasil, 100% apurado). Os demais candidatos aparecem com 0 por falta de dado — por isso o coeficiente eleitoral e os percentuais abaixo NÃO são reais. O ranking dos eleitos está correto."
     },
     "dep_estadual": {
       "label": "Deputado Estadual",
+      "sub": "Amapá — sistema proporcional",
       "seatsLabel": "24 vagas",
       "seats": 24,
       "proportional": true,
       "candidatos": [
         {
-          "nome": "JAIME DA SILVA PEREZ",
-          "partido": "—",
-          "votos": 8222
+          "nome": "Adolfo Nery",
+          "partido": "PL",
+          "votos": 0
         },
         {
-          "nome": "JOSE BENEDITO MOREIRA",
-          "partido": "—",
-          "votos": 772
+          "nome": "Alan Figueiredo",
+          "partido": "PODE",
+          "votos": 0
         },
         {
-          "nome": "RENAN DA SILVA ROSAS",
-          "partido": "—",
-          "votos": 1812
+          "nome": "Alan Santos",
+          "partido": "NOVO",
+          "votos": 0
         },
         {
-          "nome": "ENNIO DANILO DE ALMEIDA CAVALCANTE",
-          "partido": "—",
-          "votos": 1929
+          "nome": "Alcinete Santos",
+          "partido": "FE BRASIL",
+          "votos": 0
         },
         {
-          "nome": "EDINOELSON PEREIRA DA TRINDADE",
-          "partido": "—",
-          "votos": 2801
+          "nome": "Aldilene Souza",
+          "partido": "PDT",
+          "votos": 6896
         },
         {
-          "nome": "CARLOS EDUARDO PIMENTEL BARBOSA",
-          "partido": "—",
-          "votos": 6107
+          "nome": "Aldo Maurício",
+          "partido": "PL",
+          "votos": 0
         },
         {
-          "nome": "HUGO BARROSO SILVA",
-          "partido": "—",
-          "votos": 397
+          "nome": "Alesson Cavalvante",
+          "partido": "FE BRASIL",
+          "votos": 0
         },
         {
-          "nome": "EDUARDO DOS SANTOS TAVARES",
-          "partido": "—",
-          "votos": 2826
+          "nome": "Alex",
+          "partido": "PL",
+          "votos": 4805
         },
         {
-          "nome": "DIEGO JOSE MORPHEU FERREIRA MENDES",
-          "partido": "—",
-          "votos": 868
+          "nome": "Alexandre Verçosa",
+          "partido": "PL",
+          "votos": 0
         },
         {
-          "nome": "ESTEFANE PINHEIRO DOS SANTOS",
-          "partido": "—",
-          "votos": 29
+          "nome": "Anderson Almeida",
+          "partido": "FE UNIÃO PROG",
+          "votos": 0
         },
         {
-          "nome": "RAYFRAN MACEDO BARROSO",
-          "partido": "—",
-          "votos": 7301
+          "nome": "Anne Marques",
+          "partido": "FE PSOL REDE",
+          "votos": 0
         },
         {
-          "nome": "TELMA ADRIANA NERY PAIVA",
-          "partido": "—",
-          "votos": 8545
+          "nome": "Anne Távora",
+          "partido": "PL",
+          "votos": 0
         },
         {
-          "nome": "DEBORA MARTINS SARMENTO",
-          "partido": "—",
-          "votos": 139
+          "nome": "Aparecida Salomão",
+          "partido": "FE UNIÃO PROG",
+          "votos": 6202
         },
         {
-          "nome": "ODILSON SERRA NUNES",
-          "partido": "—",
-          "votos": 2678
+          "nome": "Apóstola Berenice Lazamé",
+          "partido": "MDB",
+          "votos": 0
         },
         {
-          "nome": "KARLA SAMILA GOMES SILVA",
-          "partido": "—",
-          "votos": 193
+          "nome": "Aranha",
+          "partido": "PL",
+          "votos": 0
         },
         {
-          "nome": "MARCOS PAULO BERTOLO",
-          "partido": "—",
-          "votos": 928
+          "nome": "Aranthu",
+          "partido": "MDB",
+          "votos": 0
         },
         {
-          "nome": "HILDEGARD DE AZEVEDO GURGEL",
-          "partido": "—",
+          "nome": "Ari Goes",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Augusto Júnior",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Balieiro",
+          "partido": "MDB",
+          "votos": 0
+        },
+        {
+          "nome": "Bené do Plutão",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Beth Pelaes",
+          "partido": "FE UNIÃO PROG",
+          "votos": 0
+        },
+        {
+          "nome": "Bia Pombo",
+          "partido": "FE UNIÃO PROG",
+          "votos": 9771
+        },
+        {
+          "nome": "Bryan Mendonça",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Capitão Adriano",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Careca da Talentus",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Careca Lobato",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Carlos Carmezim",
+          "partido": "FE BRASIL",
+          "votos": 0
+        },
+        {
+          "nome": "Carlos Evangelista",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Carlos Murilo",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Carol Monteiro",
+          "partido": "MDB",
+          "votos": 0
+        },
+        {
+          "nome": "Celisa Melo",
+          "partido": "FE BRASIL",
+          "votos": 0
+        },
+        {
+          "nome": "Cesar Farias",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Chiquinho do Povo",
+          "partido": "FE PSOL REDE",
+          "votos": 0
+        },
+        {
+          "nome": "Cirilo Fernandes",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Claudinha",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Claudio Costa",
+          "partido": "PCO",
+          "votos": 0
+        },
+        {
+          "nome": "Claudio do Povão",
+          "partido": "PDT",
+          "votos": 0
+        },
+        {
+          "nome": "Cleicy Leão",
+          "partido": "PDT",
+          "votos": 0
+        },
+        {
+          "nome": "Cleuma Duarte",
+          "partido": "MDB",
+          "votos": 0
+        },
+        {
+          "nome": "Conselheira Elizete",
+          "partido": "FE UNIÃO PROG",
+          "votos": 0
+        },
+        {
+          "nome": "Coronel André Dias",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Coronel Flexa",
+          "partido": "REPUBLICANOS",
+          "votos": 8098
+        },
+        {
+          "nome": "Costa Filho",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Cris da ABB",
+          "partido": "PDT",
+          "votos": 0
+        },
+        {
+          "nome": "Cristina Almeida",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Daimini",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Daniela Fortunato",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Dary Guedes",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Dayse Marques",
+          "partido": "FE PSOL REDE",
+          "votos": 0
+        },
+        {
+          "nome": "Débora Martins",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Deolinda Luz",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Diogo Senior",
+          "partido": "MDB",
+          "votos": 10050
+        },
+        {
+          "nome": "Divino Rocha",
+          "partido": "FE UNIÃO PROG",
+          "votos": 0
+        },
+        {
+          "nome": "Dr Achiles",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Dr. Angelo",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Dra Vânia Fontoura",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Dr. Hugo",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Dr. Liliane Albuquerque",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Dr Marcos Paulo",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Dr. Negrão",
+          "partido": "FE UNIÃO PROG",
+          "votos": 0
+        },
+        {
+          "nome": "Dr. Patrick Medrado",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Dr Reinaldo Portilho",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Dr Renan Rosas",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Dr. Sandro Carvalho",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Dr Sath",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Dr. Victor Amoras",
+          "partido": "FE PSOL REDE",
+          "votos": 9383
+        },
+        {
+          "nome": "Dr Yuri Alesi",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Dudu Barbosa",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Dudu Tavares",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Dulce do Jari",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Edna Auzier",
+          "partido": "FE BRASIL",
+          "votos": 0
+        },
+        {
+          "nome": "Edu Siqueira",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Elaine Igreja",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Elenice",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Eliana Brandão",
+          "partido": "PCO",
+          "votos": 0
+        },
+        {
+          "nome": "Elindomar Silva",
+          "partido": "FE BRASIL",
+          "votos": 0
+        },
+        {
+          "nome": "Engenheiro Angelo",
+          "partido": "FE UNIÃO PROG",
+          "votos": 0
+        },
+        {
+          "nome": "Ennio Cavalcante",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Estefane Raposa",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Fabricio Furlan",
+          "partido": "FE PSOL REDE",
+          "votos": 6999
+        },
+        {
+          "nome": "Franco",
+          "partido": "PSD",
+          "votos": 5566
+        },
+        {
+          "nome": "Fulêra",
+          "partido": "MDB",
+          "votos": 0
+        },
+        {
+          "nome": "Gian do Nae",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Girlene Barroso",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Harife Viegas",
+          "partido": "FE PSOL REDE",
+          "votos": 0
+        },
+        {
+          "nome": "Helinho Castro",
+          "partido": "FE PSOL REDE",
+          "votos": 0
+        },
+        {
+          "nome": "Helô",
+          "partido": "MDB",
+          "votos": 0
+        },
+        {
+          "nome": "Helson Freitas",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Herison Tupan",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Hildegard Gurgel",
+          "partido": "REPUBLICANOS",
           "votos": 12357
         },
         {
-          "nome": "KINOVAK MARQUES TOURINHO",
-          "partido": "—",
+          "nome": "Instrutor Santos",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Irismar Vilhena",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Israel Santos",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Jack JK",
+          "partido": "PDT",
+          "votos": 13278
+        },
+        {
+          "nome": "Jacqueline Amaral",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Jaime Perez",
+          "partido": "REPUBLICANOS",
+          "votos": 8222
+        },
+        {
+          "nome": "Jardel Eliezer",
+          "partido": "FE BRASIL",
+          "votos": 0
+        },
+        {
+          "nome": "Jim Davis",
+          "partido": "PDT",
+          "votos": 0
+        },
+        {
+          "nome": "João Mendonça",
+          "partido": "PODE",
+          "votos": 8736
+        },
+        {
+          "nome": "João Pedro",
+          "partido": "PDT",
+          "votos": 17559
+        },
+        {
+          "nome": "Joelson Alencar",
+          "partido": "FE PSOL REDE",
+          "votos": 0
+        },
+        {
+          "nome": "Jó Pereira",
+          "partido": "MDB",
+          "votos": 0
+        },
+        {
+          "nome": "Jorge Amanajás",
+          "partido": "FE UNIÃO PROG",
+          "votos": 8078
+        },
+        {
+          "nome": "Jorginho Maciel",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Jorielson",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Teka do Jory",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Joselyo Mais Saúde",
+          "partido": "FE UNIÃO PROG",
+          "votos": 7301
+        },
+        {
+          "nome": "Jucelino Fernandes",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Juliana Carvalho",
+          "partido": "FE PSOL REDE",
+          "votos": 0
+        },
+        {
+          "nome": "Julia Soares",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Junior Favacho",
+          "partido": "MDB",
+          "votos": 8005
+        },
+        {
+          "nome": "Karla Samila",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Karyna Ramos",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Kinovak",
+          "partido": "REPUBLICANOS",
           "votos": 9978
         },
         {
-          "nome": "JEOVANA DA CONCEICAO PEREIRA",
-          "partido": "—",
-          "votos": 146
+          "nome": "Kleber Diniz",
+          "partido": "PDT",
+          "votos": 0
         },
         {
-          "nome": "ALDICLEIA LIRA GOES",
-          "partido": "—",
-          "votos": 7977
+          "nome": "Laene Dantas",
+          "partido": "PODE",
+          "votos": 0
         },
         {
-          "nome": "ANDRE LUIZ DIAS DA COSTA",
-          "partido": "—",
-          "votos": 1048
+          "nome": "Leila Viana",
+          "partido": "PDT",
+          "votos": 0
         },
         {
-          "nome": "ARNÓBIO FLEXA NASCIMENTO",
-          "partido": "—",
-          "votos": 8098
+          "nome": "Liliane Abreu",
+          "partido": "FE BRASIL",
+          "votos": 0
+        },
+        {
+          "nome": "Lobato",
+          "partido": "FE PSOL REDE",
+          "votos": 0
+        },
+        {
+          "nome": "Lorran Barreto",
+          "partido": "PSD",
+          "votos": 5460
+        },
+        {
+          "nome": "Lucélia Quaresma",
+          "partido": "FE UNIÃO PROG",
+          "votos": 0
+        },
+        {
+          "nome": "Madson Millor",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Manoel Araujo",
+          "partido": "FE BRASIL",
+          "votos": 0
+        },
+        {
+          "nome": "Marcelo Oliveira",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Maricley Ribeiro",
+          "partido": "PDT",
+          "votos": 0
+        },
+        {
+          "nome": "Marina Sá",
+          "partido": "FE PSOL REDE",
+          "votos": 0
+        },
+        {
+          "nome": "Mario Bianchi",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Marluce Costa",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Max da AABB",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Mercúrio",
+          "partido": "MDB",
+          "votos": 0
+        },
+        {
+          "nome": "Nanda Cabral",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Natanael dos Anjos",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Nete Matias",
+          "partido": "FE UNIÃO PROG",
+          "votos": 0
+        },
+        {
+          "nome": "Obreira Lene Lobo",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Odilson Nunes",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Ofirney Sadala",
+          "partido": "FE UNIÃO PROG",
+          "votos": 0
+        },
+        {
+          "nome": "Pastora Izamar",
+          "partido": "PDT",
+          "votos": 0
+        },
+        {
+          "nome": "Pastora Léia Pelaes",
+          "partido": "PDT",
+          "votos": 0
+        },
+        {
+          "nome": "Pastora Maria de Jesus",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Pastor Oliveira",
+          "partido": "PDT",
+          "votos": 0
+        },
+        {
+          "nome": "Paulinho Ramos",
+          "partido": "FE UNIÃO PROG",
+          "votos": 0
+        },
+        {
+          "nome": "Pr. Mezaque",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Prof. Bené Bingota",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Prof. Carla",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Professora Dalva",
+          "partido": "FE PSOL REDE",
+          "votos": 0
+        },
+        {
+          "nome": "Professora Sara",
+          "partido": "FE BRASIL",
+          "votos": 0
+        },
+        {
+          "nome": "Professor Marco Antonio",
+          "partido": "FE PSOL REDE",
+          "votos": 0
+        },
+        {
+          "nome": "Professor Marcos",
+          "partido": "FE BRASIL",
+          "votos": 0
+        },
+        {
+          "nome": "Professor Morpheu",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Professor Raudison Sena",
+          "partido": "FE BRASIL",
+          "votos": 0
+        },
+        {
+          "nome": "Prof. Ivanildo Luz",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Prof. Rogério Lima",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Rafael Masim",
+          "partido": "FE PSOL REDE",
+          "votos": 0
+        },
+        {
+          "nome": "Rafael Pimentel",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Rayfran Beirão",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Rayra Araújo",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Reginaldo Faraó",
+          "partido": "FE UNIÃO PROG",
+          "votos": 0
+        },
+        {
+          "nome": "Riba das Mesas",
+          "partido": "FE PSOL REDE",
+          "votos": 0
+        },
+        {
+          "nome": "Ricardo Magno",
+          "partido": "FE PSOL REDE",
+          "votos": 0
+        },
+        {
+          "nome": "R Nelson",
+          "partido": "PODE",
+          "votos": 10286
+        },
+        {
+          "nome": "Roberto Góes",
+          "partido": "FE UNIÃO PROG",
+          "votos": 7990
+        },
+        {
+          "nome": "Rodolfo Vale",
+          "partido": "FE UNIÃO PROG",
+          "votos": 15863
+        },
+        {
+          "nome": "Rogério Serrão",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Ronildo Nobre",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Roseli Matos",
+          "partido": "FE UNIÃO PROG",
+          "votos": 0
+        },
+        {
+          "nome": "Salmon Santana",
+          "partido": "MDB",
+          "votos": 0
+        },
+        {
+          "nome": "Sandra Alcantara",
+          "partido": "PODE",
+          "votos": 0
+        },
+        {
+          "nome": "Sargento Geovana",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Sargento Gracinete",
+          "partido": "REPUBLICANOS",
+          "votos": 0
+        },
+        {
+          "nome": "Sebastião Leitão",
+          "partido": "FE BRASIL",
+          "votos": 0
+        },
+        {
+          "nome": "Sebastião Vampiro",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Selma de Paula",
+          "partido": "FE UNIÃO PROG",
+          "votos": 0
+        },
+        {
+          "nome": "Silvia Artesã",
+          "partido": "FE BRASIL",
+          "votos": 0
+        },
+        {
+          "nome": "Simone Karipuna",
+          "partido": "FE PSOL REDE",
+          "votos": 0
+        },
+        {
+          "nome": "Socorro Marques",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Socorro Nogueira",
+          "partido": "FE BRASIL",
+          "votos": 9253
+        },
+        {
+          "nome": "Soedi",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Telma Nery",
+          "partido": "REPUBLICANOS",
+          "votos": 8545
+        },
+        {
+          "nome": "Ten Cel Ademar",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Tenente Solange",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Toinho Aguiar",
+          "partido": "PSD",
+          "votos": 0
+        },
+        {
+          "nome": "Val Dias",
+          "partido": "PDT",
+          "votos": 0
+        },
+        {
+          "nome": "Van Vilhena",
+          "partido": "FE BRASIL",
+          "votos": 0
+        },
+        {
+          "nome": "Vera da Farmácia",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Walcimar Fonseca",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Waldeir",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Wanna Queiroga",
+          "partido": "PL",
+          "votos": 0
+        },
+        {
+          "nome": "Winnie Ataliba",
+          "partido": "NOVO",
+          "votos": 0
+        },
+        {
+          "nome": "Zeneide Costa",
+          "partido": "FE BRASIL",
+          "votos": 0
+        },
+        {
+          "nome": "Zé Roberto",
+          "partido": "FE PSOL REDE",
+          "votos": 0
         }
-      ]
+      ],
+      "note": "ATENÇÃO: só estão preenchidos os votos dos 24 ELEITOS (fonte: CNN Brasil, 100% apurado). Os demais candidatos aparecem com 0 por falta de dado — por isso o coeficiente eleitoral e os percentuais abaixo NÃO são reais. O ranking dos eleitos está correto."
     }
   },
   "municipios": [
@@ -264,5 +1577,5 @@
       "pct": 100
     }
   ],
-  "atualizadoEm": "2026-10-06T18:20:30.609032+00:00"
+  "atualizadoEm": "2026-10-06T17:10:13.704349+00:00"
 }

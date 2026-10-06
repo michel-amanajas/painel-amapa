@@ -657,6 +657,13 @@ def rodar_uma_vez(buscar_fotos: bool = False, votos_municipio: bool = False):
     for chave, info in CARGOS.items():
         candidatos = buscar_cargo(chave, info)
         if candidatos is not None:
+            antigo = (dados["racas"].get(chave) or {}).get("candidatos") or []
+            tot_antigo = sum(int(c.get("votos") or 0) for c in antigo)
+            tot_novo = sum(int(c.get("votos") or 0) for c in candidatos)
+            if tot_antigo > 0 and tot_novo < tot_antigo:
+                print(f"  [proteção] {info['label']}: leitura nova ({tot_novo} votos) é menor que a "
+                      f"já salva ({tot_antigo}) — mantendo os dados salvos.")
+                continue
             dados["racas"][chave] = {
                 "label": info["label"],
                 "seatsLabel": f"{info['seats']} vaga{'s' if info['seats'] != 1 else ''}",
