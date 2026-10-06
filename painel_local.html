@@ -361,6 +361,33 @@
   }
   .race-card .rc-foot b{ color:var(--gold); font-family:var(--font-body); }
 
+  /* ---------- Votos por município (escolher candidato) ---------- */
+  .mv-controls{ display:grid; grid-template-columns: 1fr 1.6fr; gap:12px; margin-bottom:12px; }
+  @media (max-width: 640px){ .mv-controls{ grid-template-columns: 1fr; } }
+  .mv-controls label{
+    display:block; font-size:11px; color:var(--text-muted);
+    font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.03em; margin-bottom:4px;
+  }
+  .mv-controls select, #mv-search{
+    width:100%; background:var(--panel-2); border:1px solid var(--line); color:var(--text);
+    font-family:var(--font-body); font-size:14px; padding:9px 12px; border-radius:6px;
+  }
+  .mv-controls select:focus, #mv-search:focus{ outline:none; border-color:var(--gold); }
+  #mv-search{ margin-bottom:12px; }
+  .mv-head{ display:flex; align-items:center; gap:12px; margin:6px 0 14px; padding-top:12px; border-top:1px solid var(--line); }
+  .mv-head .mv-name{ font-weight:600; font-size:16px; }
+  .mv-head .mv-meta{ font-size:12px; color:var(--text-muted); font-family:var(--font-mono); }
+  .mv-row{
+    display:grid; grid-template-columns: minmax(110px, 190px) 1fr 84px 56px;
+    gap:10px; align-items:center; padding:7px 0; border-bottom:1px solid var(--line); font-size:13px;
+  }
+  .mv-row:last-child{ border-bottom:none; }
+  .mv-row .mv-mname{ font-weight:500; }
+  .mv-row .mv-votes{ text-align:right; font-family:var(--font-mono); font-variant-numeric: tabular-nums; }
+  .mv-row .mv-pct{ text-align:right; font-family:var(--font-mono); font-size:12px; color:var(--text-muted); font-variant-numeric: tabular-nums; }
+  .mv-row.mv-zero .mv-mname, .mv-row.mv-zero .mv-votes{ color:var(--text-muted); }
+  .mv-note{ font-size:12.5px; color:var(--text-muted); padding:10px 14px; background:var(--panel-2); border-left:3px solid var(--gold); border-radius:4px; }
+
   /* ---------- Cartão de coeficiente eleitoral ---------- */
   .coef-card{
     display:flex;
@@ -766,6 +793,8 @@
 
   <div id="landing" class="landing" style="display:none;"></div>
 
+  <div id="muni-view" style="display:none;"></div>
+
   <div class="grid" id="detail-view" style="display:none;">
     <section class="panel">
       <h2 id="race-title">—</h2>
@@ -811,6 +840,8 @@ const clockEl = document.getElementById('clock');
 
 let races = {};      // preenchido pelo snapshot da coleção "racas"
 let municipios = [];  // preenchido pelo snapshot do doc "municipios/lista"
+let votosMunicipio = {}; // {cargo: {nomeCandidato: {municipio: votos}}} — vem do dados.json
+let mvRace = 'dep_estadual', mvCand = null, mvFiltro = '';
 let activeRace = "resumo"; // "resumo" (tela-resumo) | uma das chaves de RACE_ORDER
 let viewMode = "individual"; // "individual" | "partidos" | "filtro"
 let expandedParty = null;    // partido aberto no accordion da view "partidos"
@@ -931,6 +962,12 @@ function renderTabs(){
   resumoBtn.addEventListener('click', () => { activeRace = 'resumo'; renderTabs(); renderRace(); });
   tabsEl.appendChild(resumoBtn);
 
+  const muniBtn = document.createElement('button');
+  muniBtn.className = activeRace === 'municipio' ? 'active' : '';
+  muniBtn.innerHTML = 'Votos por município<span class="seats">escolha o candidato</span>';
+  muniBtn.addEventListener('click', () => { activeRace = 'municipio'; renderTabs(); renderRace(); });
+  tabsEl.appendChild(muniBtn);
+
   RACE_ORDER.forEach(key => {
     const r = races[key];
     if(!r) return;
@@ -988,9 +1025,81 @@ function renderLanding(){
   });
 }
 
+// ---------- Aba "Votos por município": escolhe cargo + candidato ----------
+function renderMuniView(){
+  const el = document.getElementById('muni-view');
+  const focado = document.activeElement && document.activeElement.id;
+  const r = races[mvRace];
+  const cands = r ? (r.candidatos || []).slice().sort((a,b) => (b.votos||0)-(a.votos||0) || (a.nome||'').localeCompare(b.nome||'')) : [];
+  const termo = normalizar(mvFiltro.trim());
+  const lista = termo ? cands.filter(c => normalizar(c.nome).includes(termo)) : cands;
+  if(!mvCand || !cands.some(c => c.nome === mvCand)) mvCand = (lista[0] || cands[0] || {}).nome || null;
+
+  const opcoesRace = RACE_ORDER.filter(k => races[k]).map(k =>
+    `<option value="${k}"${k===mvRace?' selected':''}>${races[k].label}</option>`).join('');
+  const opcoesCand = lista.map(c =>
+    `<option value="${escapeAttr(c.nome)}"${c.nome===mvCand?' selected':''}>${escapeAttr(c.nome)} — ${escapeAttr(c.partido||'')}</option>`).join('');
+
+  el.innerHTML = `
+    <section class="panel">
+      <h2>Votos por município</h2>
+      <p class="sub">Escolha o cargo e o candidato para ver quantos votos ele teve em cada um dos 16 municípios.</p>
+      <div class="mv-controls">
+        <div><label for="mv-race">Cargo</label><select id="mv-race">${opcoesRace}</select></div>
+        <div><label for="mv-cand">Candidato</label><select id="mv-cand">${opcoesCand || '<option>— nenhum —</option>'}</select></div>
+      </div>
+      <input id="mv-search" type="text" placeholder="Filtrar a lista de candidatos por nome…" autocomplete="off" value="${escapeAttr(mvFiltro)}">
+      <div id="mv-result"></div>
+    </section>`;
+
+  document.getElementById('mv-race').addEventListener('change', e => { mvRace = e.target.value; mvCand = null; mvFiltro = ''; renderMuniView(); });
+  document.getElementById('mv-cand').addEventListener('change', e => { mvCand = e.target.value; renderMuniResult(); });
+  document.getElementById('mv-search').addEventListener('input', e => { mvFiltro = e.target.value; mvCand = null; renderMuniView(); });
+  if(focado === 'mv-search'){
+    const inp = document.getElementById('mv-search'); inp.focus(); inp.setSelectionRange(inp.value.length, inp.value.length);
+  }
+  renderMuniResult();
+}
+
+function renderMuniResult(){
+  const out = document.getElementById('mv-result');
+  const r = races[mvRace];
+  const c = r && (r.candidatos || []).find(x => x.nome === mvCand);
+  if(!c){ out.innerHTML = '<p class="mv-note">Nenhum candidato encontrado.</p>'; return; }
+  const dadosCand = ((votosMunicipio[mvRace] || {})[c.nome]) || null;
+  const cabeca = `<div class="mv-head">${avatarHtml(c)}<div><div class="mv-name">${escapeAttr(c.nome)}</div>
+      <div class="mv-meta">${escapeAttr(c.partido||'')} · ${fmtInt(c.votos)} votos no estado</div></div></div>`;
+  if(!dadosCand){
+    out.innerHTML = cabeca + `<p class="mv-note">Os votos por município deste candidato ainda não estão no painel. Eles são carregados do TSE pelo atualizar_apuracao.py (um arquivo por município) e aparecem aqui automaticamente.</p>`;
+    return;
+  }
+  const nomes = municipios.length ? municipios.map(m => m.nome) : Object.keys(dadosCand);
+  const linhas = nomes.map(n => ({ nome:n, votos: dadosCand[n] || 0 })).sort((a,b) => b.votos - a.votos || a.nome.localeCompare(b.nome));
+  const soma = linhas.reduce((s,l) => s + l.votos, 0);
+  const maximo = Math.max(1, ...linhas.map(l => l.votos));
+  out.innerHTML = cabeca + linhas.map(l => `
+    <div class="mv-row${l.votos ? '' : ' mv-zero'}">
+      <div class="mv-mname">${escapeAttr(l.nome)}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${l.votos/maximo*100}%"></div></div>
+      <div class="mv-votes">${fmtInt(l.votos)}</div>
+      <div class="mv-pct">${soma ? fmtPct(l.votos/soma*100) : '—'}</div>
+    </div>`).join('') +
+    `<p class="legend-note">Soma dos 16 municípios: ${fmtInt(soma)} votos. Percentual = parcela do total do candidato em cada município.</p>`;
+}
+
 function renderRace(){
   const landingEl = document.getElementById('landing');
   const detailEl = document.getElementById('detail-view');
+  const muniEl = document.getElementById('muni-view');
+
+  if(activeRace === 'municipio'){
+    landingEl.style.display = 'none';
+    detailEl.style.display = 'none';
+    muniEl.style.display = 'block';
+    renderMuniView();
+    return;
+  }
+  muniEl.style.display = 'none';
 
   if(activeRace === 'resumo'){
     landingEl.style.display = 'grid';
@@ -1364,6 +1473,7 @@ async function buscarDados(){
     });
     races = next;
     municipios = dados.municipios || [];
+    votosMunicipio = dados.votosMunicipio || {};
     renderUpdatedAt(dados.atualizadoEm || null);
 
     ultimaLeituraOk = true;

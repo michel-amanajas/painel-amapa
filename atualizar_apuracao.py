@@ -448,6 +448,50 @@ def buscar_cargo(chave: str, info: dict) -> list | None:
     return None
 
 
+def urls_cargo_municipio(cod_mun: str, cargo_codigo: str, eleicao: str) -> list:
+    """URLs do arquivo de resultado de UM município (padrão do TSE:
+    <uf><cod_municipio>-c<cargo>-e<eleicao>-r.json, ex.: ap06050-c0006-e006257-r.json)."""
+    cargo4, eleicao6 = cargo_codigo.zfill(4), eleicao.zfill(6)
+    nome = f"{UF}{cod_mun}-c{cargo4}-e{eleicao6}-r.json"
+    return [
+        f"{BASE_URL}/{PLEITO}/dados-simplificados/{UF}/{nome}",
+        f"{BASE_URL}/{eleicao}/dados-simplificados/{UF}/{nome}",
+        f"{BASE_URL}/{PLEITO}/dados-simplificados/{UF}/{cod_mun}-c{cargo4}-e{eleicao6}-r.json",
+    ]
+
+
+def buscar_votos_municipios(dados: dict) -> dict:
+    """Para cada cargo e cada um dos 16 municípios, baixa o arquivo municipal do
+    TSE e monta {cargo: {nome_candidato: {municipio: votos}}}. O nome do
+    candidato é o MESMO que está no dados.json (casado sem acento/maiúscula).
+    Municípios que falharem ficam de fora desta rodada (não derruba o resto)."""
+    resultado = {}
+    for chave, info in CARGOS.items():
+        candidatos = (dados.get("racas", {}).get(chave) or {}).get("candidatos") or []
+        if not candidatos:
+            continue
+        por_nome = {normalizar_nome(c["nome"]): c["nome"] for c in candidatos}
+        saida = {}
+        ok = 0
+        for cod, nome_mun in MUNICIPIOS.items():
+            payload = None
+            for url in urls_cargo_municipio(cod, info["codigo"], info["eleicao"]):
+                payload = buscar_json(url)
+                if payload is not None:
+                    break
+            if payload is None:
+                continue
+            ok += 1
+            for c in extrair_candidatos(payload):
+                nome = por_nome.get(normalizar_nome(c["nome"]))
+                if nome:
+                    saida.setdefault(nome, {})[nome_mun] = c["votos"]
+        print(f"  [municípios] {info['label']}: {ok}/{len(MUNICIPIOS)} municípios lidos")
+        if saida:
+            resultado[chave] = saida
+    return resultado
+
+
 def buscar_municipios() -> list | None:
     """Busca o percentual de seções apuradas por município.
     Usa o arquivo agregado por cargo (qualquer um serve, todos têm o
@@ -513,7 +557,7 @@ def carregar_dados_atuais() -> dict:
     return {"racas": {}, "municipios": [], "atualizadoEm": None}
 
 
-def rodar_uma_vez(buscar_fotos: bool = False):
+def rodar_uma_vez(buscar_fotos: bool = False, votos_municipio: bool = False):
     dados = carregar_dados_atuais()
     algo_mudou = False
 
@@ -546,6 +590,12 @@ def rodar_uma_vez(buscar_fotos: bool = False):
     # exemplo, a lista com nomes reais e 0 votos, enquanto o TSE ainda não
     # liberou a apuração). Isso garante que a foto apareça mesmo quando a
     # busca de resultados dá 404 o tempo todo antes do dia da eleição.
+    if votos_municipio:
+        vm = buscar_votos_municipios(dados)
+        if vm:
+            dados.setdefault("votosMunicipio", {}).update(vm)
+            algo_mudou = True
+
     if buscar_fotos and mapa_fotos:
         for chave, raca in dados["racas"].items():
             candidatos = raca.get("candidatos") or []
@@ -576,6 +626,8 @@ def main():
                          help="sobrescreve BASE_URL (use a URL de produção do TSE)")
     parser.add_argument("--fotos", action="store_true",
                          help="baixa (uma vez) e aplica as fotos oficiais do TSE a cada candidato — ver item 5 do topo do arquivo")
+    parser.add_argument("--votos-municipio", action="store_true",
+                         help="baixa os votos de cada candidato por município (aba 'Votos por município' do painel)")
     args = parser.parse_args()
 
     global BASE_URL
@@ -587,13 +639,13 @@ def main():
         sys.exit(1)
 
     if args.once:
-        rodar_uma_vez(buscar_fotos=args.fotos)
+        rodar_uma_vez(buscar_fotos=args.fotos, votos_municipio=args.votos_municipio)
         return
 
     print(f"Rodando em loop, a cada {args.intervalo}s. Ctrl+C para parar.\n")
     try:
         while True:
-            rodar_uma_vez(buscar_fotos=args.fotos)
+            rodar_uma_vez(buscar_fotos=args.fotos, votos_municipio=args.votos_municipio)
             time.sleep(args.intervalo)
     except KeyboardInterrupt:
         print("\nEncerrado pelo usuário.")

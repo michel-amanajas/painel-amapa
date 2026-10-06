@@ -32,7 +32,7 @@ jobs:
           python-version: "3.12"
 
       - name: Buscar dados do TSE (e fotos dos candidatos)
-        run: python atualizar_apuracao.py --once --fotos
+        run: python atualizar_apuracao.py --once --fotos --votos-municipio
 
       - name: Publicar dados.json e fotos atualizados (se mudou)
         run: |
