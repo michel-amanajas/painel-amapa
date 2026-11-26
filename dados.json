@@ -135,20 +135,12 @@
       "proportional": true,
       "candidatos": [
         {
-          "nome": "Tenente Coronel Marques",
+          "nome": "Gesiel Oliveira",
           "partido": "—",
-          "votos": 6071,
-          "num": "2225",
-          "sq": "30002538088",
-          "foto": "fotos/30002538088.jpg"
-        },
-        {
-          "nome": "Vinicius Gurgel",
-          "partido": "—",
-          "votos": 19625,
-          "num": "2222",
-          "sq": "30002538084",
-          "foto": "fotos/30002538084.jpg"
+          "votos": 4268,
+          "num": "2277",
+          "sq": "30002538081",
+          "foto": "fotos/30002538081.jpg"
         },
         {
           "nome": "Bia da Zilma",
@@ -167,20 +159,28 @@
           "foto": "fotos/30002538083.jpg"
         },
         {
+          "nome": "Vinicius Gurgel",
+          "partido": "—",
+          "votos": 19625,
+          "num": "2222",
+          "sq": "30002538084",
+          "foto": "fotos/30002538084.jpg"
+        },
+        {
+          "nome": "Jorge Souza",
+          "partido": "—",
+          "votos": 2631,
+          "num": "2212",
+          "sq": "30002538082",
+          "foto": "fotos/30002538082.jpg"
+        },
+        {
           "nome": "Elias Real do Menino Jesus",
           "partido": "—",
           "votos": 956,
           "num": "2223",
           "sq": "30002538089",
           "foto": "fotos/30002538089.jpg"
-        },
-        {
-          "nome": "Coronel Palmira",
-          "partido": "—",
-          "votos": 1029,
-          "num": "2220",
-          "sq": "30002538087",
-          "foto": "fotos/30002538087.jpg"
         },
         {
           "nome": "Caetano Bentes",
@@ -191,20 +191,20 @@
           "foto": "fotos/30002538085.jpg"
         },
         {
-          "nome": "Gesiel Oliveira",
+          "nome": "Tenente Coronel Marques",
           "partido": "—",
-          "votos": 4268,
-          "num": "2277",
-          "sq": "30002538081",
-          "foto": "fotos/30002538081.jpg"
+          "votos": 6071,
+          "num": "2225",
+          "sq": "30002538088",
+          "foto": "fotos/30002538088.jpg"
         },
         {
-          "nome": "Jorge Souza",
+          "nome": "Coronel Palmira",
           "partido": "—",
-          "votos": 2631,
-          "num": "2212",
-          "sq": "30002538082",
-          "foto": "fotos/30002538082.jpg"
+          "votos": 1029,
+          "num": "2220",
+          "sq": "30002538087",
+          "foto": "fotos/30002538087.jpg"
         },
         {
           "nome": "Vasti Barbosa",
@@ -223,12 +223,12 @@
           "foto": "fotos/30002553599.jpg"
         },
         {
-          "nome": "Marcio Serrão",
+          "nome": "Aline Gurgel",
           "partido": "—",
-          "votos": 20796,
-          "num": "4444",
-          "sq": "30002536305",
-          "foto": "fotos/30002536305.jpg"
+          "votos": 25501,
+          "num": "4410",
+          "sq": "30002536304",
+          "foto": "fotos/30002536304.jpg"
         },
         {
           "nome": "Felipe Show",
@@ -237,6 +237,14 @@
           "num": "4480",
           "sq": "30002536306",
           "foto": "fotos/30002536306.jpg"
+        },
+        {
+          "nome": "Luiz Carlos",
+          "partido": "—",
+          "votos": 6316,
+          "num": "4456",
+          "sq": "30002536303",
+          "foto": "fotos/30002536303.jpg"
         },
         {
           "nome": "Cristiano Furlan",
@@ -255,28 +263,12 @@
           "foto": "fotos/30002536302.jpg"
         },
         {
-          "nome": "Luiz Carlos",
+          "nome": "Marcio Serrão",
           "partido": "—",
-          "votos": 6316,
-          "num": "4456",
-          "sq": "30002536303",
-          "foto": "fotos/30002536303.jpg"
-        },
-        {
-          "nome": "Aline Gurgel",
-          "partido": "—",
-          "votos": 25501,
-          "num": "4410",
-          "sq": "30002536304",
-          "foto": "fotos/30002536304.jpg"
-        },
-        {
-          "nome": "Bena Rocha",
-          "partido": "—",
-          "votos": 10981,
-          "num": "1112",
-          "sq": "30002536308",
-          "foto": "fotos/30002536308.jpg"
+          "votos": 20796,
+          "num": "4444",
+          "sq": "30002536305",
+          "foto": "fotos/30002536305.jpg"
         },
         {
           "nome": "Andre Abdon",
@@ -287,12 +279,12 @@
           "foto": "fotos/30002536307.jpg"
         },
         {
-          "nome": "Ivone Chagas",
+          "nome": "Bena Rocha",
           "partido": "—",
-          "votos": 6810,
-          "num": "4343",
-          "sq": "30002533101",
-          "foto": "fotos/30002533101.jpg"
+          "votos": 10981,
+          "num": "1112",
+          "sq": "30002536308",
+          "foto": "fotos/30002536308.jpg"
         },
         {
           "nome": "Lucas Abrahao",
@@ -303,20 +295,12 @@
           "foto": "fotos/30002533103.jpg"
         },
         {
-          "nome": "Professora Ivanéia",
+          "nome": "Ivone Chagas",
           "partido": "—",
-          "votos": 756,
-          "num": "1313",
-          "sq": "30002533097",
-          "foto": "fotos/30002533097.jpg"
-        },
-        {
-          "nome": "Paulo Lemos",
-          "partido": "—",
-          "votos": 16242,
-          "num": "1350",
-          "sq": "30002533100",
-          "foto": "fotos/30002533100.jpg"
+          "votos": 6810,
+          "num": "4343",
+          "sq": "30002533101",
+          "foto": "fotos/30002533101.jpg"
         },
         {
           "nome": "Camilo Capiberibe",
@@ -327,12 +311,36 @@
           "foto": "fotos/30002533104.jpg"
         },
         {
+          "nome": "Paulo Lemos",
+          "partido": "—",
+          "votos": 16242,
+          "num": "1350",
+          "sq": "30002533100",
+          "foto": "fotos/30002533100.jpg"
+        },
+        {
+          "nome": "Professora Ivanéia",
+          "partido": "—",
+          "votos": 756,
+          "num": "1313",
+          "sq": "30002533097",
+          "foto": "fotos/30002533097.jpg"
+        },
+        {
           "nome": "Professora Vivian",
           "partido": "—",
           "votos": 225,
           "num": "6556",
           "sq": "30002533102",
           "foto": "fotos/30002533102.jpg"
+        },
+        {
+          "nome": "Professora Marcivânia",
+          "partido": "—",
+          "votos": 17913,
+          "num": "6565",
+          "sq": "30002533096",
+          "foto": "fotos/30002533096.jpg"
         },
         {
           "nome": "Dudão Costa",
@@ -343,12 +351,12 @@
           "foto": "fotos/30002533098.jpg"
         },
         {
-          "nome": "Professora Marcivânia",
+          "nome": "Prof. Gil Barbosa",
           "partido": "—",
-          "votos": 17913,
-          "num": "6565",
-          "sq": "30002533096",
-          "foto": "fotos/30002533096.jpg"
+          "votos": 111,
+          "num": "5080",
+          "sq": "30002532426",
+          "foto": "fotos/30002532426.jpg"
         },
         {
           "nome": "Ramona Matarazzo",
@@ -367,14 +375,6 @@
           "foto": "fotos/30002532428.jpg"
         },
         {
-          "nome": "Prof. Gil Barbosa",
-          "partido": "—",
-          "votos": 111,
-          "num": "5080",
-          "sq": "30002532426",
-          "foto": "fotos/30002532426.jpg"
-        },
-        {
           "nome": "Cris Nunes",
           "partido": "—",
           "votos": 267,
@@ -389,6 +389,14 @@
           "num": "1834",
           "sq": "30002532425",
           "foto": "fotos/30002532425.jpg"
+        },
+        {
+          "nome": "Meire Salviano",
+          "partido": "—",
+          "votos": 99,
+          "num": "1401",
+          "sq": "30002549916",
+          "foto": "fotos/30002549916.jpg"
         },
         {
           "nome": "Marcia Nery",
@@ -407,22 +415,6 @@
           "foto": "fotos/30002549914.jpg"
         },
         {
-          "nome": "Bruno Borges",
-          "partido": "—",
-          "votos": 89,
-          "num": "1415",
-          "sq": "30002549913",
-          "foto": "fotos/30002549913.jpg"
-        },
-        {
-          "nome": "Meire Salviano",
-          "partido": "—",
-          "votos": 99,
-          "num": "1401",
-          "sq": "30002549916",
-          "foto": "fotos/30002549916.jpg"
-        },
-        {
           "nome": "Luy Ricardo",
           "partido": "—",
           "votos": 359,
@@ -431,52 +423,12 @@
           "foto": "fotos/30002549917.jpg"
         },
         {
-          "nome": "Francisca Favacho",
+          "nome": "Bruno Borges",
           "partido": "—",
-          "votos": 9746,
-          "num": "1515",
-          "sq": "30002549848",
-          "foto": "fotos/30002549848.jpg"
-        },
-        {
-          "nome": "Daldeia",
-          "partido": "—",
-          "votos": 1889,
-          "num": "1526",
-          "sq": "30002549849",
-          "foto": "fotos/30002549849.jpg"
-        },
-        {
-          "nome": "Helder",
-          "partido": "—",
-          "votos": 870,
-          "num": "1511",
-          "sq": "30002549850",
-          "foto": "fotos/30002549850.jpg"
-        },
-        {
-          "nome": "Rômulo Monteiro",
-          "partido": "—",
-          "votos": 761,
-          "num": "1580",
-          "sq": "30002549851",
-          "foto": "fotos/30002549851.jpg"
-        },
-        {
-          "nome": "Alinne Madeireiro",
-          "partido": "—",
-          "votos": 950,
-          "num": "1522",
-          "sq": "30002554423",
-          "foto": "fotos/30002554423.jpg"
-        },
-        {
-          "nome": "Maria Orlanda",
-          "partido": "—",
-          "votos": 1376,
-          "num": "1545",
-          "sq": "30002549847",
-          "foto": "fotos/30002549847.jpg"
+          "votos": 89,
+          "num": "1415",
+          "sq": "30002549913",
+          "foto": "fotos/30002549913.jpg"
         },
         {
           "nome": "Elizaura da Anápolis",
@@ -487,12 +439,28 @@
           "foto": "fotos/30002549854.jpg"
         },
         {
-          "nome": "Lucas da Gazeta",
+          "nome": "Maria Orlanda",
           "partido": "—",
-          "votos": 4809,
-          "num": "1516",
-          "sq": "30002549852",
-          "foto": "fotos/30002549852.jpg"
+          "votos": 1376,
+          "num": "1545",
+          "sq": "30002549847",
+          "foto": "fotos/30002549847.jpg"
+        },
+        {
+          "nome": "Alinne Madeireiro",
+          "partido": "—",
+          "votos": 950,
+          "num": "1522",
+          "sq": "30002554423",
+          "foto": "fotos/30002554423.jpg"
+        },
+        {
+          "nome": "Helder",
+          "partido": "—",
+          "votos": 870,
+          "num": "1511",
+          "sq": "30002549850",
+          "foto": "fotos/30002549850.jpg"
         },
         {
           "nome": "Irmã Maria",
@@ -503,12 +471,52 @@
           "foto": "fotos/30002549846.jpg"
         },
         {
-          "nome": "Dorinaldo Malafaia",
+          "nome": "Lucas da Gazeta",
           "partido": "—",
-          "votos": 19382,
-          "num": "1222",
-          "sq": "30002532842",
-          "foto": "fotos/30002532842.jpg"
+          "votos": 4809,
+          "num": "1516",
+          "sq": "30002549852",
+          "foto": "fotos/30002549852.jpg"
+        },
+        {
+          "nome": "Rômulo Monteiro",
+          "partido": "—",
+          "votos": 761,
+          "num": "1580",
+          "sq": "30002549851",
+          "foto": "fotos/30002549851.jpg"
+        },
+        {
+          "nome": "Daldeia",
+          "partido": "—",
+          "votos": 1889,
+          "num": "1526",
+          "sq": "30002549849",
+          "foto": "fotos/30002549849.jpg"
+        },
+        {
+          "nome": "Francisca Favacho",
+          "partido": "—",
+          "votos": 9746,
+          "num": "1515",
+          "sq": "30002549848",
+          "foto": "fotos/30002549848.jpg"
+        },
+        {
+          "nome": "Jesus Pontes",
+          "partido": "—",
+          "votos": 14031,
+          "num": "1234",
+          "sq": "30002532844",
+          "foto": "fotos/30002532844.jpg"
+        },
+        {
+          "nome": "Lau Causa Animal",
+          "partido": "—",
+          "votos": 787,
+          "num": "1215",
+          "sq": "30002532848",
+          "foto": "fotos/30002532848.jpg"
         },
         {
           "nome": "Pastor Solangelo",
@@ -519,20 +527,12 @@
           "foto": "fotos/30002532843.jpg"
         },
         {
-          "nome": "Professora Katia Paulino",
+          "nome": "Isabel Nogueira",
           "partido": "—",
-          "votos": 2258,
-          "num": "1220",
-          "sq": "30002532846",
-          "foto": "fotos/30002532846.jpg"
-        },
-        {
-          "nome": "Lau Causa Animal",
-          "partido": "—",
-          "votos": 787,
-          "num": "1215",
-          "sq": "30002532848",
-          "foto": "fotos/30002532848.jpg"
+          "votos": 8112,
+          "num": "1213",
+          "sq": "30002532840",
+          "foto": "fotos/30002532840.jpg"
         },
         {
           "nome": "Josenildo",
@@ -551,12 +551,12 @@
           "foto": "fotos/30002532845.jpg"
         },
         {
-          "nome": "Jesus Pontes",
+          "nome": "Dorinaldo Malafaia",
           "partido": "—",
-          "votos": 14031,
-          "num": "1234",
-          "sq": "30002532844",
-          "foto": "fotos/30002532844.jpg"
+          "votos": 19382,
+          "num": "1222",
+          "sq": "30002532842",
+          "foto": "fotos/30002532842.jpg"
         },
         {
           "nome": "Kleber Karipuna",
@@ -567,12 +567,12 @@
           "foto": "fotos/30002532847.jpg"
         },
         {
-          "nome": "Isabel Nogueira",
+          "nome": "Professora Katia Paulino",
           "partido": "—",
-          "votos": 8112,
-          "num": "1213",
-          "sq": "30002532840",
-          "foto": "fotos/30002532840.jpg"
+          "votos": 2258,
+          "num": "1220",
+          "sq": "30002532846",
+          "foto": "fotos/30002532846.jpg"
         },
         {
           "nome": "Professora Goreth",
@@ -583,44 +583,12 @@
           "foto": "fotos/30002530508.jpg"
         },
         {
-          "nome": "Mayla Carvalho",
-          "partido": "—",
-          "votos": 8636,
-          "num": "2010",
-          "sq": "30002530512",
-          "foto": "fotos/30002530512.jpg"
-        },
-        {
-          "nome": "Sandra Lacerda",
-          "partido": "—",
-          "votos": 10785,
-          "num": "2020",
-          "sq": "30002530516",
-          "foto": "fotos/30002530516.jpg"
-        },
-        {
-          "nome": "Alexandre Azevedo",
-          "partido": "—",
-          "votos": 14973,
-          "num": "2055",
-          "sq": "30002530510",
-          "foto": "fotos/30002530510.jpg"
-        },
-        {
           "nome": "Dr. Vinicius Reis",
           "partido": "—",
           "votos": 14255,
           "num": "2023",
           "sq": "30002530513",
           "foto": "fotos/30002530513.jpg"
-        },
-        {
-          "nome": "Dra. Erica",
-          "partido": "—",
-          "votos": 15358,
-          "num": "2000",
-          "sq": "30002530514",
-          "foto": "fotos/30002530514.jpg"
         },
         {
           "nome": "Joel Cavalcante",
@@ -631,12 +599,36 @@
           "foto": "fotos/30002530511.jpg"
         },
         {
+          "nome": "Alexandre Azevedo",
+          "partido": "—",
+          "votos": 14973,
+          "num": "2055",
+          "sq": "30002530510",
+          "foto": "fotos/30002530510.jpg"
+        },
+        {
           "nome": "Kamille Almeida",
           "partido": "—",
           "votos": 3409,
           "num": "2030",
           "sq": "30002530509",
           "foto": "fotos/30002530509.jpg"
+        },
+        {
+          "nome": "Dra. Erica",
+          "partido": "—",
+          "votos": 15358,
+          "num": "2000",
+          "sq": "30002530514",
+          "foto": "fotos/30002530514.jpg"
+        },
+        {
+          "nome": "Sandra Lacerda",
+          "partido": "—",
+          "votos": 10785,
+          "num": "2020",
+          "sq": "30002530516",
+          "foto": "fotos/30002530516.jpg"
         },
         {
           "nome": "Kassyo Ramos",
@@ -647,12 +639,28 @@
           "foto": "fotos/30002530515.jpg"
         },
         {
+          "nome": "Mayla Carvalho",
+          "partido": "—",
+          "votos": 8636,
+          "num": "2010",
+          "sq": "30002530512",
+          "foto": "fotos/30002530512.jpg"
+        },
+        {
           "nome": "Luisão",
           "partido": "—",
           "votos": 32,
           "num": "3088",
           "sq": "30002530018",
           "foto": "fotos/30002530018.jpg"
+        },
+        {
+          "nome": "Iranei Lopes",
+          "partido": "—",
+          "votos": 284,
+          "num": "3030",
+          "sq": "30002530019",
+          "foto": "fotos/30002530019.jpg"
         },
         {
           "nome": "Professora Rilany Silva",
@@ -671,36 +679,12 @@
           "foto": "fotos/30002530017.jpg"
         },
         {
-          "nome": "Iranei Lopes",
-          "partido": "—",
-          "votos": 284,
-          "num": "3030",
-          "sq": "30002530019",
-          "foto": "fotos/30002530019.jpg"
-        },
-        {
           "nome": "Beth Garcia",
           "partido": "—",
           "votos": 62,
           "num": "3065",
           "sq": "30002530016",
           "foto": "fotos/30002530016.jpg"
-        },
-        {
-          "nome": "Nanda",
-          "partido": "—",
-          "votos": 1109,
-          "num": "5500",
-          "sq": "30002532254",
-          "foto": "fotos/30002532254.jpg"
-        },
-        {
-          "nome": "Dilson Borges",
-          "partido": "—",
-          "votos": 668,
-          "num": "5515",
-          "sq": "30002532247",
-          "foto": "fotos/30002532247.jpg"
         },
         {
           "nome": "Tia Lu",
@@ -711,12 +695,12 @@
           "foto": "fotos/30002532252.jpg"
         },
         {
-          "nome": "Augusto Aguiar",
+          "nome": "Kelly Dantas",
           "partido": "—",
-          "votos": 279,
-          "num": "5510",
-          "sq": "30002532253",
-          "foto": "fotos/30002532253.jpg"
+          "votos": 863,
+          "num": "5555",
+          "sq": "30002554527",
+          "foto": "fotos/30002554527.jpg"
         },
         {
           "nome": "Luiz Alex",
@@ -727,20 +711,20 @@
           "foto": "fotos/30002532248.jpg"
         },
         {
+          "nome": "Dilson Borges",
+          "partido": "—",
+          "votos": 668,
+          "num": "5515",
+          "sq": "30002532247",
+          "foto": "fotos/30002532247.jpg"
+        },
+        {
           "nome": "Relson Cardoso",
           "partido": "—",
           "votos": 2694,
           "num": "5533",
           "sq": "30002532255",
           "foto": "fotos/30002532255.jpg"
-        },
-        {
-          "nome": "Pr. Didio",
-          "partido": "—",
-          "votos": 737,
-          "num": "5522",
-          "sq": "30002532251",
-          "foto": "fotos/30002532251.jpg"
         },
         {
           "nome": "Leda Sadala",
@@ -751,12 +735,28 @@
           "foto": "fotos/30002532250.jpg"
         },
         {
-          "nome": "Kelly Dantas",
+          "nome": "Nanda",
           "partido": "—",
-          "votos": 863,
-          "num": "5555",
-          "sq": "30002554527",
-          "foto": "fotos/30002554527.jpg"
+          "votos": 1109,
+          "num": "5500",
+          "sq": "30002532254",
+          "foto": "fotos/30002532254.jpg"
+        },
+        {
+          "nome": "Augusto Aguiar",
+          "partido": "—",
+          "votos": 279,
+          "num": "5510",
+          "sq": "30002532253",
+          "foto": "fotos/30002532253.jpg"
+        },
+        {
+          "nome": "Pr. Didio",
+          "partido": "—",
+          "votos": 737,
+          "num": "5522",
+          "sq": "30002532251",
+          "foto": "fotos/30002532251.jpg"
         },
         {
           "nome": "Eliada Santos",
@@ -767,20 +767,20 @@
           "foto": "fotos/30002552028.jpg"
         },
         {
-          "nome": "Pimpolho",
-          "partido": "—",
-          "votos": 13,
-          "num": "2777",
-          "sq": "30002552023",
-          "foto": "fotos/30002552023.jpg"
-        },
-        {
           "nome": "Carmina Rodrigues",
           "partido": "—",
           "votos": 10,
           "num": "2722",
           "sq": "30002552025",
           "foto": "fotos/30002552025.jpg"
+        },
+        {
+          "nome": "Pimpolho",
+          "partido": "—",
+          "votos": 13,
+          "num": "2777",
+          "sq": "30002552023",
+          "foto": "fotos/30002552023.jpg"
         },
         {
           "nome": "Robson Gualberto",
@@ -791,20 +791,20 @@
           "foto": "fotos/30002552027.jpg"
         },
         {
-          "nome": "Shirley Amaral",
-          "partido": "—",
-          "votos": 22,
-          "num": "2719",
-          "sq": "30002552022",
-          "foto": "fotos/30002552022.jpg"
-        },
-        {
           "nome": "Wilguer Carvalho",
           "partido": "—",
           "votos": 32,
           "num": "2700",
           "sq": "30002552029",
           "foto": "fotos/30002552029.jpg"
+        },
+        {
+          "nome": "Shirley Amaral",
+          "partido": "—",
+          "votos": 22,
+          "num": "2719",
+          "sq": "30002552022",
+          "foto": "fotos/30002552022.jpg"
         }
       ]
     },
@@ -815,44 +815,12 @@
       "proportional": true,
       "candidatos": [
         {
-          "nome": "Karla Samila",
+          "nome": "Ennio Cavalcante",
           "partido": "—",
-          "votos": 193,
-          "num": "10321",
-          "sq": "30002549879",
-          "foto": "fotos/30002549879.jpg"
-        },
-        {
-          "nome": "Telma Nery",
-          "partido": "—",
-          "votos": 8545,
-          "num": "10000",
-          "sq": "30002549894",
-          "foto": "fotos/30002549894.jpg"
-        },
-        {
-          "nome": "Odilson Nunes",
-          "partido": "—",
-          "votos": 2678,
-          "num": "10111",
-          "sq": "30002549883",
-          "foto": "fotos/30002549883.jpg"
-        },
-        {
-          "nome": "Sargento Geovana",
-          "partido": "—",
-          "votos": 146,
-          "num": "10555",
-          "sq": "30002549875",
-          "foto": "fotos/30002549875.jpg"
-        },
-        {
-          "nome": "Professor Morpheu",
-          "partido": "—",
-          "votos": 868,
-          "num": "10700",
-          "sq": "30002549882",
-          "foto": "fotos/30002549882.jpg"
+          "votos": 1929,
+          "num": "10699",
+          "sq": "30002549874",
+          "foto": "fotos/30002549874.jpg"
         },
         {
           "nome": "Débora Martins",
@@ -863,68 +831,12 @@
           "foto": "fotos/30002549890.jpg"
         },
         {
-          "nome": "Dr. Hugo",
+          "nome": "Hildegard Gurgel",
           "partido": "—",
-          "votos": 397,
-          "num": "10333",
-          "sq": "30002549897",
-          "foto": "fotos/30002549897.jpg"
-        },
-        {
-          "nome": "Careca da Talentus",
-          "partido": "—",
-          "votos": 2801,
-          "num": "10110",
-          "sq": "30002549876",
-          "foto": "fotos/30002549876.jpg"
-        },
-        {
-          "nome": "Teka do Jory",
-          "partido": "—",
-          "votos": 7977,
-          "num": "10300",
-          "sq": "30002554526",
-          "foto": "fotos/30002554526.jpg"
-        },
-        {
-          "nome": "Dudu Tavares",
-          "partido": "—",
-          "votos": 2826,
-          "num": "10580",
-          "sq": "30002549878",
-          "foto": "fotos/30002549878.jpg"
-        },
-        {
-          "nome": "Estefane Raposa",
-          "partido": "—",
-          "votos": 29,
-          "num": "10144",
-          "sq": "30002549881",
-          "foto": "fotos/30002549881.jpg"
-        },
-        {
-          "nome": "Coronel André Dias",
-          "partido": "—",
-          "votos": 1048,
-          "num": "10190",
-          "sq": "30002549891",
-          "foto": "fotos/30002549891.jpg"
-        },
-        {
-          "nome": "Bené do Plutão",
-          "partido": "—",
-          "votos": 772,
-          "num": "10100",
-          "sq": "30002549886",
-          "foto": "fotos/30002549886.jpg"
-        },
-        {
-          "nome": "Dr Marcos Paulo",
-          "partido": "—",
-          "votos": 928,
-          "num": "10123",
-          "sq": "30002549898",
-          "foto": "fotos/30002549898.jpg"
+          "votos": 12357,
+          "num": "10800",
+          "sq": "30002549884",
+          "foto": "fotos/30002549884.jpg"
         },
         {
           "nome": "Dr Renan Rosas",
@@ -935,28 +847,60 @@
           "foto": "fotos/30002549887.jpg"
         },
         {
-          "nome": "Kinovak",
+          "nome": "Coronel Flexa",
           "partido": "—",
-          "votos": 9978,
-          "num": "10999",
-          "sq": "30002549880",
-          "foto": "fotos/30002549880.jpg"
+          "votos": 8098,
+          "num": "10500",
+          "sq": "30002549896",
+          "foto": "fotos/30002549896.jpg"
         },
         {
-          "nome": "Hildegard Gurgel",
+          "nome": "Professor Morpheu",
           "partido": "—",
-          "votos": 12357,
-          "num": "10800",
-          "sq": "30002549884",
-          "foto": "fotos/30002549884.jpg"
+          "votos": 868,
+          "num": "10700",
+          "sq": "30002549882",
+          "foto": "fotos/30002549882.jpg"
         },
         {
-          "nome": "Ennio Cavalcante",
+          "nome": "Careca da Talentus",
           "partido": "—",
-          "votos": 1929,
-          "num": "10699",
-          "sq": "30002549874",
-          "foto": "fotos/30002549874.jpg"
+          "votos": 2801,
+          "num": "10110",
+          "sq": "30002549876",
+          "foto": "fotos/30002549876.jpg"
+        },
+        {
+          "nome": "Dudu Tavares",
+          "partido": "—",
+          "votos": 2826,
+          "num": "10580",
+          "sq": "30002549878",
+          "foto": "fotos/30002549878.jpg"
+        },
+        {
+          "nome": "Telma Nery",
+          "partido": "—",
+          "votos": 8545,
+          "num": "10000",
+          "sq": "30002549894",
+          "foto": "fotos/30002549894.jpg"
+        },
+        {
+          "nome": "Karla Samila",
+          "partido": "—",
+          "votos": 193,
+          "num": "10321",
+          "sq": "30002549879",
+          "foto": "fotos/30002549879.jpg"
+        },
+        {
+          "nome": "Bené do Plutão",
+          "partido": "—",
+          "votos": 772,
+          "num": "10100",
+          "sq": "30002549886",
+          "foto": "fotos/30002549886.jpg"
         },
         {
           "nome": "Jaime Perez",
@@ -967,20 +911,28 @@
           "foto": "fotos/30002549877.jpg"
         },
         {
-          "nome": "Coronel Flexa",
+          "nome": "Dr Marcos Paulo",
           "partido": "—",
-          "votos": 8098,
-          "num": "10500",
-          "sq": "30002549896",
-          "foto": "fotos/30002549896.jpg"
+          "votos": 928,
+          "num": "10123",
+          "sq": "30002549898",
+          "foto": "fotos/30002549898.jpg"
         },
         {
-          "nome": "Rayfran Beirão",
+          "nome": "Sargento Geovana",
           "partido": "—",
-          "votos": 7301,
-          "num": "10678",
-          "sq": "30002549889",
-          "foto": "fotos/30002549889.jpg"
+          "votos": 146,
+          "num": "10555",
+          "sq": "30002549875",
+          "foto": "fotos/30002549875.jpg"
+        },
+        {
+          "nome": "Dr. Hugo",
+          "partido": "—",
+          "votos": 397,
+          "num": "10333",
+          "sq": "30002549897",
+          "foto": "fotos/30002549897.jpg"
         },
         {
           "nome": "Dudu Barbosa",
@@ -991,36 +943,60 @@
           "foto": "fotos/30002549892.jpg"
         },
         {
-          "nome": "Jorginho Maciel",
+          "nome": "Odilson Nunes",
           "partido": "—",
-          "votos": 203,
-          "num": "20223",
-          "sq": "30002532020",
-          "foto": "fotos/30002532020.jpg"
+          "votos": 2678,
+          "num": "10111",
+          "sq": "30002549883",
+          "foto": "fotos/30002549883.jpg"
         },
         {
-          "nome": "Mario Bianchi",
+          "nome": "Estefane Raposa",
           "partido": "—",
-          "votos": 637,
-          "num": "20000",
-          "sq": "30002532036",
-          "foto": "fotos/30002532036.jpg"
+          "votos": 29,
+          "num": "10144",
+          "sq": "30002549881",
+          "foto": "fotos/30002549881.jpg"
         },
         {
-          "nome": "Sandra Alcantara",
+          "nome": "Teka do Jory",
           "partido": "—",
-          "votos": 740,
-          "num": "20111",
-          "sq": "30002532025",
-          "foto": "fotos/30002532025.jpg"
+          "votos": 7977,
+          "num": "10300",
+          "sq": "30002554526",
+          "foto": "fotos/30002554526.jpg"
         },
         {
-          "nome": "Herison Tupan",
+          "nome": "Kinovak",
           "partido": "—",
-          "votos": 89,
-          "num": "20555",
-          "sq": "30002532024",
-          "foto": "fotos/30002532024.jpg"
+          "votos": 9978,
+          "num": "10999",
+          "sq": "30002549880",
+          "foto": "fotos/30002549880.jpg"
+        },
+        {
+          "nome": "Coronel André Dias",
+          "partido": "—",
+          "votos": 1048,
+          "num": "10190",
+          "sq": "30002549891",
+          "foto": "fotos/30002549891.jpg"
+        },
+        {
+          "nome": "Rayfran Beirão",
+          "partido": "—",
+          "votos": 7301,
+          "num": "10678",
+          "sq": "30002549889",
+          "foto": "fotos/30002549889.jpg"
+        },
+        {
+          "nome": "Carlos Murilo",
+          "partido": "—",
+          "votos": 3023,
+          "num": "20777",
+          "sq": "30002532017",
+          "foto": "fotos/30002532017.jpg"
         },
         {
           "nome": "Dr. Angelo",
@@ -1031,68 +1007,28 @@
           "foto": "fotos/30002532027.jpg"
         },
         {
-          "nome": "Cristina Almeida",
+          "nome": "Cesar Farias",
           "partido": "—",
-          "votos": 1778,
-          "num": "20201",
-          "sq": "30002532023",
-          "foto": "fotos/30002532023.jpg"
+          "votos": 168,
+          "num": "20321",
+          "sq": "30002532019",
+          "foto": "fotos/30002532019.jpg"
         },
         {
-          "nome": "Prof. Rogério Lima",
+          "nome": "Mario Bianchi",
           "partido": "—",
-          "votos": 329,
-          "num": "20220",
-          "sq": "30002532026",
-          "foto": "fotos/30002532026.jpg"
+          "votos": 637,
+          "num": "20000",
+          "sq": "30002532036",
+          "foto": "fotos/30002532036.jpg"
         },
         {
-          "nome": "R Nelson",
+          "nome": "Claudinha",
           "partido": "—",
-          "votos": 10286,
-          "num": "20193",
-          "sq": "30002532038",
-          "foto": "fotos/30002532038.jpg"
-        },
-        {
-          "nome": "Costa Filho",
-          "partido": "—",
-          "votos": 346,
-          "num": "20155",
-          "sq": "30002532016",
-          "foto": "fotos/30002532016.jpg"
-        },
-        {
-          "nome": "Laene Dantas",
-          "partido": "—",
-          "votos": 210,
-          "num": "20222",
-          "sq": "30002532030",
-          "foto": "fotos/30002532030.jpg"
-        },
-        {
-          "nome": "Elenice",
-          "partido": "—",
-          "votos": 3271,
-          "num": "20200",
-          "sq": "30002532040",
-          "foto": "fotos/30002532040.jpg"
-        },
-        {
-          "nome": "Prof. Bené Bingota",
-          "partido": "—",
-          "votos": 900,
-          "num": "20789",
-          "sq": "30002532033",
-          "foto": "fotos/30002532033.jpg"
-        },
-        {
-          "nome": "Israel Santos",
-          "partido": "—",
-          "votos": 38,
-          "num": "20416",
-          "sq": "30002532018",
-          "foto": "fotos/30002532018.jpg"
+          "votos": 383,
+          "num": "20500",
+          "sq": "30002532035",
+          "foto": "fotos/30002532035.jpg"
         },
         {
           "nome": "Dra Vânia Fontoura",
@@ -1103,6 +1039,22 @@
           "foto": "fotos/30002532031.jpg"
         },
         {
+          "nome": "Jucelino Fernandes",
+          "partido": "—",
+          "votos": 243,
+          "num": "20888",
+          "sq": "30002532029",
+          "foto": "fotos/30002532029.jpg"
+        },
+        {
+          "nome": "Israel Santos",
+          "partido": "—",
+          "votos": 38,
+          "num": "20416",
+          "sq": "30002532018",
+          "foto": "fotos/30002532018.jpg"
+        },
+        {
           "nome": "Julia Soares",
           "partido": "—",
           "votos": 351,
@@ -1111,12 +1063,44 @@
           "foto": "fotos/30002532028.jpg"
         },
         {
-          "nome": "Jucelino Fernandes",
+          "nome": "Cristina Almeida",
           "partido": "—",
-          "votos": 243,
-          "num": "20888",
-          "sq": "30002532029",
-          "foto": "fotos/30002532029.jpg"
+          "votos": 1778,
+          "num": "20201",
+          "sq": "30002532023",
+          "foto": "fotos/30002532023.jpg"
+        },
+        {
+          "nome": "Nanda Cabral",
+          "partido": "—",
+          "votos": 495,
+          "num": "20180",
+          "sq": "30002532022",
+          "foto": "fotos/30002532022.jpg"
+        },
+        {
+          "nome": "Laene Dantas",
+          "partido": "—",
+          "votos": 210,
+          "num": "20222",
+          "sq": "30002532030",
+          "foto": "fotos/30002532030.jpg"
+        },
+        {
+          "nome": "Sandra Alcantara",
+          "partido": "—",
+          "votos": 740,
+          "num": "20111",
+          "sq": "30002532025",
+          "foto": "fotos/30002532025.jpg"
+        },
+        {
+          "nome": "Jorginho Maciel",
+          "partido": "—",
+          "votos": 203,
+          "num": "20223",
+          "sq": "30002532020",
+          "foto": "fotos/30002532020.jpg"
         },
         {
           "nome": "Prof. Ivanildo Luz",
@@ -1135,46 +1119,6 @@
           "foto": "fotos/30002532021.jpg"
         },
         {
-          "nome": "Dr. Sandro Carvalho",
-          "partido": "—",
-          "votos": 157,
-          "num": "20666",
-          "sq": "30002532032",
-          "foto": "fotos/30002532032.jpg"
-        },
-        {
-          "nome": "Nanda Cabral",
-          "partido": "—",
-          "votos": 495,
-          "num": "20180",
-          "sq": "30002532022",
-          "foto": "fotos/30002532022.jpg"
-        },
-        {
-          "nome": "Cesar Farias",
-          "partido": "—",
-          "votos": 168,
-          "num": "20321",
-          "sq": "30002532019",
-          "foto": "fotos/30002532019.jpg"
-        },
-        {
-          "nome": "Claudinha",
-          "partido": "—",
-          "votos": 383,
-          "num": "20500",
-          "sq": "30002532035",
-          "foto": "fotos/30002532035.jpg"
-        },
-        {
-          "nome": "Carlos Murilo",
-          "partido": "—",
-          "votos": 3023,
-          "num": "20777",
-          "sq": "30002532017",
-          "foto": "fotos/30002532017.jpg"
-        },
-        {
           "nome": "João Mendonça",
           "partido": "—",
           "votos": 8736,
@@ -1183,44 +1127,60 @@
           "foto": "fotos/30002532034.jpg"
         },
         {
-          "nome": "Alcinete Santos",
+          "nome": "Herison Tupan",
           "partido": "—",
-          "votos": 343,
-          "num": "13333",
-          "sq": "30002533111",
-          "foto": "fotos/30002533111.jpg"
+          "votos": 89,
+          "num": "20555",
+          "sq": "30002532024",
+          "foto": "fotos/30002532024.jpg"
         },
         {
-          "nome": "Celisa Melo",
+          "nome": "Prof. Rogério Lima",
           "partido": "—",
-          "votos": 199,
-          "num": "13113",
-          "sq": "30002533109",
-          "foto": "fotos/30002533109.jpg"
+          "votos": 329,
+          "num": "20220",
+          "sq": "30002532026",
+          "foto": "fotos/30002532026.jpg"
         },
         {
-          "nome": "Van Vilhena",
+          "nome": "Prof. Bené Bingota",
           "partido": "—",
-          "votos": 647,
-          "num": "13130",
-          "sq": "30002533118",
-          "foto": "fotos/30002533118.jpg"
+          "votos": 900,
+          "num": "20789",
+          "sq": "30002532033",
+          "foto": "fotos/30002532033.jpg"
         },
         {
-          "nome": "Carlos Carmezim",
+          "nome": "R Nelson",
           "partido": "—",
-          "votos": 264,
-          "num": "13047",
-          "sq": "30002533121",
-          "foto": "fotos/30002533121.jpg"
+          "votos": 10286,
+          "num": "20193",
+          "sq": "30002532038",
+          "foto": "fotos/30002532038.jpg"
         },
         {
-          "nome": "Zeneide Costa",
+          "nome": "Costa Filho",
           "partido": "—",
-          "votos": 3516,
-          "num": "13456",
-          "sq": "30002533116",
-          "foto": "fotos/30002533116.jpg"
+          "votos": 346,
+          "num": "20155",
+          "sq": "30002532016",
+          "foto": "fotos/30002532016.jpg"
+        },
+        {
+          "nome": "Elenice",
+          "partido": "—",
+          "votos": 3271,
+          "num": "20200",
+          "sq": "30002532040",
+          "foto": "fotos/30002532040.jpg"
+        },
+        {
+          "nome": "Dr. Sandro Carvalho",
+          "partido": "—",
+          "votos": 157,
+          "num": "20666",
+          "sq": "30002532032",
+          "foto": "fotos/30002532032.jpg"
         },
         {
           "nome": "Jardel Eliezer",
@@ -1229,6 +1189,14 @@
           "num": "13141",
           "sq": "30002533106",
           "foto": "fotos/30002533106.jpg"
+        },
+        {
+          "nome": "Van Vilhena",
+          "partido": "—",
+          "votos": 647,
+          "num": "13130",
+          "sq": "30002533118",
+          "foto": "fotos/30002533118.jpg"
         },
         {
           "nome": "Socorro Nogueira",
@@ -1247,6 +1215,38 @@
           "foto": "fotos/30002533117.jpg"
         },
         {
+          "nome": "Carlos Carmezim",
+          "partido": "—",
+          "votos": 264,
+          "num": "13047",
+          "sq": "30002533121",
+          "foto": "fotos/30002533121.jpg"
+        },
+        {
+          "nome": "Alcinete Santos",
+          "partido": "—",
+          "votos": 343,
+          "num": "13333",
+          "sq": "30002533111",
+          "foto": "fotos/30002533111.jpg"
+        },
+        {
+          "nome": "Zeneide Costa",
+          "partido": "—",
+          "votos": 3516,
+          "num": "13456",
+          "sq": "30002533116",
+          "foto": "fotos/30002533116.jpg"
+        },
+        {
+          "nome": "Celisa Melo",
+          "partido": "—",
+          "votos": 199,
+          "num": "13113",
+          "sq": "30002533109",
+          "foto": "fotos/30002533109.jpg"
+        },
+        {
           "nome": "Liliane Abreu",
           "partido": "—",
           "votos": 8335,
@@ -1255,20 +1255,20 @@
           "foto": "fotos/30002533113.jpg"
         },
         {
-          "nome": "Elindomar Silva",
-          "partido": "—",
-          "votos": 115,
-          "num": "43043",
-          "sq": "30002533114",
-          "foto": "fotos/30002533114.jpg"
-        },
-        {
           "nome": "Edna Auzier",
           "partido": "—",
           "votos": 5299,
           "num": "43444",
           "sq": "30002533108",
           "foto": "fotos/30002533108.jpg"
+        },
+        {
+          "nome": "Elindomar Silva",
+          "partido": "—",
+          "votos": 115,
+          "num": "43043",
+          "sq": "30002533114",
+          "foto": "fotos/30002533114.jpg"
         },
         {
           "nome": "Alesson Cavalvante",
@@ -1303,100 +1303,12 @@
           "foto": "fotos/30002533105.jpg"
         },
         {
-          "nome": "Jorge Amanajas",
-          "partido": "—",
-          "votos": 8078,
-          "num": "44222",
-          "sq": "30002539122",
-          "foto": "fotos/30002539122.jpg"
-        },
-        {
-          "nome": "Reginaldo Faraó",
-          "partido": "—",
-          "votos": 5516,
-          "num": "44800",
-          "sq": "30002539108",
-          "foto": "fotos/30002539108.jpg"
-        },
-        {
-          "nome": "Nete Matias",
-          "partido": "—",
-          "votos": 4832,
-          "num": "44130",
-          "sq": "30002539112",
-          "foto": "fotos/30002539112.jpg"
-        },
-        {
-          "nome": "Engenheiro Angelo",
-          "partido": "—",
-          "votos": 2773,
-          "num": "44444",
-          "sq": "30002539115",
-          "foto": "fotos/30002539115.jpg"
-        },
-        {
-          "nome": "Aparecida Salomão",
-          "partido": "—",
-          "votos": 6202,
-          "num": "44700",
-          "sq": "30002539110",
-          "foto": "fotos/30002539110.jpg"
-        },
-        {
-          "nome": "Ofirney Sadala",
-          "partido": "—",
-          "votos": 4778,
-          "num": "44777",
-          "sq": "30002539121",
-          "foto": "fotos/30002539121.jpg"
-        },
-        {
-          "nome": "Beth Pelaes",
-          "partido": "—",
-          "votos": 3713,
-          "num": "44478",
-          "sq": "30002539117",
-          "foto": "fotos/30002539117.jpg"
-        },
-        {
-          "nome": "Dr. Negrão",
-          "partido": "—",
-          "votos": 2709,
-          "num": "44999",
-          "sq": "30002539111",
-          "foto": "fotos/30002539111.jpg"
-        },
-        {
-          "nome": "Roseli Matos",
-          "partido": "—",
-          "votos": 3477,
-          "num": "44456",
-          "sq": "30002539114",
-          "foto": "fotos/30002539114.jpg"
-        },
-        {
-          "nome": "Lucélia Quaresma",
-          "partido": "—",
-          "votos": 2015,
-          "num": "44789",
-          "sq": "30002539118",
-          "foto": "fotos/30002539118.jpg"
-        },
-        {
           "nome": "Bia Pombo",
           "partido": "—",
           "votos": 9771,
           "num": "44123",
           "sq": "30002539120",
           "foto": "fotos/30002539120.jpg"
-        },
-        {
-          "nome": "Roberto Góes",
-          "partido": "—",
-          "votos": 7990,
-          "num": "44111",
-          "sq": "30002539124",
-          "foto": "fotos/30002539124.jpg"
         },
         {
           "nome": "Rodolfo Vale",
@@ -1407,20 +1319,12 @@
           "foto": "fotos/30002539119.jpg"
         },
         {
-          "nome": "Anderson Almeida",
+          "nome": "Elizete Trindade",
           "partido": "—",
-          "votos": 4519,
-          "num": "44144",
-          "sq": "30002539125",
-          "foto": "fotos/30002539125.jpg"
-        },
-        {
-          "nome": "Paulinho Ramos",
-          "partido": "—",
-          "votos": 3393,
-          "num": "44000",
-          "sq": "30002539113",
-          "foto": "fotos/30002539113.jpg"
+          "votos": 601,
+          "num": "44577",
+          "sq": "30002539126",
+          "foto": "fotos/30002539126.jpg"
         },
         {
           "nome": "Divino Rocha",
@@ -1431,12 +1335,116 @@
           "foto": "fotos/30002539116.jpg"
         },
         {
-          "nome": "Elizete Trindade",
+          "nome": "Reginaldo Faraó",
           "partido": "—",
-          "votos": 601,
-          "num": "44577",
-          "sq": "30002539126",
-          "foto": "fotos/30002539126.jpg"
+          "votos": 5516,
+          "num": "44800",
+          "sq": "30002539108",
+          "foto": "fotos/30002539108.jpg"
+        },
+        {
+          "nome": "Aparecida Salomão",
+          "partido": "—",
+          "votos": 6202,
+          "num": "44700",
+          "sq": "30002539110",
+          "foto": "fotos/30002539110.jpg"
+        },
+        {
+          "nome": "Beth Pelaes",
+          "partido": "—",
+          "votos": 3713,
+          "num": "44478",
+          "sq": "30002539117",
+          "foto": "fotos/30002539117.jpg"
+        },
+        {
+          "nome": "Engenheiro Angelo",
+          "partido": "—",
+          "votos": 2773,
+          "num": "44444",
+          "sq": "30002539115",
+          "foto": "fotos/30002539115.jpg"
+        },
+        {
+          "nome": "Jorge Amanajas",
+          "partido": "—",
+          "votos": 8078,
+          "num": "44222",
+          "sq": "30002539122",
+          "foto": "fotos/30002539122.jpg"
+        },
+        {
+          "nome": "Paulinho Ramos",
+          "partido": "—",
+          "votos": 3393,
+          "num": "44000",
+          "sq": "30002539113",
+          "foto": "fotos/30002539113.jpg"
+        },
+        {
+          "nome": "Roberto Góes",
+          "partido": "—",
+          "votos": 7990,
+          "num": "44111",
+          "sq": "30002539124",
+          "foto": "fotos/30002539124.jpg"
+        },
+        {
+          "nome": "Lucélia Quaresma",
+          "partido": "—",
+          "votos": 2015,
+          "num": "44789",
+          "sq": "30002539118",
+          "foto": "fotos/30002539118.jpg"
+        },
+        {
+          "nome": "Dr. Negrão",
+          "partido": "—",
+          "votos": 2709,
+          "num": "44999",
+          "sq": "30002539111",
+          "foto": "fotos/30002539111.jpg"
+        },
+        {
+          "nome": "Nete Matias",
+          "partido": "—",
+          "votos": 4832,
+          "num": "44130",
+          "sq": "30002539112",
+          "foto": "fotos/30002539112.jpg"
+        },
+        {
+          "nome": "Ofirney Sadala",
+          "partido": "—",
+          "votos": 4778,
+          "num": "44777",
+          "sq": "30002539121",
+          "foto": "fotos/30002539121.jpg"
+        },
+        {
+          "nome": "Roseli Matos",
+          "partido": "—",
+          "votos": 3477,
+          "num": "44456",
+          "sq": "30002539114",
+          "foto": "fotos/30002539114.jpg"
+        },
+        {
+          "nome": "Anderson Almeida",
+          "partido": "—",
+          "votos": 4519,
+          "num": "44144",
+          "sq": "30002539125",
+          "foto": "fotos/30002539125.jpg"
+        },
+        {
+          "nome": "Selma de Paula",
+          "partido": "—",
+          "votos": 462,
+          "num": "11123",
+          "sq": "30002539123",
+          "foto": "fotos/30002539123.jpg"
         },
         {
           "nome": "Joselyo Mais Saúde",
@@ -1447,12 +1455,44 @@
           "foto": "fotos/30002539109.jpg"
         },
         {
-          "nome": "Selma de Paula",
+          "nome": "Apóstola Berenice Lazamé",
           "partido": "—",
-          "votos": 462,
-          "num": "11123",
-          "sq": "30002539123",
-          "foto": "fotos/30002539123.jpg"
+          "votos": 62,
+          "num": "15321",
+          "sq": "30002549870",
+          "foto": "fotos/30002549870.jpg"
+        },
+        {
+          "nome": "Diogo Senior",
+          "partido": "—",
+          "votos": 10050,
+          "num": "15123",
+          "sq": "30002549865",
+          "foto": "fotos/30002549865.jpg"
+        },
+        {
+          "nome": "Cleuma Duarte",
+          "partido": "—",
+          "votos": 1210,
+          "num": "15125",
+          "sq": "30002549867",
+          "foto": "fotos/30002549867.jpg"
+        },
+        {
+          "nome": "Jó Pereira",
+          "partido": "—",
+          "votos": 416,
+          "num": "15007",
+          "sq": "30002553615",
+          "foto": "fotos/30002553615.jpg"
+        },
+        {
+          "nome": "Helô",
+          "partido": "—",
+          "votos": 329,
+          "num": "15777",
+          "sq": "30002549869",
+          "foto": "fotos/30002549869.jpg"
         },
         {
           "nome": "Carol Monteiro",
@@ -1471,30 +1511,6 @@
           "foto": "fotos/30002549868.jpg"
         },
         {
-          "nome": "Cleuma Duarte",
-          "partido": "—",
-          "votos": 1210,
-          "num": "15125",
-          "sq": "30002549867",
-          "foto": "fotos/30002549867.jpg"
-        },
-        {
-          "nome": "Helô",
-          "partido": "—",
-          "votos": 329,
-          "num": "15777",
-          "sq": "30002549869",
-          "foto": "fotos/30002549869.jpg"
-        },
-        {
-          "nome": "Apóstola Berenice Lazamé",
-          "partido": "—",
-          "votos": 62,
-          "num": "15321",
-          "sq": "30002549870",
-          "foto": "fotos/30002549870.jpg"
-        },
-        {
           "nome": "Fulêra",
           "partido": "—",
           "votos": 178,
@@ -1503,28 +1519,12 @@
           "foto": "fotos/30002549866.jpg"
         },
         {
-          "nome": "Jó Pereira",
+          "nome": "Junior Favacho",
           "partido": "—",
-          "votos": 416,
-          "num": "15007",
-          "sq": "30002553615",
-          "foto": "fotos/30002553615.jpg"
-        },
-        {
-          "nome": "Diogo Senior",
-          "partido": "—",
-          "votos": 10050,
-          "num": "15123",
-          "sq": "30002549865",
-          "foto": "fotos/30002549865.jpg"
-        },
-        {
-          "nome": "Balieiro",
-          "partido": "—",
-          "votos": 567,
-          "num": "15190",
-          "sq": "30002549871",
-          "foto": "fotos/30002549871.jpg"
+          "votos": 8005,
+          "num": "15699",
+          "sq": "30002549864",
+          "foto": "fotos/30002549864.jpg"
         },
         {
           "nome": "Salmon Santana",
@@ -1535,12 +1535,12 @@
           "foto": "fotos/30002549872.jpg"
         },
         {
-          "nome": "Junior Favacho",
+          "nome": "Balieiro",
           "partido": "—",
-          "votos": 8005,
-          "num": "15699",
-          "sq": "30002549864",
-          "foto": "fotos/30002549864.jpg"
+          "votos": 567,
+          "num": "15190",
+          "sq": "30002549871",
+          "foto": "fotos/30002549871.jpg"
         },
         {
           "nome": "Eliana Brandão",
@@ -1559,124 +1559,12 @@
           "foto": "fotos/30002553597.jpg"
         },
         {
-          "nome": "Dr Yuri Alesi",
-          "partido": "—",
-          "votos": 862,
-          "num": "30555",
-          "sq": "30002530074",
-          "foto": "fotos/30002530074.jpg"
-        },
-        {
-          "nome": "Dr Sath",
-          "partido": "—",
-          "votos": 586,
-          "num": "30999",
-          "sq": "30002530078",
-          "foto": "fotos/30002530078.jpg"
-        },
-        {
-          "nome": "Dulce do Jari",
-          "partido": "—",
-          "votos": 77,
-          "num": "30333",
-          "sq": "30002530085",
-          "foto": "fotos/30002530085.jpg"
-        },
-        {
-          "nome": "Irismar Vilhena",
-          "partido": "—",
-          "votos": 91,
-          "num": "30456",
-          "sq": "30002530079",
-          "foto": "fotos/30002530079.jpg"
-        },
-        {
-          "nome": "Winnie Ataliba",
-          "partido": "—",
-          "votos": 680,
-          "num": "30200",
-          "sq": "30002530089",
-          "foto": "fotos/30002530089.jpg"
-        },
-        {
-          "nome": "Alan Santos",
-          "partido": "—",
-          "votos": 86,
-          "num": "30192",
-          "sq": "30002530081",
-          "foto": "fotos/30002530081.jpg"
-        },
-        {
-          "nome": "Ten Cel Ademar",
-          "partido": "—",
-          "votos": 567,
-          "num": "30190",
-          "sq": "30002530080",
-          "foto": "fotos/30002530080.jpg"
-        },
-        {
-          "nome": "Augusto Júnior",
-          "partido": "—",
-          "votos": 90,
-          "num": "30888",
-          "sq": "30002530087",
-          "foto": "fotos/30002530087.jpg"
-        },
-        {
-          "nome": "Karyna Ramos",
-          "partido": "—",
-          "votos": 1143,
-          "num": "30222",
-          "sq": "30002530076",
-          "foto": "fotos/30002530076.jpg"
-        },
-        {
-          "nome": "Helson Freitas",
-          "partido": "—",
-          "votos": 1495,
-          "num": "30123",
-          "sq": "30002530077",
-          "foto": "fotos/30002530077.jpg"
-        },
-        {
           "nome": "Daniela Fortunato",
           "partido": "—",
           "votos": 62,
           "num": "30300",
           "sq": "30002530082",
           "foto": "fotos/30002530082.jpg"
-        },
-        {
-          "nome": "Waldeir",
-          "partido": "—",
-          "votos": 1695,
-          "num": "30111",
-          "sq": "30002530083",
-          "foto": "fotos/30002530083.jpg"
-        },
-        {
-          "nome": "Vera da Farmácia",
-          "partido": "—",
-          "votos": 1090,
-          "num": "30321",
-          "sq": "30002530086",
-          "foto": "fotos/30002530086.jpg"
-        },
-        {
-          "nome": "Marluce Costa",
-          "partido": "—",
-          "votos": 85,
-          "num": "30500",
-          "sq": "30002530090",
-          "foto": "fotos/30002530090.jpg"
-        },
-        {
-          "nome": "Marcelo Oliveira",
-          "partido": "—",
-          "votos": 339,
-          "num": "30000",
-          "sq": "30002530075",
-          "foto": "fotos/30002530075.jpg"
         },
         {
           "nome": "Natanael dos Anjos",
@@ -1687,68 +1575,116 @@
           "foto": "fotos/30002530084.jpg"
         },
         {
-          "nome": "Edu Siqueira",
+          "nome": "Waldeir",
           "partido": "—",
-          "votos": 2087,
-          "num": "22555",
-          "sq": "30002538137",
-          "foto": "fotos/30002538137.jpg"
+          "votos": 1695,
+          "num": "30111",
+          "sq": "30002530083",
+          "foto": "fotos/30002530083.jpg"
         },
         {
-          "nome": "Dr. Patrick Medrado",
+          "nome": "Dr Sath",
           "partido": "—",
-          "votos": 278,
-          "num": "22240",
-          "sq": "30002538138",
-          "foto": "fotos/30002538138.jpg"
+          "votos": 586,
+          "num": "30999",
+          "sq": "30002530078",
+          "foto": "fotos/30002530078.jpg"
         },
         {
-          "nome": "Alexandre Verçosa",
+          "nome": "Marcelo Oliveira",
           "partido": "—",
-          "votos": 2515,
-          "num": "22223",
-          "sq": "30002538144",
-          "foto": "fotos/30002538144.jpg"
+          "votos": 339,
+          "num": "30000",
+          "sq": "30002530075",
+          "foto": "fotos/30002530075.jpg"
         },
         {
-          "nome": "Girlene Barroso",
+          "nome": "Winnie Ataliba",
           "partido": "—",
-          "votos": 82,
-          "num": "22100",
-          "sq": "30002538092",
-          "foto": "fotos/30002538092.jpg"
+          "votos": 680,
+          "num": "30200",
+          "sq": "30002530089",
+          "foto": "fotos/30002530089.jpg"
         },
         {
-          "nome": "Alex",
+          "nome": "Marluce Costa",
           "partido": "—",
-          "votos": 4805,
-          "num": "22123",
-          "sq": "30002538135",
-          "foto": "fotos/30002538135.jpg"
+          "votos": 85,
+          "num": "30500",
+          "sq": "30002530090",
+          "foto": "fotos/30002530090.jpg"
         },
         {
-          "nome": "Anne Távora",
+          "nome": "Alan Santos",
           "partido": "—",
-          "votos": 868,
-          "num": "22111",
-          "sq": "30002538152",
-          "foto": "fotos/30002538152.jpg"
+          "votos": 86,
+          "num": "30192",
+          "sq": "30002530081",
+          "foto": "fotos/30002530081.jpg"
         },
         {
-          "nome": "Soedi",
+          "nome": "Helson Freitas",
           "partido": "—",
-          "votos": 289,
-          "num": "22321",
-          "sq": "30002538150",
-          "foto": "fotos/30002538150.jpg"
+          "votos": 1495,
+          "num": "30123",
+          "sq": "30002530077",
+          "foto": "fotos/30002530077.jpg"
         },
         {
-          "nome": "Wanna Queiroga",
+          "nome": "Irismar Vilhena",
           "partido": "—",
-          "votos": 206,
-          "num": "22789",
-          "sq": "30002538147",
-          "foto": "fotos/30002538147.jpg"
+          "votos": 91,
+          "num": "30456",
+          "sq": "30002530079",
+          "foto": "fotos/30002530079.jpg"
+        },
+        {
+          "nome": "Karyna Ramos",
+          "partido": "—",
+          "votos": 1143,
+          "num": "30222",
+          "sq": "30002530076",
+          "foto": "fotos/30002530076.jpg"
+        },
+        {
+          "nome": "Ten Cel Ademar",
+          "partido": "—",
+          "votos": 567,
+          "num": "30190",
+          "sq": "30002530080",
+          "foto": "fotos/30002530080.jpg"
+        },
+        {
+          "nome": "Dr Yuri Alesi",
+          "partido": "—",
+          "votos": 862,
+          "num": "30555",
+          "sq": "30002530074",
+          "foto": "fotos/30002530074.jpg"
+        },
+        {
+          "nome": "Dulce do Jari",
+          "partido": "—",
+          "votos": 77,
+          "num": "30333",
+          "sq": "30002530085",
+          "foto": "fotos/30002530085.jpg"
+        },
+        {
+          "nome": "Vera da Farmácia",
+          "partido": "—",
+          "votos": 1090,
+          "num": "30321",
+          "sq": "30002530086",
+          "foto": "fotos/30002530086.jpg"
+        },
+        {
+          "nome": "Augusto Júnior",
+          "partido": "—",
+          "votos": 90,
+          "num": "30888",
+          "sq": "30002530087",
+          "foto": "fotos/30002530087.jpg"
         },
         {
           "nome": "Índia Potira",
@@ -1759,36 +1695,12 @@
           "foto": "fotos/30002554364.jpg"
         },
         {
-          "nome": "Aldo Maurício",
-          "partido": "—",
-          "votos": 857,
-          "num": "22777",
-          "sq": "30002538145",
-          "foto": "fotos/30002538145.jpg"
-        },
-        {
-          "nome": "Obreira Lene Lobo",
-          "partido": "—",
-          "votos": 172,
-          "num": "22101",
-          "sq": "30002538148",
-          "foto": "fotos/30002538148.jpg"
-        },
-        {
           "nome": "Aranha",
           "partido": "—",
           "votos": 2398,
           "num": "22800",
           "sq": "30002538141",
           "foto": "fotos/30002538141.jpg"
-        },
-        {
-          "nome": "Walcimar Fonseca",
-          "partido": "—",
-          "votos": 1578,
-          "num": "22000",
-          "sq": "30002538149",
-          "foto": "fotos/30002538149.jpg"
         },
         {
           "nome": "Madson Millor",
@@ -1807,44 +1719,60 @@
           "foto": "fotos/30002538136.jpg"
         },
         {
-          "nome": "Pastora Maria de Jesus",
+          "nome": "Anne Távora",
           "partido": "—",
-          "votos": 460,
-          "num": "22722",
-          "sq": "30002538134",
-          "foto": "fotos/30002538134.jpg"
+          "votos": 868,
+          "num": "22111",
+          "sq": "30002538152",
+          "foto": "fotos/30002538152.jpg"
         },
         {
-          "nome": "Dr Achiles",
+          "nome": "Soedi",
           "partido": "—",
-          "votos": 2635,
-          "num": "22456",
-          "sq": "30002538091",
-          "foto": "fotos/30002538091.jpg"
+          "votos": 289,
+          "num": "22321",
+          "sq": "30002538150",
+          "foto": "fotos/30002538150.jpg"
         },
         {
-          "nome": "Dr Reinaldo Portilho",
+          "nome": "Walcimar Fonseca",
           "partido": "—",
-          "votos": 557,
-          "num": "22666",
-          "sq": "30002538093",
-          "foto": "fotos/30002538093.jpg"
+          "votos": 1578,
+          "num": "22000",
+          "sq": "30002538149",
+          "foto": "fotos/30002538149.jpg"
         },
         {
-          "nome": "Cirilo Fernandes",
+          "nome": "Alex",
           "partido": "—",
-          "votos": 398,
-          "num": "22580",
-          "sq": "30002538140",
-          "foto": "fotos/30002538140.jpg"
+          "votos": 4805,
+          "num": "22123",
+          "sq": "30002538135",
+          "foto": "fotos/30002538135.jpg"
         },
         {
-          "nome": "Jorielson",
+          "nome": "Aldo Maurício",
           "partido": "—",
-          "votos": 2200,
-          "num": "22333",
-          "sq": "30002538143",
-          "foto": "fotos/30002538143.jpg"
+          "votos": 857,
+          "num": "22777",
+          "sq": "30002538145",
+          "foto": "fotos/30002538145.jpg"
+        },
+        {
+          "nome": "Edu Siqueira",
+          "partido": "—",
+          "votos": 2087,
+          "num": "22555",
+          "sq": "30002538137",
+          "foto": "fotos/30002538137.jpg"
+        },
+        {
+          "nome": "Wanna Queiroga",
+          "partido": "—",
+          "votos": 206,
+          "num": "22789",
+          "sq": "30002538147",
+          "foto": "fotos/30002538147.jpg"
         },
         {
           "nome": "Carlos Evangelista",
@@ -1863,28 +1791,76 @@
           "foto": "fotos/30002538139.jpg"
         },
         {
-          "nome": "Pr. Mezaque",
+          "nome": "Dr Reinaldo Portilho",
           "partido": "—",
-          "votos": 743,
-          "num": "55321",
-          "sq": "30002532238",
-          "foto": "fotos/30002532238.jpg"
+          "votos": 557,
+          "num": "22666",
+          "sq": "30002538093",
+          "foto": "fotos/30002538093.jpg"
         },
         {
-          "nome": "Rogério Serrão",
+          "nome": "Jorielson",
           "partido": "—",
-          "votos": 3500,
-          "num": "55123",
-          "sq": "30002532240",
-          "foto": "fotos/30002532240.jpg"
+          "votos": 2200,
+          "num": "22333",
+          "sq": "30002538143",
+          "foto": "fotos/30002538143.jpg"
         },
         {
-          "nome": "Instrutor Santos",
+          "nome": "Obreira Lene Lobo",
           "partido": "—",
-          "votos": 121,
-          "num": "55622",
-          "sq": "30002532245",
-          "foto": "fotos/30002532245.jpg"
+          "votos": 172,
+          "num": "22101",
+          "sq": "30002538148",
+          "foto": "fotos/30002538148.jpg"
+        },
+        {
+          "nome": "Cirilo Fernandes",
+          "partido": "—",
+          "votos": 398,
+          "num": "22580",
+          "sq": "30002538140",
+          "foto": "fotos/30002538140.jpg"
+        },
+        {
+          "nome": "Girlene Barroso",
+          "partido": "—",
+          "votos": 82,
+          "num": "22100",
+          "sq": "30002538092",
+          "foto": "fotos/30002538092.jpg"
+        },
+        {
+          "nome": "Dr. Patrick Medrado",
+          "partido": "—",
+          "votos": 278,
+          "num": "22240",
+          "sq": "30002538138",
+          "foto": "fotos/30002538138.jpg"
+        },
+        {
+          "nome": "Alexandre Verçosa",
+          "partido": "—",
+          "votos": 2515,
+          "num": "22223",
+          "sq": "30002538144",
+          "foto": "fotos/30002538144.jpg"
+        },
+        {
+          "nome": "Dr Achiles",
+          "partido": "—",
+          "votos": 2635,
+          "num": "22456",
+          "sq": "30002538091",
+          "foto": "fotos/30002538091.jpg"
+        },
+        {
+          "nome": "Pastora Maria de Jesus",
+          "partido": "—",
+          "votos": 460,
+          "num": "22722",
+          "sq": "30002538134",
+          "foto": "fotos/30002538134.jpg"
         },
         {
           "nome": "Careca Lobato",
@@ -1895,20 +1871,20 @@
           "foto": "fotos/30002532241.jpg"
         },
         {
-          "nome": "Ronildo Nobre",
+          "nome": "Elaine Igreja",
           "partido": "—",
-          "votos": 4534,
-          "num": "55222",
-          "sq": "30002532239",
-          "foto": "fotos/30002532239.jpg"
+          "votos": 4478,
+          "num": "55699",
+          "sq": "30002532243",
+          "foto": "fotos/30002532243.jpg"
         },
         {
-          "nome": "Bryan Mendonça",
+          "nome": "Rafael Pimentel",
           "partido": "—",
-          "votos": 111,
-          "num": "55155",
-          "sq": "30002532246",
-          "foto": "fotos/30002532246.jpg"
+          "votos": 2713,
+          "num": "55190",
+          "sq": "30002532235",
+          "foto": "fotos/30002532235.jpg"
         },
         {
           "nome": "Deolinda Luz",
@@ -1927,12 +1903,20 @@
           "foto": "fotos/30002532237.jpg"
         },
         {
-          "nome": "Ari Goes",
+          "nome": "Prof. Carla",
           "partido": "—",
-          "votos": 545,
-          "num": "55000",
-          "sq": "30002531190",
-          "foto": "fotos/30002531190.jpg"
+          "votos": 1023,
+          "num": "55111",
+          "sq": "30002532234",
+          "foto": "fotos/30002532234.jpg"
+        },
+        {
+          "nome": "Ronildo Nobre",
+          "partido": "—",
+          "votos": 4534,
+          "num": "55222",
+          "sq": "30002532239",
+          "foto": "fotos/30002532239.jpg"
         },
         {
           "nome": "Dary Guedes",
@@ -1951,44 +1935,12 @@
           "foto": "fotos/30002531192.jpg"
         },
         {
-          "nome": "Sebastião Filho",
+          "nome": "Toinho Aguiar",
           "partido": "—",
-          "votos": 58,
-          "num": "55888",
-          "sq": "30002532242",
-          "foto": "fotos/30002532242.jpg"
-        },
-        {
-          "nome": "Capitão Adriano",
-          "partido": "—",
-          "votos": 441,
-          "num": "55666",
-          "sq": "30002532244",
-          "foto": "fotos/30002532244.jpg"
-        },
-        {
-          "nome": "Lorran Barreto",
-          "partido": "—",
-          "votos": 5460,
-          "num": "55055",
-          "sq": "30002531189",
-          "foto": "fotos/30002531189.jpg"
-        },
-        {
-          "nome": "Elaine Igreja",
-          "partido": "—",
-          "votos": 4478,
-          "num": "55699",
-          "sq": "30002532243",
-          "foto": "fotos/30002532243.jpg"
-        },
-        {
-          "nome": "Socorro Marques",
-          "partido": "—",
-          "votos": 2085,
-          "num": "55369",
-          "sq": "30002532236",
-          "foto": "fotos/30002532236.jpg"
+          "votos": 42,
+          "num": "55100",
+          "sq": "30002531187",
+          "foto": "fotos/30002531187.jpg"
         },
         {
           "nome": "Dr. Liliane Albuquerque",
@@ -1999,124 +1951,76 @@
           "foto": "fotos/30002531188.jpg"
         },
         {
-          "nome": "Toinho Aguiar",
+          "nome": "Pr. Mezaque",
           "partido": "—",
-          "votos": 42,
-          "num": "55100",
-          "sq": "30002531187",
-          "foto": "fotos/30002531187.jpg"
+          "votos": 743,
+          "num": "55321",
+          "sq": "30002532238",
+          "foto": "fotos/30002532238.jpg"
         },
         {
-          "nome": "Rafael Pimentel",
+          "nome": "Rogério Serrão",
           "partido": "—",
-          "votos": 2713,
-          "num": "55190",
-          "sq": "30002532235",
-          "foto": "fotos/30002532235.jpg"
+          "votos": 3500,
+          "num": "55123",
+          "sq": "30002532240",
+          "foto": "fotos/30002532240.jpg"
         },
         {
-          "nome": "Prof. Carla",
+          "nome": "Sebastião Filho",
           "partido": "—",
-          "votos": 1023,
-          "num": "55111",
-          "sq": "30002532234",
-          "foto": "fotos/30002532234.jpg"
+          "votos": 58,
+          "num": "55888",
+          "sq": "30002532242",
+          "foto": "fotos/30002532242.jpg"
         },
         {
-          "nome": "Aldilene Souza",
+          "nome": "Instrutor Santos",
           "partido": "—",
-          "votos": 6896,
-          "num": "12456",
-          "sq": "30002533721",
-          "foto": "fotos/30002533721.jpg"
+          "votos": 121,
+          "num": "55622",
+          "sq": "30002532245",
+          "foto": "fotos/30002532245.jpg"
         },
         {
-          "nome": "Pastor Oliveira",
+          "nome": "Ari Goes",
           "partido": "—",
-          "votos": 6368,
-          "num": "12147",
-          "sq": "30002533727",
-          "foto": "fotos/30002533727.jpg"
+          "votos": 545,
+          "num": "55000",
+          "sq": "30002531190",
+          "foto": "fotos/30002531190.jpg"
         },
         {
-          "nome": "Cris da Abb",
+          "nome": "Socorro Marques",
           "partido": "—",
-          "votos": 205,
-          "num": "12777",
-          "sq": "30002533723",
-          "foto": "fotos/30002533723.jpg"
+          "votos": 2085,
+          "num": "55369",
+          "sq": "30002532236",
+          "foto": "fotos/30002532236.jpg"
         },
         {
-          "nome": "Leila Viana",
+          "nome": "Lorran Barreto",
           "partido": "—",
-          "votos": 156,
-          "num": "12555",
-          "sq": "30002533725",
-          "foto": "fotos/30002533725.jpg"
+          "votos": 5460,
+          "num": "55055",
+          "sq": "30002531189",
+          "foto": "fotos/30002531189.jpg"
         },
         {
-          "nome": "João Pedro",
+          "nome": "Capitão Adriano",
           "partido": "—",
-          "votos": 17559,
-          "num": "12123",
-          "sq": "30002533718",
-          "foto": "fotos/30002533718.jpg"
+          "votos": 441,
+          "num": "55666",
+          "sq": "30002532244",
+          "foto": "fotos/30002532244.jpg"
         },
         {
-          "nome": "Pastora Izamar",
+          "nome": "Bryan Mendonça",
           "partido": "—",
-          "votos": 113,
-          "num": "12377",
-          "sq": "30002533724",
-          "foto": "fotos/30002533724.jpg"
-        },
-        {
-          "nome": "Val Dias",
-          "partido": "—",
-          "votos": 244,
-          "num": "12345",
-          "sq": "30002553948",
-          "foto": "fotos/30002553948.jpg"
-        },
-        {
-          "nome": "Jack Jk",
-          "partido": "—",
-          "votos": 13278,
-          "num": "12222",
-          "sq": "30002533720",
-          "foto": "fotos/30002533720.jpg"
-        },
-        {
-          "nome": "Cleicy Leão",
-          "partido": "—",
-          "votos": 103,
-          "num": "12131",
-          "sq": "30002553947",
-          "foto": "fotos/30002553947.jpg"
-        },
-        {
-          "nome": "Kleber Diniz",
-          "partido": "—",
-          "votos": 139,
-          "num": "12369",
-          "sq": "30002533726",
-          "foto": "fotos/30002533726.jpg"
-        },
-        {
-          "nome": "Claudio do Povão",
-          "partido": "—",
-          "votos": 109,
-          "num": "12100",
-          "sq": "30002533728",
-          "foto": "fotos/30002533728.jpg"
-        },
-        {
-          "nome": "Jim Davis",
-          "partido": "—",
-          "votos": 110,
-          "num": "12789",
-          "sq": "30002533717",
-          "foto": "fotos/30002533717.jpg"
+          "votos": 111,
+          "num": "55155",
+          "sq": "30002532246",
+          "foto": "fotos/30002532246.jpg"
         },
         {
           "nome": "Pastora Léia Pelaes",
@@ -2127,6 +2031,62 @@
           "foto": "fotos/30002533719.jpg"
         },
         {
+          "nome": "Leila Viana",
+          "partido": "—",
+          "votos": 156,
+          "num": "12555",
+          "sq": "30002533725",
+          "foto": "fotos/30002533725.jpg"
+        },
+        {
+          "nome": "Kleber Diniz",
+          "partido": "—",
+          "votos": 139,
+          "num": "12369",
+          "sq": "30002533726",
+          "foto": "fotos/30002533726.jpg"
+        },
+        {
+          "nome": "Val Dias",
+          "partido": "—",
+          "votos": 244,
+          "num": "12345",
+          "sq": "30002553948",
+          "foto": "fotos/30002553948.jpg"
+        },
+        {
+          "nome": "Pastora Izamar",
+          "partido": "—",
+          "votos": 113,
+          "num": "12377",
+          "sq": "30002533724",
+          "foto": "fotos/30002533724.jpg"
+        },
+        {
+          "nome": "Jack Jk",
+          "partido": "—",
+          "votos": 13278,
+          "num": "12222",
+          "sq": "30002533720",
+          "foto": "fotos/30002533720.jpg"
+        },
+        {
+          "nome": "Cris da Abb",
+          "partido": "—",
+          "votos": 205,
+          "num": "12777",
+          "sq": "30002533723",
+          "foto": "fotos/30002533723.jpg"
+        },
+        {
+          "nome": "Jim Davis",
+          "partido": "—",
+          "votos": 110,
+          "num": "12789",
+          "sq": "30002533717",
+          "foto": "fotos/30002533717.jpg"
+        },
+        {
           "nome": "Maricley Ribeiro",
           "partido": "—",
           "votos": 93,
@@ -2135,52 +2095,52 @@
           "foto": "fotos/30002533722.jpg"
         },
         {
-          "nome": "Zé Roberto",
+          "nome": "Claudio do Povão",
           "partido": "—",
-          "votos": 1300,
-          "num": "18147",
-          "sq": "30002533031",
-          "foto": "fotos/30002533031.jpg"
+          "votos": 109,
+          "num": "12100",
+          "sq": "30002533728",
+          "foto": "fotos/30002533728.jpg"
         },
         {
-          "nome": "Professor Marco Antonio",
+          "nome": "Pastor Oliveira",
           "partido": "—",
-          "votos": 1046,
-          "num": "18667",
-          "sq": "30002533024",
-          "foto": "fotos/30002533024.jpg"
+          "votos": 6368,
+          "num": "12147",
+          "sq": "30002533727",
+          "foto": "fotos/30002533727.jpg"
         },
         {
-          "nome": "Helinho Castro",
+          "nome": "João Pedro",
           "partido": "—",
-          "votos": 3966,
-          "num": "18130",
-          "sq": "30002533026",
-          "foto": "fotos/30002533026.jpg"
+          "votos": 17559,
+          "num": "12123",
+          "sq": "30002533718",
+          "foto": "fotos/30002533718.jpg"
         },
         {
-          "nome": "Riba das Mesas",
+          "nome": "Aldilene Souza",
           "partido": "—",
-          "votos": 21,
-          "num": "18144",
-          "sq": "30002533030",
-          "foto": "fotos/30002533030.jpg"
+          "votos": 6896,
+          "num": "12456",
+          "sq": "30002533721",
+          "foto": "fotos/30002533721.jpg"
         },
         {
-          "nome": "Professora Dalva",
+          "nome": "Cleicy Leão",
           "partido": "—",
-          "votos": 39,
-          "num": "18222",
-          "sq": "30002533022",
-          "foto": "fotos/30002533022.jpg"
+          "votos": 103,
+          "num": "12131",
+          "sq": "30002553947",
+          "foto": "fotos/30002553947.jpg"
         },
         {
-          "nome": "Juliana Carvalho",
+          "nome": "Simone Karipuna",
           "partido": "—",
-          "votos": 143,
-          "num": "18143",
-          "sq": "30002533020",
-          "foto": "fotos/30002533020.jpg"
+          "votos": 3003,
+          "num": "18888",
+          "sq": "30002533033",
+          "foto": "fotos/30002533033.jpg"
         },
         {
           "nome": "Joelson Alencar",
@@ -2199,20 +2159,20 @@
           "foto": "fotos/30002533025.jpg"
         },
         {
-          "nome": "Lobato",
+          "nome": "Harife Viegas",
           "partido": "—",
-          "votos": 35,
-          "num": "18139",
-          "sq": "30002533019",
-          "foto": "fotos/30002533019.jpg"
+          "votos": 585,
+          "num": "18500",
+          "sq": "30002533029",
+          "foto": "fotos/30002533029.jpg"
         },
         {
-          "nome": "Dayse Marques",
+          "nome": "Helinho Castro",
           "partido": "—",
-          "votos": 5543,
-          "num": "18789",
-          "sq": "30002533018",
-          "foto": "fotos/30002533018.jpg"
+          "votos": 3966,
+          "num": "18130",
+          "sq": "30002533026",
+          "foto": "fotos/30002533026.jpg"
         },
         {
           "nome": "Rafael Masim",
@@ -2223,36 +2183,12 @@
           "foto": "fotos/30002533027.jpg"
         },
         {
-          "nome": "Marina Sá",
+          "nome": "Dayse Marques",
           "partido": "—",
-          "votos": 118,
-          "num": "18111",
-          "sq": "30002533017",
-          "foto": "fotos/30002533017.jpg"
-        },
-        {
-          "nome": "Chiquinho do Povo",
-          "partido": "—",
-          "votos": 82,
-          "num": "18777",
-          "sq": "30002533032",
-          "foto": "fotos/30002533032.jpg"
-        },
-        {
-          "nome": "Simone Karipuna",
-          "partido": "—",
-          "votos": 3003,
-          "num": "18888",
-          "sq": "30002533033",
-          "foto": "fotos/30002533033.jpg"
-        },
-        {
-          "nome": "Dr. Victor Amoras",
-          "partido": "—",
-          "votos": 9383,
-          "num": "18001",
-          "sq": "30002533021",
-          "foto": "fotos/30002533021.jpg"
+          "votos": 5543,
+          "num": "18789",
+          "sq": "30002533018",
+          "foto": "fotos/30002533018.jpg"
         },
         {
           "nome": "Fabricio Furlan",
@@ -2263,6 +2199,70 @@
           "foto": "fotos/30002533034.jpg"
         },
         {
+          "nome": "Professor Marco Antonio",
+          "partido": "—",
+          "votos": 1046,
+          "num": "18667",
+          "sq": "30002533024",
+          "foto": "fotos/30002533024.jpg"
+        },
+        {
+          "nome": "Zé Roberto",
+          "partido": "—",
+          "votos": 1300,
+          "num": "18147",
+          "sq": "30002533031",
+          "foto": "fotos/30002533031.jpg"
+        },
+        {
+          "nome": "Dr. Victor Amoras",
+          "partido": "—",
+          "votos": 9383,
+          "num": "18001",
+          "sq": "30002533021",
+          "foto": "fotos/30002533021.jpg"
+        },
+        {
+          "nome": "Lobato",
+          "partido": "—",
+          "votos": 35,
+          "num": "18139",
+          "sq": "30002533019",
+          "foto": "fotos/30002533019.jpg"
+        },
+        {
+          "nome": "Juliana Carvalho",
+          "partido": "—",
+          "votos": 143,
+          "num": "18143",
+          "sq": "30002533020",
+          "foto": "fotos/30002533020.jpg"
+        },
+        {
+          "nome": "Riba das Mesas",
+          "partido": "—",
+          "votos": 21,
+          "num": "18144",
+          "sq": "30002533030",
+          "foto": "fotos/30002533030.jpg"
+        },
+        {
+          "nome": "Chiquinho do Povo",
+          "partido": "—",
+          "votos": 82,
+          "num": "18777",
+          "sq": "30002533032",
+          "foto": "fotos/30002533032.jpg"
+        },
+        {
+          "nome": "Professora Dalva",
+          "partido": "—",
+          "votos": 39,
+          "num": "18222",
+          "sq": "30002533022",
+          "foto": "fotos/30002533022.jpg"
+        },
+        {
           "nome": "Ricardo Magno",
           "partido": "—",
           "votos": 434,
@@ -2271,12 +2271,12 @@
           "foto": "fotos/30002533023.jpg"
         },
         {
-          "nome": "Harife Viegas",
+          "nome": "Marina Sá",
           "partido": "—",
-          "votos": 585,
-          "num": "18500",
-          "sq": "30002533029",
-          "foto": "fotos/30002533029.jpg"
+          "votos": 118,
+          "num": "18111",
+          "sq": "30002533017",
+          "foto": "fotos/30002533017.jpg"
         }
       ]
     }
@@ -2347,5 +2347,5 @@
       "pct": 100
     }
   ],
-  "atualizadoEm": "2026-11-26T12:47:00.001459+00:00"
+  "atualizadoEm": "2026-11-26T21:59:06.495847+00:00"
 }
